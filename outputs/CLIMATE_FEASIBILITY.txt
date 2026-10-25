@@ -1,0 +1,6 @@
+
+England/S.North-Sea: July mean 16.5C -> infeasible-to-marginal
+N.France: July mean 18.5C -> infeasible-to-marginal
+Germany: July mean 18.0C -> infeasible-to-marginal
+Iberian huerta (irrigated): July mean 25.5C -> feasible (irrigated/warm)
+Mediterranean coast: July mean 24.5C -> feasible (irrigated/warm)

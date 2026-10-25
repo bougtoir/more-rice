@@ -1,0 +1,7 @@
+crop,seed_ratio_low,seed_ratio_high,net_yield_kg_ha_low,net_yield_kg_ha_high,kcal_per_kg,kcal_per_ha_low,kcal_per_ha_high,basis,source_ids
+wheat,3.0,4.5,500,900,3390,1695000,3051000,medieval documented,"S11,S12"
+rye,3.0,5.0,450,850,3380,1521000,2873000,medieval documented,"S11,S12"
+barley,3.5,6.0,500,1000,3520,1760000,3520000,medieval documented,"S11,S12"
+oats,2.0,3.0,350,700,3790,1326500,2653000,medieval documented,"S11,S12"
+rice_irrigated_bounded,15.0,40.0,1000,2000,3650,3650000,7300000,MODERN UPPER BOUND (feasibility only),"S16,S17 modern-bound only"
+rice_upland_bounded,8.0,20.0,500,1200,3650,1825000,4380000,MODERN UPPER BOUND (feasibility only),"S16,S18 modern-bound only"

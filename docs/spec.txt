@@ -1,0 +1,604 @@
+RESEARCH FEASIBILITY AND HISTORICAL EVIDENCE AUDIT
+
+Working title
+
+Agricultural Innovation and Peasant Dependence in Medieval Western Europe: Was Rice Cultivation Politically Suppressed?
+
+Research objective
+
+Investigate whether medieval Western European rulers or landlords deliberately discouraged the adoption of potentially more productive crops, particularly upland rice, to preserve peasant dependence and territorial control.
+
+The primary investigation must focus on Western Europe between AD 1000 and 1300.
+
+Do not assume that the hypothesis is correct.
+
+The objective is to determine whether the hypothesis is historically testable, whether credible evidence supports or contradicts it, and whether the available evidence permits an original research contribution suitable for an international peer-reviewed journal.
+
+This is an evidence-first historical investigation, not an advocacy exercise.
+
+⸻
+
+PHASE 0 — RESEARCH FREEZE
+
+Before beginning:
+
+1. Freeze the research question.
+2. Define the historical and geographical scope.
+3. Register the hypotheses.
+4. Define admissible evidence.
+5. Define explicit falsification criteria.
+6. Establish a source-verification protocol.
+
+Primary period:
+
+AD 1000–1300.
+
+Primary regions:
+
+* England
+* Northern France
+* German-speaking territories
+* Iberian Peninsula
+
+Additional regions may be included only when justified by the research question.
+
+Do not combine medieval Western Europe with Renaissance Italy as if they shared the same institutional environment.
+
+Distinguish:
+
+* Political rulers
+* Territorial lords
+* Manorial landlords
+* Monastic landlords
+* Village communities
+* Free peasants
+* Unfree peasants
+
+Do not assume that all medieval peasants were serfs.
+
+⸻
+
+PHASE 1 — HISTORICAL RICE KNOWLEDGE AUDIT
+
+Investigate whether rice cultivation was known in medieval Western Europe.
+
+Distinguish five levels of knowledge:
+
+K0: No documented knowledge of rice.
+
+K1: Rice known as an imported commodity.
+
+K2: Knowledge that rice was cultivated elsewhere.
+
+K3: Knowledge of practical rice cultivation methods.
+
+K4: Documented local cultivation or experimental introduction.
+
+Investigate both:
+
+* Irrigated rice cultivation
+* Upland or dryland rice cultivation
+
+Do not infer knowledge of upland rice from knowledge of rice as food.
+
+Search primary and secondary historical sources, including:
+
+* Agricultural treatises
+* Monastic records
+* Manorial accounts
+* Royal ordinances
+* Tax records
+* Estate management documents
+* Trade records
+* Botanical and medical manuscripts
+* Arabic-Latin agricultural translations
+* Medieval Iberian agricultural texts
+* Archaeobotanical studies
+
+Include medieval Arabic agronomic literature where relevant.
+
+Investigate whether agricultural knowledge circulating in Islamic Iberia was accessible to Christian European rulers and landlords.
+
+For every source, record:
+
+* Original title
+* Author
+* Date
+* Geographical origin
+* Original language
+* Modern edition or translation
+* Relevant passage
+* Exact page or folio
+* DOI, ISBN, archival identifier, or stable repository URL
+* Evidence category
+* Confidence grade
+
+Never fabricate quotations, archival references, translations, or bibliographic details.
+
+Clearly distinguish direct primary-source evidence from later historical interpretation.
+
+⸻
+
+PHASE 2 — CULTIVATION AND NON-ADOPTION AUDIT
+
+Identify documented attempts to cultivate rice in Europe before AD 1300.
+
+Investigate:
+
+1. Where rice cultivation occurred.
+2. When cultivation began.
+3. Whether cultivation was irrigated or rainfed.
+4. Whether cultivation expanded or disappeared.
+5. Whether cultivation was encouraged or restricted.
+6. Whether rulers or landlords intervened.
+7. Whether the reasons for intervention were recorded.
+
+Particular attention:
+
+* Islamic Iberia
+* Christian Iberia following territorial conquest
+* Medieval Sicily
+* Mediterranean France
+* Other regions with plausible rice-growing conditions
+
+For Sicily, explicitly investigate historiographical disputes concerning the authenticity of documents used to establish early rice cultivation.
+
+Do not treat traditional narratives as verified facts.
+
+For regions without documented rice cultivation, distinguish:
+
+A. Documented non-adoption despite known availability.
+
+B. No documented adoption, but knowledge plausibly available.
+
+C. No evidence that cultivation knowledge was available.
+
+D. Evidence insufficient to determine adoption status.
+
+Absence of surviving records must not be interpreted automatically as evidence of deliberate suppression.
+
+⸻
+
+PHASE 3 — AGRICULTURAL PRODUCTIVITY COMPARISON
+
+Investigate whether rice could plausibly have provided an agricultural productivity advantage over existing medieval cereals.
+
+Compare:
+
+* Wheat
+* Rye
+* Barley
+* Oats
+* Irrigated rice
+* Upland rice
+
+Primary productivity indicators:
+
+1. Seed-to-harvest ratio
+2. Net grain yield after seed retention
+3. Annual edible calories per hectare
+4. Labor productivity
+5. Yield variability
+6. Crop failure risk
+7. Irrigation requirements
+8. Growing-season temperature requirements
+9. Soil suitability
+10. Storage and processing losses
+
+Do not equate seed productivity with land productivity.
+
+Do not use modern improved rice varieties as direct estimates of medieval productivity.
+
+Where historical rice productivity data are unavailable, report the uncertainty explicitly.
+
+Modern agronomic data may be used only for bounded feasibility analysis, with explicit limitations.
+
+Use historical climate reconstructions where available.
+
+Investigate whether plausible medieval upland rice varieties could have matured under the growing-season conditions of the target regions.
+
+Do not assume that all upland rice varieties share the same temperature requirements.
+
+Do not assume that rainfed rice cultivation is independent of rainfall reliability.
+
+Calculate comparative productivity only when sufficient data exist.
+
+All numerical results must be generated programmatically from documented inputs.
+
+No hardcoded scientific results.
+
+⸻
+
+PHASE 4 — POLITICAL ECONOMY HYPOTHESES
+
+Test the following hypotheses separately.
+
+H1 — Agricultural feasibility
+
+Rice cultivation was technically and environmentally feasible in at least some medieval Western European regions where it was not widely adopted.
+
+H2 — Knowledge availability
+
+Relevant rulers, landlords, or agricultural decision-makers had access to sufficient information about rice cultivation to consider its adoption.
+
+H3 — Political restriction
+
+Some rulers or landlords actively discouraged or restricted rice cultivation despite its plausible agricultural or economic advantages.
+
+H4 — Peasant dependence mechanism
+
+The political restriction was motivated partly by a desire to preserve peasant dependence, limit mobility, or maintain landlord control.
+
+H5 — Institutional variation
+
+Restrictions on potentially productivity-enhancing agricultural innovations were more likely where landlords possessed stronger coercive control over peasants.
+
+These hypotheses must not be collapsed into a single proposition.
+
+H1 and H2 do not establish H3.
+
+H3 does not establish H4.
+
+H4 cannot be inferred solely from the existence of serfdom.
+
+Investigate competing explanations:
+
+* Climate
+* Water availability
+* Soil suitability
+* Crop failure risk
+* Seed availability
+* Knowledge transmission barriers
+* Labor requirements
+* Irrigation investment
+* Property rights
+* Common-field institutions
+* Taxation
+* Tithes
+* Market access
+* Dietary preferences
+* Processing requirements
+* Public health concerns
+* Path dependence
+* Institutional resistance
+* Political control
+
+⸻
+
+PHASE 5 — PRIMARY-SOURCE INTENT AUDIT
+
+Search specifically for documentary evidence of political motives.
+
+Priority evidence:
+
+1. Explicit statements opposing agricultural innovation.
+2. Regulations restricting crop substitution.
+3. Documents connecting agricultural change with peasant mobility.
+4. Records concerning loss of manorial labor.
+5. Statements about peasant economic independence.
+6. Landlord concerns about declining labor services.
+7. Conflicts between peasants and landlords over crop choice.
+8. Restrictions on land-use changes.
+9. Policies that favored landlord revenue over aggregate agricultural productivity.
+
+For each document, distinguish:
+
+* Explicitly stated motive
+* Strongly supported contextual inference
+* Weak circumstantial inference
+* Modern scholarly interpretation
+* Unsupported speculation
+
+Do not infer political intent merely from non-adoption.
+
+Investigate whether landlords had incentives to encourage rather than suppress productivity improvements.
+
+Examine whether increased agricultural surplus could increase rents, taxes, or labor demand.
+
+Develop a mechanism explaining the conditions under which landlords might prefer lower productivity.
+
+The mechanism must specify why the political benefit of preserving dependence would exceed the economic benefit of higher output.
+
+⸻
+
+PHASE 6 — COMPARATIVE HISTORICAL DESIGN
+
+Construct a structured comparative dataset.
+
+Unit of analysis:
+
+Region–period–institutional regime.
+
+Candidate variables:
+
+* Rice knowledge level
+* Rice cultivation status
+* Environmental suitability
+* Agricultural productivity evidence
+* Peasant legal status
+* Mobility restrictions
+* Landlord coercive authority
+* Agricultural decision-making rights
+* Crop regulation
+* Innovation adoption
+* Documented political motives
+* Evidence quality
+
+Separate observed variables from inferred variables.
+
+Do not code missing evidence as zero.
+
+Do not invent numerical institutional scores without defensible operational definitions.
+
+Investigate matched comparisons involving:
+
+* Similar climate, different institutional arrangements
+* Similar institutions, different rice knowledge availability
+* Political transitions within the same region
+* Agricultural innovations with different implications for labor dependence
+
+Consider Iberian territorial transitions as possible comparative cases.
+
+Explicitly address:
+
+* Population displacement
+* Irrigation infrastructure changes
+* Land redistribution
+* Religious and legal changes
+* Trade disruption
+* Selection bias
+* Documentary survival bias
+
+Do not claim causal identification unless the design genuinely supports it.
+
+⸻
+
+PHASE 7 — NEGATIVE CONTROLS
+
+Investigate other agricultural innovations available during AD 1000–1300.
+
+Possible candidates:
+
+* Heavy plough adoption
+* Three-field rotation
+* Water-powered agricultural processing
+* Legume cultivation
+* Improved drainage
+* Irrigation technologies
+* Other documented crop introductions
+
+Determine whether the same rulers or landlords encouraged innovations that increased agricultural productivity.
+
+If productivity-enhancing innovations were widely encouraged under strong serfdom, this must be treated as evidence against a general suppression hypothesis.
+
+Distinguish innovations that:
+
+* Increased landlord revenue
+* Reduced dependence on landlord-controlled infrastructure
+* Increased peasant bargaining power
+* Increased labor mobility
+* Required collective coordination
+
+Do not assume that all innovations have equivalent political consequences.
+
+⸻
+
+PHASE 8 — RENAISSANCE ITALY AS A LATER COMPARATIVE CASE
+
+Exclude fifteenth- and sixteenth-century Italy from the primary medieval analysis.
+
+Investigate northern Italian rice cultivation only as a later historical comparison.
+
+Focus on:
+
+* Milan
+* Po Valley
+* Ferrara
+* Irrigation development
+* Commercial agriculture
+* Urban markets
+* Political patronage
+* Landlord investment
+* Agricultural regulation
+
+Assess whether rice expansion was associated with:
+
+1. Commercialization
+2. Irrigation investment
+3. Institutional transformation
+4. Changes in labor relations
+5. Agricultural knowledge transmission
+6. Renaissance intellectual developments
+
+Do not assume that Renaissance humanism caused agricultural modernization.
+
+Distinguish temporal coincidence from documented causation.
+
+Include Renaissance Italy in the Discussion only if it contributes to evaluating the medieval hypotheses.
+
+Otherwise, omit it.
+
+The later Italian experience must not be used as direct evidence of medieval political motives.
+
+⸻
+
+PHASE 9 — CLOSEST PRIOR STUDIES AND NOVELTY GATE
+
+Identify at least 10 closely related academic studies.
+
+Cover:
+
+* Medieval agricultural productivity
+* Serfdom and agricultural innovation
+* Medieval crop diffusion
+* Islamic agricultural transmission
+* Rice cultivation in medieval Europe
+* Institutional barriers to technological adoption
+* Political economy of labor coercion
+* Historical agricultural decision-making
+
+Verify the existence of every reference.
+
+Record DOI, ISBN, publisher, or stable bibliographic identifier.
+
+Identify what each study has already established.
+
+Construct a Closest Prior Studies matrix.
+
+Determine whether the proposed study offers:
+
+A. New primary-source evidence.
+
+B. A new comparative historical dataset.
+
+C. A defensible new causal mechanism.
+
+D. A genuinely new synthesis of previously disconnected evidence.
+
+E. No sufficient novelty.
+
+Do not proceed to manuscript drafting if the contribution merely restates established scholarship.
+
+⸻
+
+PHASE 10 — ADVERSARIAL REVIEW
+
+Conduct a hostile review from three perspectives.
+
+Reviewer 1 — Medieval economic historian
+
+Challenge:
+
+* Historical periodization
+* Source authenticity
+* Serfdom definitions
+* Regional comparability
+* Interpretation of landlord motives
+
+Reviewer 2 — Agricultural historian
+
+Challenge:
+
+* Rice cultivation feasibility
+* Upland versus irrigated rice
+* Historical yield estimates
+* Seed productivity versus land productivity
+* Climate and soil constraints
+* Anachronistic agronomic assumptions
+
+Reviewer 3 — Political economist
+
+Challenge:
+
+* Causal mechanism
+* Endogeneity
+* Institutional confounding
+* Alternative explanations
+* Selection bias
+* Unsupported intentionality
+* Lack of counterfactual identification
+
+For every criticism:
+
+1. State the strongest objection.
+2. Identify supporting evidence.
+3. Determine whether the objection is fatal.
+4. Revise the hypothesis or design where justified.
+5. Preserve unresolved limitations.
+
+Do not manufacture supportive evidence to rescue the hypothesis.
+
+⸻
+
+PHASE 11 — RESEARCH DECISION GATE
+
+Produce one of the following decisions.
+
+GO — Original historical research
+
+Sufficient primary-source evidence and a defensible original contribution exist.
+
+CONDITIONAL GO — Comparative institutional study
+
+Direct evidence of political intent is limited, but institutional variation permits a meaningful comparative analysis.
+
+PIVOT — General agricultural innovation suppression
+
+Rice-specific evidence is insufficient, but stronger evidence exists for other agricultural innovations.
+
+NO-GO — Insufficient historical evidence
+
+The hypothesis cannot be meaningfully tested using currently accessible sources.
+
+A negative result is acceptable.
+
+Do not force manuscript production.
+
+⸻
+
+REQUIRED DELIVERABLES
+
+Produce:
+
+1. RESEARCH_FEASIBILITY_REPORT.docx
+2. PRIMARY_SOURCE_REGISTRY.csv
+3. RICE_KNOWLEDGE_TIMELINE.csv
+4. CULTIVATION_EVIDENCE.csv
+5. MEDIEVAL_PRODUCTIVITY_COMPARISON.csv
+6. INSTITUTIONAL_COMPARISON.csv
+7. POLITICAL_INTENT_EVIDENCE.csv
+8. COMPETING_EXPLANATIONS.md
+9. CLOSEST_PRIOR_STUDIES.md
+10. ADVERSARIAL_REVIEW.md
+11. NOVELTY_AND_JOURNAL_FIT.md
+12. FINAL_GO_NO_GO.md
+
+Include a reproducible research directory containing:
+
+* Source metadata
+* Downloaded legally accessible documents
+* Extraction scripts
+* Analysis scripts
+* Data provenance
+* Checksums
+* Computational environment
+* Reproduction instructions
+
+All substantive historical claims must be traceable to identifiable sources.
+
+All quotations must be verified against the original documents or clearly identified scholarly editions.
+
+If primary sources are inaccessible, record the limitation rather than inventing evidence.
+
+Preserve original-language passages alongside translations.
+
+Do not present an automatically generated translation as a verified historical translation.
+
+All computational results must derive from documented inputs.
+
+No numerical hardcoding.
+
+Ensure consistency between data, text, tables, and figures.
+
+Do not generate a manuscript until the final research gate has been completed.
+
+⸻
+
+FINAL INSTRUCTION
+
+The purpose of this investigation is not to demonstrate that medieval rulers deliberately maintained low agricultural productivity.
+
+The purpose is to determine whether political institutions systematically influenced the adoption or rejection of potentially productivity-enhancing agricultural technologies, with rice cultivation serving as the initial historical test case.
+
+Distinguish carefully between:
+
+* Technological possibility
+* Knowledge availability
+* Economic feasibility
+* Actual adoption
+* Political intervention
+* Documented political intent
+
+Report evidence against the hypothesis with the same prominence as evidence supporting it.
+
+A historically defensible negative conclusion is preferable to an unsupported positive claim.

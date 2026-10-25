@@ -52,7 +52,7 @@ Correct — and that is itself the finding: **rice cultivation never became a po
 |------------|------------------------------|
 | H1 feasibility | Partially supported — only in Mediterranean/irrigated fringe, which is also where adoption occurred |
 | H2 knowledge | Supported narrowly: K1–K2 widespread; K3 confined to Arabic agronomy (no Latin transmission) |
-| H3 political restriction | **Not supported — zero documents; sole documented intervention (1475) was promotion + export monopoly** |
+| H3 political restriction | **Refined: restriction IS documented — but only in Valencia, for sanitary ('fiebres tercianas') and confessional ('Muslim food') motives, never dependence (P11–P13); the 1475 Milan intervention was promotion + export monopoly** |
 | H4 dependence motive | **Not supported — no motive evidence; mechanism contradicts landlord incentives and Domar theory** |
 | H5 institutional variation | Not testable on rice; negative controls (plough/rotation/mills/legumes) show innovation encouraged under high-coercion regimes → general suppression mechanism falsified |
 

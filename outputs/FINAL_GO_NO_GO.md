@@ -6,7 +6,7 @@
 ## Basis
 
 **Against the affirmative hypothesis (H3/H4):**
-- Zero primary documents anywhere record a ruler or landlord discouraging, banning, or penalizing rice cultivation in AD 1000–1300 Western Europe.
+- The only documented medieval restrictions on rice cultivation are Valencian sanitary limits on marsh-zone paddies (post-1238 onward, motive: 'fiebres tercianas'/malaria) plus confessional stigma of rice as "Muslim food" — real criticism, real restriction, but neither motive is peasant dependence. No document anywhere discourages rice for labor-control reasons.
 - The only documented ruler interventions on rice (James I's Furs preserving Andalusi irrigation, 1238–1276; Sforza's cultivation, seed gift and export monopoly, 1470–1495) run in the *opposite* direction: protection and promotion.
 - The one claim of very early European cultivation (Arab Sicily, pre-1000) rests on Giuseppe Vella's exposed 18th-century forgeries; the real 12th-century source (Falcando) is silent.
 - The proposed mechanism (suppressing output to preserve dependence) contradicts observed landlord behavior (Winchester lords maximizing yields, Titow 1972) and the standard coercion model (Domar 1970: coercion binds labor; high output raises extractable surplus).
@@ -21,7 +21,7 @@
 |------------|--------|
 | H1 feasibility | Partially true (Mediterranean/irrigated fringe only); true exactly where adoption occurred |
 | H2 knowledge | True in weak form (K1–K2 north of Alps); practical K3 never crossed the Arabic–Latin barrier |
-| H3 restriction | **Rejected — no evidence** |
+| H3 restriction | **Qualified: documented in Valencia — sanitary + confessional motives only; dependence motive absent everywhere** |
 | H4 dependence motive | **Rejected — no evidence; mechanism implausible** |
 | H5 institutional variation | Reframed: coercion strength does not predict innovation rejection (negative controls falsify it) |
 

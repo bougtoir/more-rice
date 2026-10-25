@@ -22,7 +22,8 @@ Assessment standard: which explanations are necessary and sufficient to explain 
 | **Common-field institutions** | Open-field communality plausibly resists novel monocrops; applies to *any* innovation, not rice-specifically. |
 | **Property rights / commons** | Relevant to irrigation investment (who owns the water), reinforces #2. |
 | **Political control / peasant dependence (the audit hypothesis)** | **No documentary support anywhere** (P04, P05, P09). Where a ruler did act on rice (Sforza export ban, P03), the act protected *his* monopoly on the new high-yield crop — economically the opposite of suppressing productivity. The posited mechanism (lower output preserves dependence) contradicts observed landlord behavior (P06: Winchester lords tracked and raised yields) and Domar-type theory (P08: coercion binds *labor*, not *output*). |
-| **Public health (malaria)** | The genuine historical objection to paddies — but documented only in post-medieval Italy (P10), and sanitary, not dependence-motivated. |
+| **Public health (malaria)** | **Now documented in-period**: Valencia restricted/prohibited paddies in marsh zones from the post-1238 conquest aftermath onward (intermittent, strongest 15th–18th c.), motive = 'fiebres tercianas' (P11, S21/S24/S25/S26). The genuine historical objection to paddies — sanitary, not dependence-motivated. |
+| **Confessional stigma ("Muslim food")** | Post-conquest Valencia coded rice as Muslim food occupying land for "Christian products" (S25); Iberian impurity/commensality rhetoric (S22, S23) provides the discourse channel — the closest medieval analogue to the potato's "devil's root" stigma, again dependence-irrelevant. |
 
 ## Conclusion
 

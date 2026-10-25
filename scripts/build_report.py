@@ -90,8 +90,11 @@ for line in [
     "the same fringe where adoption actually occurred.",
     "H2 — Supported weakly: K1–K2 knowledge widespread; practical K3 confined to Arabic "
     "agronomy and never transmitted to Latin decision-makers.",
-    "H3 — Rejected: no document restricts rice; the two recorded interventions (Valencia "
-    "water-law continuity; Sforza promotion + export monopoly) are pro-cultivation.",
+    "H3 — Qualified: restriction IS documented — Valencia limited/prohibited marsh-zone "
+    "paddies for sanitary reasons ('fiebres tercianas', post-1238 onward, intermittent "
+    "through the 18th c.) plus confessional 'Muslim food' stigma; but no document "
+    "anywhere restricts rice to preserve peasant dependence. The 1475 Milan intervention "
+    "was promotion + export monopoly.",
     "H4 — Rejected: no motive evidence; the mechanism contradicts landlord incentives "
     "(lords maximized yields — Titow) and coercion theory (Domar: bind labor, not output).",
     "H5 — Falsified in general form by negative controls: heavy plough, three-field "
@@ -103,7 +106,10 @@ doc.add_paragraph(
     "A defensible mechanism for when landlords *would* prefer lower output could not be "
     "constructed: the political benefit of preserved dependence would have to exceed the "
     "economic benefit of higher rent — and every observed lord behaved as the economic "
-    "theory predicts. See POLITICAL_INTENT_EVIDENCE.csv and COMPETING_EXPLANATIONS.md.")
+    "theory predicts. The genuine medieval criticisms of rice (wetland fevers; "
+    "'Muslim food' stigma — the closest analogue to the potato's later 'devil's root' "
+    "reputation) are sanitary and confessional, not dependence-motivated. See "
+    "POLITICAL_INTENT_EVIDENCE.csv and COMPETING_EXPLANATIONS.md.")
 
 # Phase 6-8
 doc.add_heading("Phases 6–8 — Comparison, negative controls, Italy", 1)

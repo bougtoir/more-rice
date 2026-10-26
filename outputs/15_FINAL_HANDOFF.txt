@@ -1,0 +1,31 @@
+PHASE 3 HANDOFF — more-rice diffusion audit
+===========================================
+Verdict: NO-GO for manuscript → CONDITIONAL PIVOT (gate details in 14_FINAL_GO_NO_GO.md).
+
+Gate outcomes: Gap-closure FAIL (A1/A2 archive-inaccessible), Historical-validity PARTIAL-PASS,
+Comparative-validity FAIL, Novelty MARGINAL-PASS, Publication-suitability FAIL.
+
+Files produced this phase (outputs/):
+ 01_PREVIOUS_GAPS_RESOLUTION.md      02_PRIMARY_SOURCE_FOLIO_VERIFICATION.csv
+ 03_DIFFUSION_ONTOLOGY_AND_CODING_RULES.md   04_MULTILAYER_TRANSMISSION_EDGES.csv
+ 05_DYNASTIC_AND_ADMINISTRATIVE_NETWORK.md   06_VALENCIA_MURCIA_COMPARISON.md
+ 07_INTERNAL_CROWN_OF_ARAGON_DIFFUSION.md    08_CASTILE_FRANCE_TRANSMISSION_AUDIT.md
+ 09_COMPARATIVE_CROPS_AND_INSTITUTIONS.md    10_MECHANISM_PROCESS_TRACING_MATRIX.csv
+ 11_SOURCE_COVERAGE_AND_MISSINGNESS.md       12_CLOSEST_PRIOR_STUDIES_AND_NOVELTY.md
+ 13_FINAL_ADVERSARIAL_REVIEW.md              14_FINAL_GO_NO_GO.md   15_FINAL_HANDOFF.txt
+
+Human-only remaining tasks:
+ 1. PARES/ACA: check Real Cancillería Reg. 6-7 (or CODOIN t.IX, 1856) for arroz/arrossal entries
+    — Reg. 5 transcription (entries 1-664, captured at data/raw/...html) contains NONE.
+ 2. Orihuela codex / facsimile: check for any rice/crop terminology (1266-1314).
+
+Answers to final questions:
+ (1) Crossed borders: commodity grain (D1) + administrative templates (D7-admin). Did NOT demonstrably
+     cross: seeds, cultivators, actionable knowledge, crop policy.
+ (2) Merely unrecorded: all D3-D5 stages outside Valencia (structurally invisible in written record).
+ (3) Documentation stops between D1 and D3 — consistent with personnel-embedded tacit technology;
+     cannot discriminate source gap from real non-diffusion at feasible margins (Ebre, Roussillon).
+ (4) James I links show dynastic unity + admin-template transfer WITHOUT crop transfer — political
+     contact is not technology diffusion.
+ (5) Novel contribution = reframing + negative audit + staged ontology; MARGINAL-PASS only, and the
+     flagship primary exhibit (arrozales register) is folio-unverified → no manuscript until archive check.

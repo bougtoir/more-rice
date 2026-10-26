@@ -1,0 +1,6 @@
+scenario,portfolio,shortfall_behavior,dependency_added,verdict
+1,outdoor status quo,baseline,weather only,reference
+2,outdoor + field rice,reduces shortfall where corr low (Romania -9.4pp),+irrigation water,preferred where feasible
+3,outdoor + CEA rice,protects vs frost/drought BUT adds grid dependency,"electricity, LED supply",emergency reserve niche; fails bulk role
+4,non-rice diversification,comparable or better (Serbia potato),varies,mandatory comparator
+5,grain storage + import diversification,strong tail protection,trade/logistics,often cheapest resilience

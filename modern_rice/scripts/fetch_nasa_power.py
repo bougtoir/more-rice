@@ -23,6 +23,12 @@ POINTS = {
  "Lund_SE": (55.7, 13.2), "Oslo_NO": (59.9, 10.7),
  "Tallinn_EE": (59.4, 24.8), "Vilnius_LT": (54.7, 25.3),
  "Warsaw_PL": (52.2, 21.0), "Edinburgh_UK": (55.9, -3.2),
+ # Phase 6: agricultural-cell resolution for NW Europe + Danube
+ "Kent_UK": (51.2, 0.9), "EastAnglia_UK": (52.2, 1.0),
+ "Berlin_DE": (52.5, 13.4), "Munich_DE": (48.1, 11.6), "Rhine_DE": (50.9, 6.9),
+ "Zealand_DK": (55.5, 11.8), "Uppsala_SE": (59.9, 17.6), "Riga_LV": (56.9, 24.1),
+ "Beauce_FR": (48.4, 1.9), "Loire_FR": (47.5, 0.8), "Alsace_FR": (48.5, 7.4),
+ "Danube_HU": (47.0, 19.0), "Saxony_DE": (51.0, 13.7), "Galway_IE": (53.3, -8.9),
 }
 P = {k: f"nasa_power_{k}.json" for k in POINTS}
 

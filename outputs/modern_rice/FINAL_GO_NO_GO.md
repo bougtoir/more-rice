@@ -1,12 +1,9 @@
-# FINAL GO/NO-GO — Phase 5
-
-Gates:
-- A Agronomic validity: PASS — cultivar-aware cold bound (≈900 GDD10 japonica+transplant) now documented and externally validated (JP/China/Korea/N.Italy sites); Hokkaido false-negative explained, not forced.
-- B Crop-risk model validity: PASS — portfolio results reproduced; uncertainty flagged.
-- C Water & economic feasibility: PARTIAL — basin screen done (Central Asia excluded: 123% stress); economics = prices only, break-even framing.
-- D Scholarly novelty: PASS (narrow) — the simultaneous cultivar-aware + water-constrained + tail-risk + non-rice-comparator frame is distinct.
-- E Robust regional recommendations: PASS (bounded) — evidence-supported: Uruguay/Rio Grande do Sul margin; field-trial: Lower Danube, Osijek; research-only: Kherson, KazakhstanN; excluded: Central Asia (water), UK/Germany/Denmark/Scandinavia/Baltic (thermal); insufficient evidence: N. France borderline.
-
-**Verdict: CONDITIONAL GO (Gate C partial).** Not full GO → no manuscript preparation per spec. The previous categorical exclusion of UK/Germany/northern Europe remains defensible: their observed minima (405–825 GDD) sit below even the Hokkaido cold bound (~900) AND lack the japonica cultivar pool + transplant/warm-water management system — a double constraint, not just latitude.
-
-Path to full GO: cost-side data (e.g. FAO/FADN-type farm accountancy) + basin mass-balance for the two field-trial regions.
+# FINAL GO/NO-GO — Phase 6
+Core gates:
+- A agronomic validity: PASS — cultivar-aware bound validated on independent cold-region systems; Europe reassessed at agricultural-cell resolution (Rhine/Alsace/Loire/Berlin/Saxony ~950-1100 → B-tier hypothetical-transfer class; UK/Denmark/Scandinavia/Baltic <900 → unsuitable confirmed).
+- B risk-model validity: PASS — modeled shortfalls labeled as scenario statistics.
+- C field water/economic feasibility: PARTIAL — Danube water plausible at country scale, allocation & costs unproven (break-even only).
+- D novelty: PASS (narrow).
+- E robust regional priorities: PASS (bounded: Uruguay/RGS evidence-supported; Lower Danube/Osijek field-trial; Kherson/KazakhstanN research-only; Central Asia excluded-water; NW Europe unsuitable/borderline).
+CEA gate: **CEA-SEPARATE→EXCLUDE for staple role** (vendor claims unverified independently; energy floor ~$10/kg >> field $0.4; possible small emergency-reserve niche → independent engineering study needed).
+**Overall: CONDITIONAL GO.** No manuscript (Gate C partial). Open conditions unchanged: cost-side farm data + Danube basin allocation demonstration.

@@ -1,0 +1,5 @@
+system,energy_kWh_kg,elec_cost_USD_kg_0.15kWh,floor_USD_kg_dry_matter_lit,vs_field_rice,verdict
+E/F indoor LED,40,6.0,~10 (Plant Physiol 2025 lower bound),15-25x,not commercially viable for staple
+D greenhouse,2,0.3,1-3 scenario,3-8x,"niche possible, not staple"
+C outdoor ratoon,0,0,-,1x,viable where verified
+A outdoor flooded,0,0,-,1x,reference

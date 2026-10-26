@@ -1,0 +1,5 @@
+system,light_source,grain_yield_estimate,cycles_per_year,aux_energy_kWh_per_kg,status
+D sunlit greenhouse,"solar, transmission 0.6-0.8",400-700 g/m2/cycle (bounded),3-4,0.5-3,bounded scenario
+E artificially-lit single layer,LED ~2.5 umol/J,photon-bound 200-500 g/m2/cycle,up to 6 claimed,30-80,bound not observation
+F multilayer,per-layer bounds x L layers,n*per-layer,same,same per kg,floor-m2 basis only
+C outdoor ratoon (NARO),sunlight free,944kg/10a field-verified,2,~0 aux,verified baseline

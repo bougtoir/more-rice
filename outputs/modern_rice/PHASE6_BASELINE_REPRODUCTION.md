@@ -1,0 +1,2 @@
+# Phase 6 Baseline Reproduction
+Reran canonical pipeline: 95.8% SPAM coverage (identical); DAILY_CLIMATE_POINT_METRICS.csv now 43 points (14 new agricultural cells appended, prior values unchanged); portfolio deltas Romania 20.3→10.9%, Kazakhstan 21.2→3.0% reproduced; Serbia potato-better result preserved; Central Chile exclusion and Hokkaido false-negative confirmed against reruns. All prior outputs preserved; new rows are additive only.

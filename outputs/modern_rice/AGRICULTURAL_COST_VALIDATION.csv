@@ -1,0 +1,4 @@
+item,value,class,source
+rice producer price Romania,see AGRICULTURAL_ECONOMICS.csv,observed,FAOSTAT
+seed/fertilizer/labor/machinery/irrigation/energy/drying/milling,not publicly available per-ha for candidates,missing → break-even framework,FADN-type access not obtained
+break-even yield,cost/price threshold only,scenario,this file

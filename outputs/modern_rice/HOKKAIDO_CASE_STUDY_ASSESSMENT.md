@@ -1,0 +1,2 @@
+# Hokkaido Case Study Assessment
+False negative explained as interaction: cultivar pool (ultra-early japonica) + management system (heated nursery, transplant, warm water) + microclimate buffering. Not a spatial artifact alone (consistent across 3 sites) nor cultivar alone. Supports independent Results subsection documenting an empirical managed-cold bound (~900 GDD10 season-window) — does NOT license latitude extrapolation to Europe, where the cultivar+management system is absent.

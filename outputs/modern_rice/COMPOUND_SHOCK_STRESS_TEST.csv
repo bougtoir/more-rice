@@ -1,0 +1,7 @@
+scenario,wheat,upland_rice,correlated_failure,verdict
+normal,ok,deficit years>60% EU,-,upland fails even normal
+moderate drought,stressed,fails,YES correlated,no protection
+severe drought,fails,fails,YES,worse than wheat
+heatwave+drought,fails,fails,YES,correlated loss
+cold spring+summer drought,stressed,fails,YES,no independence benefit
+irrigation restriction,-,irrigated rice hit too,-,irrigated not immune

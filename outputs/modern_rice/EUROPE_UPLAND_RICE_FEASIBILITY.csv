@@ -1,0 +1,20 @@
+region,gdd10,flower_deficit_P>10d,rainfed_class,verdict
+Hokkaido_JP,903.0,48.0,D,rainfed fails: drought-deficit in flowering stage
+Morioka_JP,1136.0,20.0,A/B,rainfed viable
+LowerDanube_RO,1750.0,100.0,D,rainfed fails: drought-deficit in flowering stage
+Balkan_Osijek,1606.0,100.0,D,rainfed fails: drought-deficit in flowering stage
+SUkraine_Kherson,1672.0,100.0,D,rainfed fails: drought-deficit in flowering stage
+Danube_HU,1506.0,96.0,D,rainfed fails: drought-deficit in flowering stage
+Rhine_DE,957.0,96.0,D,rainfed fails: drought-deficit in flowering stage
+Alsace_FR,1080.0,96.0,D,rainfed fails: drought-deficit in flowering stage
+Loire_FR,1108.0,100.0,D,rainfed fails: drought-deficit in flowering stage
+Saxony_DE,969.0,92.0,D,rainfed fails: drought-deficit in flowering stage
+Berlin_DE,1089.0,88.0,D,rainfed fails: drought-deficit in flowering stage
+Beauce_FR,978.0,100.0,D,rainfed fails: drought-deficit in flowering stage
+Kent_UK,754.0,92.0,D,rainfed fails: drought-deficit in flowering stage
+Denmark_Aarhus,652.0,64.0,D,rainfed fails: drought-deficit in flowering stage
+Lund_SE,755.0,64.0,D,rainfed fails: drought-deficit in flowering stage
+Warsaw_PL,1084.0,88.0,D,rainfed fails: drought-deficit in flowering stage
+Vilnius_LT,825.0,84.0,D,rainfed fails: drought-deficit in flowering stage
+CentralAsia_Tashkent,2129.0,100.0,D,rainfed fails: drought-deficit in flowering stage
+Vercelli_IT,1224.0,92.0,D,rainfed fails: drought-deficit in flowering stage

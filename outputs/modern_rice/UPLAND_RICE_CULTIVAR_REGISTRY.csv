@@ -1,0 +1,6 @@
+cultivar_class,documented_system,thermal_req,water_req,yield_obs,source_tier
+temperate upland (Japanese NERICA-class analog),"Japan upland rice (historical, rainfed Honshu)",cool-season adapted,rainfed ~500mm+ season,0.5-2.5 t/ha,review literature
+tropical upland (NERICA),W. Africa upland,"warm, not cold",rainfed,0.8-2.5 t/ha,IRRI/AfricaRice docs
+aerobic rice (IRRI lines),irrigated non-flooded,temperate-adapted partial,supplemental,3-6 t/ha (25-30% penalty),IRRI research
+Hokkaido ultra-early japonica,LOWLAND only,~900 GDD bound,irrigated,field verified,NASA POWER + docs
+European cold-adapted upland,none documented,-,-,-,HYPOTHETICAL - no cultivar

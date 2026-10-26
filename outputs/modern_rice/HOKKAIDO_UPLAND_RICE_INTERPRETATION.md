@@ -1,0 +1,2 @@
+# Hokkaido–Upland Interpretation
+Hokkaido case does NOT generalize to upland: its success is lowland paddy + japonica + management; Japanese upland rice historically worked because Japanese summer rainfall is high. Europe's continental summer drought (flower-deficit ~100% yrs) invalidates rainfed analogy → strengthens the conclusion that water infrastructure, not temperature alone, gates European rice.

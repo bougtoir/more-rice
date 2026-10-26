@@ -1,8 +1,10 @@
-# FINAL GO/NO-GO — Phase 7
-- A agronomic: PASS (cultivar-aware bound + independent validation).
-- B risk model: PASS (scenario framing corrected).
-- C water+economics: **PARTIAL→bounded PASS? Decision: still PARTIAL** — water resolved for Lower Danube (Q99 1100 m3/s >> ~1-10 m3/s paddy demand at ≤250kha; WEAP shows no agri deficit any scenario), but economics has only Italian-observed costs; Romania cost data not publicly accessible → break-even not demonstrated margin.
-- D novelty: PASS (narrow: integrated water+econ+tail-risk gate on cultivar-aware suitability).
-- E priorities: PASS (bounded).
-
-**Verdict: CONDITIONAL GO** — remaining exact deficiency: Romania/Bulgaria/Croatia/Serbia rice-specific production-cost observations (FADN access or national agency data). Manuscript preparation NOT initiated per spec (all 5 gates must pass).
+# FINAL GO/NO-GO — Phase 8
+- A agronomic: PASS (bound + cultivar registry; EU upland = hypothetical honestly).
+- B risk model: PASS.
+- C1 irrigated water: PASS (Lower Danube).
+- C2 rainfed upland water: **FAIL for continental Europe** (flower-deficit 88-100% of years; exceptions: Japan sites, Denmark/Lund marginal).
+- C3 supplemental water: PARTIAL (demand quantified; infrastructure still needed).
+- C4 economics: PARTIAL (Italian observed costs; EU rice costs missing → break-even).
+- D novelty: PASS — new finding: **rainfed upland rice cannot bypass the water gate in continental Europe; drought-correlated failure removes the diversification benefit exactly when it matters**.
+- E priorities: PASS (per-system split produced).
+**Verdict: CONDITIONAL GO.** Irrigated pathway (Lower Danube field-trial) remains the only defensible vector; upland rainfed is ruled out for EU candidates — a defensible negative result. Manuscript requires Romania-observed rice costs OR acceptance of break-even framing — user's call.

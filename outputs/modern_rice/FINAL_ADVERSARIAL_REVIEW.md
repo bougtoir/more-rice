@@ -1,7 +1,7 @@
-# Final Adversarial Review — Phase 7 (5 reviewers)
-1. Ag economics: Italian costs real but country transfer unproven → kept proxy/break-even class; major flaw unresolved: no Romania-observed costs (FADN inaccessible). 
-2. Hydrology: Q99 1100 m3/s vs paddy demand ~10 m3/s at 100kha → water plausibly abundant; minor: conveyance losses & drought-year municipal priority unmodelled.
-3. Rice agronomy: bound interpretation acceptable; photoperiod/water-temp uncertainties retained.
-4. Crop modeling: European cells above bound reclassified correctly as hypothetical-transfer, not demonstrated — logic holds.
-5. Food-security: scenario-statistics framing now correct; private/social split honest.
-Fatal flaws: none. Major: Romanian-observed costs still absent (structural data limitation, not methodological).
+# Final Adversarial Review — Phase 8 (5 reviewers)
+1. Rice agronomy: no EU-documented cold-adapted upland cultivar correctly forces hypothetical class; flaw: bucket model coarse (minor, flagged).
+2. Soil-water hydrology: TAW=100mm scenario documented, Hargreaves approximation acknowledged; deficit frequencies robust to reasonable TAW perturbation (direction unchanged).
+3. Ag economics: rainfed capex saving does NOT imply economic pass — break-even only; yield 0.5-2.5 t/ha can't cover margins unproven.
+4. Crop modeling: correlated-failure stress test exposes that upland fails WITH wheat in drought → no diversification benefit in the tail where it matters. Strong honest negative.
+5. Food-security stats: upland diversification worsens tail risk in drought years; irrigated remains the only defensible diversification vector.
+Fatal flaws: none; major: bucket-model simplification (bounded).

@@ -1,0 +1,5 @@
+system,yield_t_ha,yield_variability,drought_sensitivity,failure_P,water_productivity
+A irrigated lowland,4.5-6.5,low,low (if water secure),low,~0.3-0.5 kg/m3
+B rainfed upland,0.5-2.5,HIGH,very high,high in continental EU (see DAILY_SOIL_WATER_BALANCE),higher per blue-water but unstable
+C supplemental upland,2-4,moderate,moderate,medium,compromise
+D wheat comparator,3.0-3.5,moderate,moderate,baseline,reference

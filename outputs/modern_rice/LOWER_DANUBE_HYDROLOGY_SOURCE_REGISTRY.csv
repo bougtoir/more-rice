@@ -1,0 +1,6 @@
+source,datum,value,tier
+CT-UPT Iron Gates ecohydrology (2014),mean discharge Iron Gates I,5420 m3/s,peer-reviewed
+same,min flow 90/95/99% certainty,1460/1320/1100 m3/s,peer-reviewed
+same,annual stock,174e9 m3,peer-reviewed
+Geo-Eco-Marina WEAP study 2022,water allocation Iron Gates-Zimnicea,no agri deficit in dry/normal/wet scenarios,peer-reviewed model
+IGI assessment 2023 (93 gauges +17 Danube),low-flow stats 1980-2020,Q80/Q95/AM7 available,peer-reviewed

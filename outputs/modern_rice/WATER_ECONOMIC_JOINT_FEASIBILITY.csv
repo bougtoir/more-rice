@@ -1,0 +1,6 @@
+region,water_feasible_max_area_ha_bounded,econ_status,joint_verdict
+LowerDanube,250000,Italy-observed rice costs ~1470-2430EUR/ha transferred as proxy + break-even vs wheat,feasible ≤~250kha under Q99<1%; econ viable iff yield>=break-even vs wheat margin
+Balkan_Osijek,50000,same proxy,conditional: cold edge + water demand small
+SUkraine_Kherson,100000,proxy,conditional (context caveat)
+NFrance_B-tier_cells,0,hypothetical cultivar+management transfer unproven,not promoted
+Germany_cells(B),0,same,"research-only, not deployment"

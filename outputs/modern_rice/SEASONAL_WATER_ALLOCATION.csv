@@ -1,0 +1,5 @@
+scenario,Q99_min_flow_m3s,rice_area_ha,demand_m3s_1000mm_120d,share_of_Q99_pct,verdict
+severe_drought(Q99),1100,10000,9.6,0.87,within Q99 alone
+severe_drought(Q99),1100,50000,48.1,4.37,within Q99 alone
+severe_drought(Q99),1100,100000,96.2,8.74,within Q99 alone
+severe_drought(Q99),1100,250000,240.4,21.85,needs allocation check

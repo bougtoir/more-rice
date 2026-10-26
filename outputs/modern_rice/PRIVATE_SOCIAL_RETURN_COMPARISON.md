@@ -1,0 +1,2 @@
+# Private vs Social Returns
+Private: Italian rice margins 1499-4379 EUR/ha show paddy can be profitable where systems exist; transfer to Danube unproven (proxy class). Public: modeled shortfall reduction (e.g. -9.4pp Romania) is a resilience externality not monetizable without defensible valuation → break-even policy thresholds reported, no subsidy claim. Alternatives (storage, import diversification, irrigation modernization) listed as comparators, not dominated.

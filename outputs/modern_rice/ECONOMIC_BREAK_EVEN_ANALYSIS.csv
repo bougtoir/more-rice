@@ -1,0 +1,4 @@
+region,incumbent_crop,incumbent_margin_EUR_ha_est,rice_price_USD_t,breakeven_rice_cost_for_parity,verdict
+LowerDanube,wheat,300-600 est,see prices CSV,rice gross margin >= wheat margin → rice yield*p - cost >= margin,conditional GO for field trial scale
+Balkan_Osijek,wheat/maize,300-600 est,,same,research-scale
+Uruguay_RGDS,wheat/soy,300-700 est,,existing expansion ongoing - market validated,supported

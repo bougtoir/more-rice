@@ -1,0 +1,2 @@
+# Hokkaido Final Interpretation
+Hokkaido is retained as empirical challenge to climate-only models: observed commercial cultivation at ~900 GDD10 (season window) + managed japonica system. Distinctions preserved: observed cultivation ≠ model feasibility; ~900 is an empirical management-specific bound, not physiology; it does NOT demonstrate European feasibility — Rhine/Alsace/Loire/Berlin/Saxony exceed it but lack the cultivar+management system → hypothetical transfer class only.

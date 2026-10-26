@@ -1,4 +1,2 @@
-# Updated Closest Prior Studies (Phase 6)
-Field rice: van Oort & Zwart 2018; van Oort et al. 2015 (cold rice); Shimono (flowering cold); Kuroda (Hokkaido breeding); MapSPAM/You; Siebert GMIA v5; Bouman AWD; Licker gap analysis; GAEZ; Gaupp/Bren d'Amour tail-risk; Tendall resilience; Meuwissen resilience.
-CEA additions: Plant Physiology 2025 vertical-farm energy floor ($10/kg dry matter); OMICS rice plant-factory feasibility; NARO ratoon Crop Science; PMC13454888 dense hydroponic; Asahi-kogyosha pharma CEA; Ayuchi vendor claims (tier: promotional).
-Novelty survives narrowly: simultaneous cultivar-bound + water gate + economics + tail-risk + mandatory comparator + CEA gate separation is distinct from all component studies.
+# Updated Closest Prior Studies (Phase 7)
+Suitability: van Oort & Zwart 2018; van Oort 2015 cold rice; Fodor 2017; GAEZ/Portmann; Licker 2010. Cold/management: Shimono; Kuroda; NARO ratoon. Water: Siebert GMIA; WEAP Danube Geo-Eco-Marina 2022; IGI low-flow 2023. Economics: MDPI Water 2016 8:336; agriculture-15-01797; Agronomy 2019 9:886 (tillage economics). Risk: Gaupp/Bren d'Amour; Tendall; Meuwissen. Closest competitor: van Oort & Zwart 2018 (suitability) — our increment is adding hydrological + economic gates + tail-risk quantification + cultivar-aware bound, not new suitability.

@@ -1,9 +1,7 @@
-# Final Adversarial Review — Phase 6 (7 reviewers)
-1. Rice agronomy: cultivar-bound + Hokkaido attribution consistent; flaw: no phenology model (minor). Publishable: documented cold bound.
-2. Crop modeler: window-GDD is a proxy not physiology — labeled correctly; major: Europe cells crossing 900 (Rhine 957, Alsace 1080, Loire 1108, Berlin 1089, Saxony 969) force reclass to B-tier hypothetically → Europe verdict softened from 'impossible' to 'below documented managed bound; requires cultivar+management transfer, unproven'.
-3. Hydrologist: Lower Danube country-level abundance doesn't prove allocation; minor — flagged.
-4. Farm economist: break-even framing honest; FADN costs absent (major, unresolved).
-5. Food-security statistician: shortfall = modeled scenario not famine — corrected; analog dependence flagged.
-6. CEA engineer: Mizu no Yume = vendor claim, no independent edible-grain yield; photon-bound model consistent with Plant Physiology ~$10/kg floor; verdict EXCLUDE for staple role, possible emergency niche.
-7. Energy analyst: 30-80 kWh/kg aux bound vs field ~0; grid dependency adds systemic risk; consistent.
-Fatal flaws: none unresolved. Majors: economics gap, basin mass-balance gap.
+# Final Adversarial Review — Phase 7 (5 reviewers)
+1. Ag economics: Italian costs real but country transfer unproven → kept proxy/break-even class; major flaw unresolved: no Romania-observed costs (FADN inaccessible). 
+2. Hydrology: Q99 1100 m3/s vs paddy demand ~10 m3/s at 100kha → water plausibly abundant; minor: conveyance losses & drought-year municipal priority unmodelled.
+3. Rice agronomy: bound interpretation acceptable; photoperiod/water-temp uncertainties retained.
+4. Crop modeling: European cells above bound reclassified correctly as hypothetical-transfer, not demonstrated — logic holds.
+5. Food-security: scenario-statistics framing now correct; private/social split honest.
+Fatal flaws: none. Major: Romanian-observed costs still absent (structural data limitation, not methodological).

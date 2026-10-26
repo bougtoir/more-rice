@@ -1,9 +1,8 @@
-# FINAL GO/NO-GO — Phase 6
-Core gates:
-- A agronomic validity: PASS — cultivar-aware bound validated on independent cold-region systems; Europe reassessed at agricultural-cell resolution (Rhine/Alsace/Loire/Berlin/Saxony ~950-1100 → B-tier hypothetical-transfer class; UK/Denmark/Scandinavia/Baltic <900 → unsuitable confirmed).
-- B risk-model validity: PASS — modeled shortfalls labeled as scenario statistics.
-- C field water/economic feasibility: PARTIAL — Danube water plausible at country scale, allocation & costs unproven (break-even only).
-- D novelty: PASS (narrow).
-- E robust regional priorities: PASS (bounded: Uruguay/RGS evidence-supported; Lower Danube/Osijek field-trial; Kherson/KazakhstanN research-only; Central Asia excluded-water; NW Europe unsuitable/borderline).
-CEA gate: **CEA-SEPARATE→EXCLUDE for staple role** (vendor claims unverified independently; energy floor ~$10/kg >> field $0.4; possible small emergency-reserve niche → independent engineering study needed).
-**Overall: CONDITIONAL GO.** No manuscript (Gate C partial). Open conditions unchanged: cost-side farm data + Danube basin allocation demonstration.
+# FINAL GO/NO-GO — Phase 7
+- A agronomic: PASS (cultivar-aware bound + independent validation).
+- B risk model: PASS (scenario framing corrected).
+- C water+economics: **PARTIAL→bounded PASS? Decision: still PARTIAL** — water resolved for Lower Danube (Q99 1100 m3/s >> ~1-10 m3/s paddy demand at ≤250kha; WEAP shows no agri deficit any scenario), but economics has only Italian-observed costs; Romania cost data not publicly accessible → break-even not demonstrated margin.
+- D novelty: PASS (narrow: integrated water+econ+tail-risk gate on cultivar-aware suitability).
+- E priorities: PASS (bounded).
+
+**Verdict: CONDITIONAL GO** — remaining exact deficiency: Romania/Bulgaria/Croatia/Serbia rice-specific production-cost observations (FADN access or national agency data). Manuscript preparation NOT initiated per spec (all 5 gates must pass).

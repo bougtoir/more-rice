@@ -1,0 +1,2 @@
+# FADN/Cost Data Audit
+- EU FADN microdata not openly downloadable; Eurostat dissemination codes probed (404/403). Substituted peer-reviewed Italian paddy cost studies (Vercelli CCI-derived): total cost 1470-2430 EUR/ha, variable 1130-1470, gross margin 1499-4379 conventional / 1318-2650 organic. Recorded as OBSERVED-Italy, PROXY for Romania — not represented as Romanian observations. Romania/Bulgaria/Croatia/Serbia/Germany rice-specific costs remain unavailable → break-even framing.

@@ -1,0 +1,8 @@
+MORE-RICE FINAL HANDOFF
+Repo: github.com/bougtoir/more-rice @ 938fcd4+
+Package: manuscript/ (MANUSCRIPT.docx, COVER_LETTER.docx [Agricultural Systems, Onishi Tatsuki], HIGHLIGHTS.txt, ABSTRACT.txt, CLAIM_EVIDENCE_MATRIX.csv, FIGURES/ 7 figs, TABLES/, all audit md).
+Claims: A=observed (Italian costs, NASA POWER climates, Danube flows, FAOSTAT yields/prices); B=empirical bound (Hokkaido ~900 GDD10 with named management); C=scenario statistics (tail-risk 20.3->10.9%, 21.2->3.0%); D=modelled break-even economics. E (unsupported): none in substantive findings.
+Negatives retained: rainfed upland flower-deficit 88-100% yr continental EU; Serbia potato > rice; Central Asia excluded on water.
+Open residual: Romania/Bulgaria/Croatia/Serbia rice-cost observations unavailable (FADN restricted) -> economics stays break-even.
+Medieval track: still blocked on human archive checks (PARES Reg 6-7, Orihuela codex) - separate from this manuscript.
+Submission: NOT done. Requires explicit user approval.

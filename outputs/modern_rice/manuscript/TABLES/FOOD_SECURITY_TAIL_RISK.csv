@@ -1,0 +1,23 @@
+country,P_shortfall_A_existing,P_shortfall_B_rice20,P_shortfall_D_potato,delta_shortfall_rice_minus_A,rice_source
+Argentina,0.047,0.016,0.031,0.031,Argentina
+Australia,0.156,0.078,0.047,0.078,Australia
+Bangladesh,0.328,0.266,0.25,0.062,Bangladesh
+Bulgaria,0.203,0.172,0.188,0.031,Bulgaria
+Chile,0.078,0.062,0.062,0.016,Chile
+Croatia,0.061,0.061,0.03,0.0,analog:Greece
+France,0.109,0.062,0.125,0.047,France
+Germany,0.031,0.031,0.031,0.0,analog:Italy
+Greece,0.094,0.062,0.094,0.032,Greece
+Hungary,0.188,0.156,0.156,0.032,Hungary
+Italy,0.016,0.0,0.0,0.016,Italy
+Japan,0.047,0.031,0.031,0.016,Japan
+Kazakhstan,0.212,0.03,0.091,0.182,Kazakhstan
+Poland,0.016,0.016,0.016,0.0,analog:Hungary
+Portugal,0.125,0.094,0.125,0.031,Portugal
+Romania,0.203,0.109,0.172,0.094,Romania
+Serbia,0.211,0.211,0.053,0.0,analog:Hungary
+Spain,0.094,0.047,0.047,0.047,Spain
+Ukraine,0.0,0.03,0.03,-0.03,Ukraine
+United Kingdom of Great Britain and Northern Ireland,0.0,0.0,0.0,0.0,analog:Italy
+United States of America,0.016,0.0,0.0,0.016,United States of America
+Uzbekistan,0.061,0.0,0.061,0.061,Uzbekistan

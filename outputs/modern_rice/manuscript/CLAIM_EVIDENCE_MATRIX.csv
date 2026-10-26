@@ -1,0 +1,9 @@
+claim,class,evidence
+95.8% SPAM coverage of suitability screen,A,VALIDATION_VS_SPAM.csv
+~900 GDD10 empirical managed bound,A,DAILY_CLIMATE_POINT_METRICS.csv (JP sites)
+EU cells 957-1108 exceed bound but lack system,B,DAILY_CLIMATE_POINT_METRICS.csv + reassessment
+rainfed upland flower-deficit 88-100% yrs,B,DAILY_SOIL_WATER_BALANCE.csv
+Danube Q99 1100 m3/s vs ~24 m3/s demand,A(lit)+B,LOWER_DANUBE_HYDROLOGY_SOURCE_REGISTRY.csv
+Romania/Kazakhstan shortfall reductions,D,RICE_PORTFOLIO_SCENARIOS.csv
+Italian costs 1470-2430 EUR/ha,A(Italy),AGRICULTURAL_COST_REGISTRY.csv
+Romanian rice costs,E/missing,not observed → break-even only

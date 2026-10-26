@@ -1,0 +1,5 @@
+- Climate-only rice suitability models show a systematic cold-region false negative (Hokkaido)
+- Empirical managed bound ~900 GDD10 documents technology-dependent feasibility
+- Rainfed upland rice fails flowering-stage moisture balance in 88-100% of continental-EU years
+- Lower Danube irrigated rice hydrologically feasible (Q99 1100 m3/s vs ~24 m3/s at 250kha)
+- Conditional tail-risk reductions (RO 20.3->10.9%; KZ 21.2->3.0%) are scenario statistics, not famine rates

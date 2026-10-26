@@ -1,0 +1,7 @@
+item,value,unit,country,system,observed_or_proxy,source
+total production cost flooded,1470-2430,EUR/ha,Italy,paddy,observed,MDPI Water 2016 8:336 (Vercelli CCI)
+variable costs,1130-1470,EUR/ha,Italy,paddy,observed,agriculture-15-01797 (4 farms)
+gross margin conventional,1499-4379,EUR/ha,Italy,paddy,observed,same
+gross margin organic,1318-2650,EUR/ha,Italy,paddy,observed,same
+water tariff,"area-based flat, not volumetric",EUR/ha,Italy,paddy,observed,MDPI 2016
+Romania rice cost,not publicly available,-,Romania,-,missing→proxy Italy + break-even,FADN not open

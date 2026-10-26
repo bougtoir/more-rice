@@ -1,0 +1,9 @@
+region,system_A_irrigated,system_B_rainfed,system_C_supplemental
+LowerDanube,2 field-trial (water feasible),4 unsuitable (100% flower-deficit),2-3 conditional
+Balkan_Osijek,2-3 conditional,4 unsuitable (100%),3 research-only
+SUkraine_Kherson,3 research-only,4 unsuitable (100%),3 research-only
+Danube_HU,2 field-trial,4 unsuitable (96%),3 conditional
+Rhine/Alsace/Loire/Saxony/Berlin,3 research-only (hypothetical cultivar),4 unsuitable (88-100%),3 research-only
+Kent_UK,4-5 (thermal),4 unsuitable (92%),5 insufficient
+Japan_cold_regions,existing (verified bound),3-4 marginal (48% Hokkaido/20% Morioka),existing paddy
+Uruguay_RGDS,1-2 evidence-supported,needs separate eval,2 conditional

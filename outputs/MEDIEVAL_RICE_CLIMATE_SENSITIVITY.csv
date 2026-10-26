@@ -1,0 +1,8 @@
+region,pct_feasible,pct_marginal,pct_infeasible,verdict,irrigated_required
+England (S/SE),0,0,100,infeasible across parameter grid,True
+Northern France,0,11,89,marginal/parametric-uncertain,True
+German territories,0,0,100,infeasible across parameter grid,False
+Mediterranean France,100,0,0,feasible across parameter grid,True
+Northern Iberia,28,17,56,marginal/parametric-uncertain,False
+Eastern Iberia (Valencia),100,0,0,feasible across parameter grid,True
+Southern Iberia,100,0,0,feasible across parameter grid,True

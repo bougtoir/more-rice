@@ -1,0 +1,10 @@
+region,infeasible,marginal,feas_irrig_dep,feas_rainfed,param_uncertain
+Europe_W,30663,507,639,0,4289
+EastAsia,22802,395,682,13804,11311
+SAsia,4928,117,9750,3746,474
+SSAmerica,4760,1589,12138,26869,3265
+SubSahara,1057,1545,38944,18403,2767
+NAmerica,36480,1453,9481,6391,10586
+Oceania,1445,849,19607,4429,1316
+WAfrica,0,5,20317,4045,8
+SEAsia,258,0,1610,17058,378

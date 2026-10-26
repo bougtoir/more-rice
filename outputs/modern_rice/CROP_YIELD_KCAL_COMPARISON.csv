@@ -1,0 +1,88 @@
+Area,Item,yield_kg_ha,edible_kcal_ha
+Bangladesh,Barley,1219.0,4265800.0
+Bangladesh,Maize (corn),9246.0,33287040.0
+Bangladesh,Potatoes,23198.0,18558720.0
+Bangladesh,Rice,5291.0,19310690.0
+Bangladesh,Wheat,3761.0,12787740.0
+Brazil,Barley,3655.0,12792500.0
+Brazil,Maize (corn),5426.0,19532520.0
+Brazil,Potatoes,33520.0,26816240.0
+Brazil,Rice,6728.0,24557565.0
+Brazil,Wheat,2613.0,8883180.0
+"China, mainland",Barley,3676.0,12867750.0
+"China, mainland",Maize (corn),6592.0,23730480.0
+"China, mainland",Potatoes,20805.0,16643760.0
+"China, mainland",Rice,7154.0,26113925.0
+"China, mainland",Wheat,5940.0,20194640.0
+Denmark,Barley,5497.0,19240550.0
+Denmark,Maize (corn),6886.0,24788520.0
+Denmark,Potatoes,45835.0,36667920.0
+Denmark,Wheat,7040.0,23934640.0
+Egypt,Barley,4091.0,14318150.0
+Egypt,Maize (corn),7585.0,27307080.0
+Egypt,Potatoes,30094.0,24075520.0
+Egypt,Rice,9132.0,33329975.0
+Egypt,Wheat,6778.0,23044180.0
+Finland,Barley,3662.0,12818750.0
+Finland,Potatoes,31249.0,24998880.0
+Finland,Wheat,3536.0,12022740.0
+France,Barley,5347.0,18713100.0
+France,Maize (corn),9204.0,33134760.0
+France,Potatoes,42436.0,33948800.0
+France,Rice,5338.0,19484795.0
+France,Wheat,5974.0,20309900.0
+Germany,Barley,6392.0,22370600.0
+Germany,Maize (corn),10053.0,36191520.0
+Germany,Potatoes,45015.0,36012160.0
+Germany,Wheat,7084.0,24086280.0
+India,Barley,3082.0,10787350.0
+India,Maize (corn),3545.0,12761280.0
+India,Potatoes,24568.0,19654720.0
+India,Rice,4313.0,15743180.0
+India,Wheat,3559.0,12100600.0
+Italy,Barley,3842.0,13447350.0
+Italy,Maize (corn),9974.0,35905680.0
+Italy,Potatoes,28778.0,23022240.0
+Italy,Rice,6407.0,23384820.0
+Italy,Wheat,3660.0,12442980.0
+Japan,Barley,2855.0,9993900.0
+Japan,Maize (corn),2685.0,9667080.0
+Japan,Potatoes,32309.0,25847280.0
+Japan,Rice,6956.0,25389765.0
+Japan,Wheat,4439.0,15093280.0
+Nigeria,Maize (corn),2030.0,7307280.0
+Nigeria,Potatoes,3755.0,3004000.0
+Nigeria,Rice,1996.0,7287225.0
+Nigeria,Wheat,1574.0,5351940.0
+Poland,Barley,4257.0,14900200.0
+Poland,Maize (corn),7224.0,26006760.0
+Poland,Potatoes,30182.0,24145520.0
+Poland,Wheat,5107.0,17363800.0
+Portugal,Barley,3983.0,13939100.0
+Portugal,Maize (corn),9477.0,34117560.0
+Portugal,Potatoes,21722.0,17377920.0
+Portugal,Rice,6209.0,22663580.0
+Portugal,Wheat,3374.0,11471940.0
+Spain,Barley,3286.0,11502050.0
+Spain,Maize (corn),12115.0,43614360.0
+Spain,Potatoes,32109.0,25687200.0
+Spain,Rice,7049.0,25729945.0
+Spain,Wheat,3654.0,12423600.0
+Sweden,Barley,4446.0,15562050.0
+Sweden,Maize (corn),6769.0,24366960.0
+Sweden,Potatoes,37311.0,29849040.0
+Sweden,Wheat,6169.0,20975960.0
+Ukraine,Barley,3800.0,13301750.0
+Ukraine,Maize (corn),6600.0,23758560.0
+Ukraine,Potatoes,17501.0,14000800.0
+Ukraine,Rice,5000.0,18250000.0
+Ukraine,Wheat,4595.0,15623000.0
+United Kingdom of Great Britain and Northern Ireland,Barley,5939.0,20786150.0
+United Kingdom of Great Britain and Northern Ireland,Maize (corn),1570.0,5652000.0
+United Kingdom of Great Britain and Northern Ireland,Potatoes,46581.0,37264880.0
+United Kingdom of Great Britain and Northern Ireland,Wheat,7281.0,24756420.0
+United States of America,Barley,4127.0,14445200.0
+United States of America,Maize (corn),11257.0,40524480.0
+United States of America,Potatoes,50900.0,40719600.0
+United States of America,Rice,8684.0,31696965.0
+United States of America,Wheat,3446.0,11717080.0

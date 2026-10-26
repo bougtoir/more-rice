@@ -1,0 +1,10 @@
+system_or_trait,definition,evidence_basis,thermal_req,water_req,labor,caveat
+upland rice,non-flooded aerobic field cultivation,IRRI/agronomy literature,~same as lowland (tropical origin; grain fill needs warm season),rain only; weeds-critical,very high weeding,"yield 0.5-1.2 t/ha typical; NOT a cold solution"
+rainfed lowland,bunded fields, rainfall-fed ponding,SAsia/SEAsia literature,warm season + reliable wet-season rain,300-500mm+ over season,moderate,"dominant system in monsoon Asia; drought-vulnerable"
+irrigated lowland,flooded paddies with controlled water,Po Valley/Camargue/Ebro/Japan/Egypt evidence,warm season 3-4 months 18-20C+,large blue-water demand,moderate-high,"highest yields; needs works + water rights"
+direct-seeded (DSR),establishment method; overlaps all systems,modern adoption lit (Asia shift),same as host system,lower than transplant paddy,lower,"method not a crop group; weed control critical"
+AWD,water management (periodic drainage),IRRI: water savings ~15-30%; GHG reduction evidence,same as host system,reduced blue water,same,"management practice, not a crop group"
+early-maturing varieties,"110-130 day cycles",Japan/N.Italy short-season varieties,lower GDD need,same,same,"yield penalty vs full-season"
+cold-tolerant varieties,seedling/reproductive cold tolerance (e.g., japonica),Hokkaido/N.Italy precedent,extends thermal floor modestly,same,same,"cold tolerance limited; no variety enables sub-16C grain fill"
+drought/salt-tolerant traits,NERICA/coastal varieties,Africa/coastal trials,standard,reduced/varies,same,"site-specific; extrapolation limited"
+seed/quarantine/IP constraints,phytosanitary + PVP rules for moving seed,national regulations,n/a,n/a,n/a,"real adoption barrier for frontier regions"

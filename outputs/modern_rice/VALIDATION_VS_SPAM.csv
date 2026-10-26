@@ -1,0 +1,6 @@
+class,rice_harv_area_ha_in_class,share
+infeasible,6418734.0,0.0399
+marginal,257757.1,0.0016
+feasible_irrig_dependent,53103932.0,0.3304
+feasible_rainfed,100951672.0,0.6281
+param_uncertain_cells,54580,

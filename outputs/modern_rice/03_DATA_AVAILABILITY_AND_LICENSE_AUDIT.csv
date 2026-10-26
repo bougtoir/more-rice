@@ -1,0 +1,13 @@
+dataset,provider,version,resolution,access,license,commercial_use,obtained,file,sha256_or_note
+WorldClim bioclim (bio1-19),worldclim.org,2.1,10-arcmin,open download,CC BY-SA 4.0,yes,yes,modern_rice/data/raw/wc2.1_10m_bio.zip,00513224583665ec0f2f955a4ec252730c4deb2004cce9e793492a3f26df4dcf
+WorldClim monthly tavg,worldclim.org,2.1,10-arcmin,open download,CC BY-SA 4.0,yes,yes,modern_rice/data/raw/wc2.1_10m_tavg.zip,5e567dcfe94379b94229492849ce91078b1c6e5210aaf435fba449fae6b95405
+WorldClim monthly prec,worldclim.org,2.1,10-arcmin,open download,CC BY-SA 4.0,yes,yes,modern_rice/data/raw/wc2.1_10m_prec.zip,1090f578f6402672a2b6438e252156f6cf867a25002a8ad6ffcbfa19e516ddc6
+MapSPAM 2010 v2.0 harvested area,IFPRI/Harvard Dataverse,spam2010v2r0,5-arcmin,open download (dataverse),CC0/open terms,yes,yes,modern_rice/data/raw/spam2010v2r0_global_harv_area.geotiff.zip,3fc0d52e075cad00dfc857ca033d54e44326fd4c57ae8da7bc14f9f0ba3f3dc6
+FAOSTAT Crops & Livestock (normalized bulk),FAO,2025-12-23 snapshot,country-year,open bulk,CC BY-NC-SA 3.0 IGO,NO (NC clause),yes,modern_rice/data/raw/faostat_qcl.zip,c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853
+SoilGrids 250m,soilgrids.org,2.0,250m,open WCS/download,CC BY 4.0,yes,not_yet,deferred (volume; pilot used climate only),
+AQUASTAT / GMIA irrigated-area map,FAO,v5,5-arcmin,open download,varies,yes,not_yet,deferred for phase 4,
+GAEZ v4 suitability,FAO/IIASA,v4,5-arcmin,web download,non-commercial research use,restricted,not_yet,license-restricted; noted not fetched,
+CMIP6 bias-adjusted climate,ISIMIP/ESGF,3b,0.5deg,open,CC BY 4.0,yes,not_yet,scenario phase only (spec: keep separate),
+ERA5-Land,CDS,current,0.1deg,open via CDS API,CDS license,yes,not_yet,redundant w/ WorldClim for pilot,
+Variety trial datasets (IRRI etc),IRRI/literature,various,field trials,partial open,varies,varies,not_yet,literature-sourced params only,
+FAOSTAT prices/inputs,FAO,current,country-year,open,CC BY-NC-SA 3.0 IGO,no,not_yet,phase 4 if gates pass,

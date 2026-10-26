@@ -1,0 +1,15 @@
+region,gdd10_season,coldsnap_nights,thermal_verdict,feasible_cells,water_infra,risk_model_evidence,priority
+LowerDanube_RO,1750,20.0,marginal-feasible (GDD ok; cold-snap n~20),0,heat+water ok; GMIA AEI 11%,portfolio gain P 20.3->10.9%,HIGH-priority field-trial candidate
+Balkan_Osijek,1606,27.2,"marginal (cold-snap n~27, GDD min 1294)",0,AEI 2% low infra,analog Hungary rice,MEDIUM (validation needed)
+SUkraine_Kherson,1672,21.8,marginal-feasible,0,AEI 9%; steppe irrigation needed,own rice series; corr -0.18,MEDIUM (war/context caveat)
+CentralAsia_Tashkent,2129,10.6,feasible thermally,3316,AEI 8%; water-stressed basins,own series; corr 0.19,MEDIUM-HIGH; water constraint decisive
+KazakhstanN,,,mixed (grid 37 feasible cells; northern cold),37,AEI ~0,P 21.2->3.0% big gain,MEDIUM; cold validation needed
+CentralChile,766,103.3,"INFEASIBLE (GDD<800, 103 cold nights)",3,AEI high but climate fails,Chile corr -0.06,REMOVED from candidates
+Camargue_FR,1677,8.2,feasible (existing),17,AEI 13%,France rice corr 0.28,existing zone - expansion only
+PoValley_IT,1556,18.7,feasible (existing),15,AEI 47%,Italy corr 0.14,existing zone
+Ebro_ES,1390,46,marginal (cold nights),73,AEI 21%,existing,existing + careful expansion
+England,722,90.6,INFEASIBLE,0,-,-,REMOVED - do not recommend
+NFrance,983,70.6,INFEASIBLE,0,-,-,REMOVED
+Germany,899,73.4,INFEASIBLE,0,-,-,REMOVED
+Uruguay_RGDS,,,feasible (existing expansion),1628,AEI 3%,analog Argentina corr 0.04,MEDIUM expansion
+Hokkaido_JP,903,68.6,INFEASIBLE by grid BUT real cultivation exists,existing,-,own series,exception noted: japonica+transplant; model under-predicts

@@ -1,0 +1,8 @@
+constraint,assessment,evidence,candidate_regions_impact
+freshwater_depletion,paddy requires large blue water; AWD saves 15-30%,IRRI literature,CentralAsia HIGH risk; Danube/Balkan moderate
+methane_CH4,flooded rice major CH4 source; AWD reduces substantially,Poore-Nemecek LCA,counts against new paddy in margin zones
+nitrous_N2O,AWD increases N2O partially offsetting CH4 gain,IPCC/LCA lit,net depends on management
+land_use_change,no conversion of natural wetlands (safeguard rule),spec rule,candidate cells are existing farmland
+soil,puddled paddies alter structure; rotation mitigates,agronomy lit,rotation scenario C preferred
+biodiversity,rice fields on farmland neutral; wetland conversion banned,spec rule,monitoring required
+per_kcal_GHG,rice paddy GHG/kcal higher than wheat (CH4),LCA lit,diversification benefit vs emission cost tradeoff must be stated

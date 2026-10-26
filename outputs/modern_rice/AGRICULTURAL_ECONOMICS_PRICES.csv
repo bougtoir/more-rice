@@ -1,0 +1,473 @@
+Area,Item,Year,Value,Unit
+Afghanistan,Barley,2025,83.54,
+Afghanistan,Maize (corn),2025,60.13,
+Afghanistan,Rice,2025,165.05,
+Afghanistan,Wheat,2025,124.45,
+Albania,Barley,2025,89.23,
+Albania,Maize (corn),2025,95.83,
+Albania,Rice,2025,116.24,
+Albania,Wheat,2025,130.47,
+Algeria,Barley,2025,99.71,
+Algeria,Maize (corn),2025,126.59,
+Algeria,Rice,2025,99.99,
+Algeria,Wheat,2025,100.0,
+Angola,Maize (corn),2025,109.32,
+Angola,Rice,2025,140.87,
+Antigua and Barbuda,Maize (corn),2025,319.07,
+Argentina,Barley,2025,178.89,
+Argentina,Maize (corn),2025,777.78,
+Argentina,Rice,2025,280.36,
+Argentina,Wheat,2025,1008.66,
+Armenia,Barley,2025,123125.0,LCU
+Armenia,Maize (corn),2025,105.58,
+Armenia,Wheat,2025,119588.0,LCU
+Australia,Barley,2025,112.59,
+Australia,Maize (corn),2025,110.69,
+Australia,Rice,2025,83.21,
+Australia,Wheat,2025,101.32,
+Austria,Barley,2025,180.0,LCU
+Austria,Maize (corn),2025,215.0,LCU
+Austria,Wheat,2025,217.0,LCU
+Azerbaijan,Barley,2025,134.08,
+Azerbaijan,Maize (corn),2025,169.5,
+Azerbaijan,Rice,2025,409.03,
+Azerbaijan,Wheat,2025,168.46,
+Bangladesh,Barley,2025,124.03,
+Bangladesh,Maize (corn),2025,122.32,
+Bangladesh,Rice,2025,186.53,
+Bangladesh,Wheat,2025,125.9,
+Barbados,Maize (corn),2025,127.62,
+Belarus,Barley,2025,413.0,LCU
+Belarus,Maize (corn),2025,475.6,LCU
+Belarus,Wheat,2025,403.2,LCU
+Belgium,Barley,2025,185.9,LCU
+Belgium,Maize (corn),2025,192.7,LCU
+Belgium,Wheat,2025,197.6,LCU
+Belgium-Luxembourg,Maize (corn),1998,7227.0,LCU
+Belize,Maize (corn),2025,227.99,
+Belize,Rice,2025,187.14,
+Benin,Maize (corn),2025,180.65,
+Benin,Rice,2025,122.97,
+Bhutan,Barley,2025,219.07,
+Bhutan,Maize (corn),2025,127.39,
+Bhutan,Rice,2025,433.86,
+Bhutan,Wheat,2025,370.96,
+Bolivia (Plurinational State of),Barley,2025,1641.8,LCU
+Bolivia (Plurinational State of),Maize (corn),2025,1655.3,LCU
+Bolivia (Plurinational State of),Rice,2025,3585.8,LCU
+Bolivia (Plurinational State of),Wheat,2025,2666.7,LCU
+Bosnia and Herzegovina,Barley,2025,114.45,
+Bosnia and Herzegovina,Maize (corn),2025,141.89,
+Bosnia and Herzegovina,Wheat,2025,206.18,
+Botswana,Maize (corn),2025,91.49,
+Brazil,Barley,2025,1320.0,LCU
+Brazil,Maize (corn),2025,1220.0,LCU
+Brazil,Rice,2025,2030.0,LCU
+Brazil,Wheat,2025,1320.0,LCU
+Brunei Darussalam,Maize (corn),2025,3479.2,LCU
+Brunei Darussalam,Rice,2025,1250.0,LCU
+Bulgaria,Barley,2025,370.7,LCU
+Bulgaria,Maize (corn),2025,381.1,LCU
+Bulgaria,Rice,2025,1023.4,LCU
+Bulgaria,Wheat,2025,404.8,LCU
+Burkina Faso,Barley,2017,720.0,LCU
+Burkina Faso,Maize (corn),2025,156.19,
+Burkina Faso,Rice,2025,130.67,
+Burkina Faso,Wheat,2017,846.0,LCU
+Burundi,Maize (corn),2025,118.11,
+Burundi,Rice,2025,155.32,
+Burundi,Wheat,2025,107.49,
+Cabo Verde,Barley,2025,101.04,
+Cabo Verde,Maize (corn),2025,94887.9,LCU
+Cabo Verde,Rice,2016,91980.0,LCU
+Cabo Verde,Wheat,2016,60490.0,LCU
+Cambodia,Maize (corn),2025,168.09,
+Cambodia,Rice,2025,138.18,
+Cameroon,Maize (corn),2025,112.11,
+Cameroon,Rice,2025,101.31,
+Cameroon,Wheat,2025,90.81,
+Canada,Barley,2025,269.7,LCU
+Canada,Maize (corn),2025,238.2,LCU
+Canada,Wheat,2025,298.8,LCU
+Central African Republic,Maize (corn),2025,103.93,
+Central African Republic,Rice,2025,103.71,
+Chad,Maize (corn),2025,327011.1,LCU
+Chad,Rice,2025,526309.0,LCU
+Chad,Wheat,2025,839204.8,LCU
+Chile,Barley,2025,315.98,
+Chile,Maize (corn),2025,238.69,
+Chile,Rice,2025,371.59,
+Chile,Wheat,2025,291.11,
+"China, mainland",Barley,2025,40.32,
+"China, mainland",Maize (corn),2025,2350.0,LCU
+"China, mainland",Rice,2025,2940.0,LCU
+"China, mainland",Wheat,2025,2810.0,LCU
+Colombia,Barley,2025,84.37,
+Colombia,Maize (corn),2025,2106000.0,LCU
+Colombia,Rice,2025,1507200.0,LCU
+Colombia,Wheat,2025,2726000.0,LCU
+Comoros,Maize (corn),1998,150000.0,LCU
+Congo,Maize (corn),2025,118.83,
+Congo,Rice,2025,135.5,
+Costa Rica,Maize (corn),2025,107.04,
+Costa Rica,Rice,2025,121.88,
+Croatia,Barley,2025,207.4,LCU
+Croatia,Maize (corn),2025,200.4,LCU
+Croatia,Wheat,2025,214.9,LCU
+Cuba,Maize (corn),2025,132.57,
+Cuba,Rice,2025,170.53,
+Cyprus,Barley,2025,166.91,
+Cyprus,Wheat,2025,146.92,
+Czechia,Barley,2025,5602.0,LCU
+Czechia,Maize (corn),2025,5053.0,LCU
+Czechia,Wheat,2025,5227.0,LCU
+Côte d'Ivoire,Maize (corn),2025,130.22,
+Côte d'Ivoire,Rice,2025,76.12,
+Denmark,Barley,2025,201.63,
+Denmark,Wheat,2025,199.33,
+Dominican Republic,Maize (corn),2025,30202.8,LCU
+Dominican Republic,Rice,2025,25866.0,LCU
+Ecuador,Barley,2025,156.71,
+Ecuador,Maize (corn),2025,107.59,
+Ecuador,Rice,2025,79.36,
+Ecuador,Wheat,2025,183.48,
+Egypt,Barley,2025,462.56,
+Egypt,Maize (corn),2025,378.03,
+Egypt,Rice,2025,1164.02,
+Egypt,Wheat,2025,350.93,
+El Salvador,Maize (corn),2025,130.17,
+El Salvador,Rice,2025,101.31,
+Eritrea,Barley,2025,192.38,
+Eritrea,Maize (corn),2025,145.0,
+Eritrea,Wheat,2025,168.83,
+Estonia,Barley,2025,108.94,
+Estonia,Wheat,2025,133.25,
+Ethiopia,Barley,2025,160.61,
+Ethiopia,Maize (corn),2025,233.41,
+Ethiopia,Rice,2025,102.29,
+Ethiopia,Wheat,2025,140.14,
+Ethiopia PDR,Barley,1992,910.0,LCU
+Ethiopia PDR,Maize (corn),1992,710.0,LCU
+Ethiopia PDR,Wheat,1992,1100.0,LCU
+Fiji,Maize (corn),2025,146.88,
+Fiji,Rice,2025,38.93,
+Finland,Barley,2025,201.0,LCU
+Finland,Wheat,2025,227.0,LCU
+France,Barley,2025,218.7,LCU
+France,Maize (corn),2025,206.4,LCU
+France,Rice,2025,119.3,
+France,Wheat,2025,225.8,LCU
+Gambia,Maize (corn),2025,42971.3,LCU
+Gambia,Rice,2025,51837.0,LCU
+Georgia,Barley,2025,147.64,
+Georgia,Maize (corn),2025,126.9,
+Georgia,Wheat,2025,155.94,
+Germany,Barley,2025,171.0,LCU
+Germany,Maize (corn),2025,202.1,LCU
+Germany,Wheat,2025,206.8,LCU
+Ghana,Maize (corn),2025,441.56,
+Ghana,Rice,2025,650.8,
+Greece,Barley,2025,207.05,
+Greece,Maize (corn),2025,118.24,
+Greece,Rice,2025,147.33,
+Greece,Wheat,2025,98.43,
+Grenada,Maize (corn),2025,113.87,
+Guatemala,Maize (corn),1993,990.0,LCU
+Guinea,Maize (corn),2025,608.35,
+Guinea,Rice,2025,770.63,
+Guinea-Bissau,Maize (corn),2025,122.65,
+Guinea-Bissau,Rice,2025,157.83,
+Haiti,Maize (corn),1995,4466.0,LCU
+Honduras,Maize (corn),2025,10311.3,LCU
+Honduras,Rice,2025,129.48,
+Honduras,Wheat,2025,99.79,
+Hungary,Barley,2025,77566.0,LCU
+Hungary,Maize (corn),2025,77947.0,LCU
+Hungary,Rice,2025,73.04,
+Hungary,Wheat,2025,86123.0,LCU
+Iceland,Barley,2025,70.12,
+India,Barley,2025,163.99,
+India,Maize (corn),2025,150.53,
+India,Rice,2025,162.39,
+India,Wheat,2025,155.81,
+Indonesia,Maize (corn),2025,157.36,
+Indonesia,Rice,2025,75.77,
+Indonesia,Wheat,2025,144.18,
+Iran (Islamic Republic of),Barley,2025,1202.52,
+Iran (Islamic Republic of),Maize (corn),2025,1336.16,
+Iran (Islamic Republic of),Rice,2025,1561.06,
+Iran (Islamic Republic of),Wheat,2025,1927.1,
+Iraq,Barley,2025,99.18,
+Iraq,Maize (corn),2025,63.13,
+Iraq,Rice,2025,141.38,
+Iraq,Wheat,2025,94.92,
+Ireland,Barley,2025,101.37,
+Ireland,Maize (corn),2025,138.96,
+Ireland,Wheat,2025,141.86,
+Israel,Barley,2025,133.11,
+Israel,Maize (corn),2025,6991.5,LCU
+Israel,Wheat,2025,102.77,
+Italy,Barley,2025,122.56,
+Italy,Maize (corn),2025,242.0,LCU
+Italy,Rice,2025,554.6,LCU
+Italy,Wheat,2025,306.0,LCU
+Jamaica,Maize (corn),2025,403.56,
+Jamaica,Rice,2025,136.84,
+Japan,Barley,2025,99.95,
+Japan,Maize (corn),2025,104.15,
+Japan,Rice,2025,158.58,
+Japan,Wheat,2025,137.69,
+Jordan,Barley,2025,121.4,
+Jordan,Maize (corn),2025,187.66,
+Jordan,Wheat,2025,102.78,
+Kazakhstan,Barley,2025,56761.0,LCU
+Kazakhstan,Maize (corn),2025,59864.0,LCU
+Kazakhstan,Rice,2025,137821.0,LCU
+Kazakhstan,Wheat,2025,68176.0,LCU
+Kenya,Barley,2025,146.1,
+Kenya,Maize (corn),2025,220.78,
+Kenya,Rice,2025,109.41,
+Kenya,Wheat,2025,190.48,
+Kuwait,Barley,2025,127.12,
+Kuwait,Maize (corn),2025,273.0,LCU
+Kuwait,Wheat,2025,108.7,
+Kyrgyzstan,Barley,2025,15408.0,LCU
+Kyrgyzstan,Maize (corn),2025,19473.0,LCU
+Kyrgyzstan,Rice,2025,178128.0,LCU
+Kyrgyzstan,Wheat,2025,17952.0,LCU
+Lao People's Democratic Republic,Maize (corn),2025,125.97,
+Lao People's Democratic Republic,Rice,2025,72.67,
+Latvia,Barley,2025,177.4,LCU
+Latvia,Maize (corn),2025,178.47,
+Latvia,Wheat,2025,211.3,LCU
+Lebanon,Barley,2025,97.9,
+Lebanon,Maize (corn),2025,134.25,
+Lebanon,Wheat,2025,114.85,
+Lesotho,Maize (corn),2023,126994.0,LCU
+Lesotho,Wheat,2023,6366.0,LCU
+Lithuania,Barley,2025,199.7,LCU
+Lithuania,Maize (corn),2025,193.3,LCU
+Lithuania,Wheat,2025,222.8,LCU
+Luxembourg,Barley,2025,131.62,
+Luxembourg,Maize (corn),2025,111.11,
+Luxembourg,Wheat,2025,135.79,
+Madagascar,Maize (corn),2025,107.33,
+Madagascar,Rice,2025,179.81,
+Madagascar,Wheat,2025,125.93,
+Malawi,Maize (corn),2025,206.39,
+Malawi,Rice,2025,678.87,
+Malawi,Wheat,2025,222.51,
+Malaysia,Maize (corn),2025,109.57,
+Malaysia,Rice,2025,111.39,
+Mali,Maize (corn),2025,201.17,
+Mali,Rice,2025,145.38,
+Mali,Wheat,2025,114.01,
+Malta,Barley,2025,122.41,
+Malta,Wheat,2025,130.63,
+Mauritania,Maize (corn),1998,420000.0,LCU
+Mauritius,Maize (corn),2025,108.5,
+Mexico,Barley,2025,167.61,
+Mexico,Maize (corn),2025,152.4,
+Mexico,Rice,2025,164.1,
+Mexico,Wheat,2025,215.65,
+Mongolia,Barley,2025,256.82,
+Mongolia,Wheat,2025,237.27,
+Morocco,Barley,2025,202.83,
+Morocco,Maize (corn),2025,294.72,
+Morocco,Rice,2025,139.48,
+Morocco,Wheat,2025,189.86,
+Mozambique,Maize (corn),2025,169.71,
+Mozambique,Rice,2025,193.06,
+Mozambique,Wheat,2025,160.91,
+Myanmar,Maize (corn),2025,147.73,
+Myanmar,Rice,2025,258.98,
+Myanmar,Wheat,2025,220.51,
+Namibia,Maize (corn),2025,171.17,
+Namibia,Wheat,2025,261.15,
+Nepal,Barley,2025,101.38,
+Nepal,Maize (corn),2025,166.39,
+Nepal,Rice,2025,160.97,
+Nepal,Wheat,2025,176.86,
+Netherlands (Kingdom of the),Barley,2025,199.8,LCU
+Netherlands (Kingdom of the),Maize (corn),2025,182.31,
+Netherlands (Kingdom of the),Wheat,2025,199.8,LCU
+New Caledonia,Maize (corn),2025,128.38,
+New Caledonia,Rice,2019,80000.0,LCU
+New Caledonia,Wheat,2022,71000.0,LCU
+New Zealand,Barley,2025,134.88,
+New Zealand,Maize (corn),2025,136.87,
+New Zealand,Wheat,2025,172.14,
+Nicaragua,Maize (corn),2023,17916.5,LCU
+Nicaragua,Rice,2023,18222.5,LCU
+Niger,Maize (corn),2025,83.97,
+Niger,Rice,2025,105.17,
+Niger,Wheat,2025,66.46,
+Nigeria,Maize (corn),2025,165.08,
+Nigeria,Rice,2025,293.29,
+Nigeria,Wheat,2025,103.51,
+North Macedonia,Barley,2025,95.18,
+North Macedonia,Maize (corn),2025,170.77,
+North Macedonia,Rice,2025,31770.4,LCU
+North Macedonia,Wheat,2025,14339.5,LCU
+Norway,Barley,2025,152.28,
+Norway,Wheat,2025,160.51,
+Oman,Barley,2025,93.5,
+Oman,Maize (corn),2025,64.13,
+Oman,Wheat,2025,86.61,
+Pakistan,Barley,2025,535.49,
+Pakistan,Maize (corn),2025,501.02,
+Pakistan,Rice,2025,970.04,
+Pakistan,Wheat,2025,339.87,
+Palestine,Barley,2025,2278.8,LCU
+Palestine,Maize (corn),2025,62.34,
+Palestine,Wheat,2025,1825.8,LCU
+Panama,Maize (corn),2025,116.67,
+Panama,Rice,2025,95.88,
+Paraguay,Maize (corn),2025,152.24,
+Paraguay,Rice,2025,148.02,
+Paraguay,Wheat,2025,197.78,
+Peru,Barley,2025,1306.6,LCU
+Peru,Maize (corn),2025,1832.3,LCU
+Peru,Rice,2025,1515.7,LCU
+Peru,Wheat,2025,171.31,
+Philippines,Maize (corn),2025,14435.0,LCU
+Philippines,Rice,2025,20680.0,LCU
+Poland,Barley,2025,834.0,LCU
+Poland,Maize (corn),2025,838.0,LCU
+Poland,Wheat,2025,915.0,LCU
+Portugal,Barley,2025,181.96,
+Portugal,Maize (corn),2025,133.48,
+Portugal,Rice,2025,134.08,
+Portugal,Wheat,2025,198.89,
+Puerto Rico,Maize (corn),2025,117.03,
+Puerto Rico,Rice,2025,123.1,
+Qatar,Barley,2025,132.66,
+Qatar,Maize (corn),2025,144.41,
+Qatar,Wheat,2025,126.87,
+Republic of Korea,Barley,2025,99.29,
+Republic of Korea,Maize (corn),2025,123.12,
+Republic of Korea,Rice,2025,2342450.0,LCU
+Republic of Korea,Wheat,2025,116.02,
+Republic of Moldova,Barley,2025,128.39,
+Republic of Moldova,Maize (corn),2025,129.44,
+Republic of Moldova,Wheat,2025,156.07,
+Romania,Barley,2025,910.0,LCU
+Romania,Maize (corn),2025,900.0,LCU
+Romania,Rice,2025,87.95,
+Romania,Wheat,2025,980.0,LCU
+Russian Federation,Barley,2025,209.87,
+Russian Federation,Maize (corn),2025,197.54,
+Russian Federation,Rice,2025,206.92,
+Russian Federation,Wheat,2025,165.85,
+Rwanda,Maize (corn),2025,573903.7,LCU
+Rwanda,Rice,2025,1012755.1,LCU
+Rwanda,Wheat,2025,969230.8,LCU
+Réunion,Maize (corn),1995,3300.0,LCU
+Saint Kitts and Nevis,Maize (corn),2019,5511.6,LCU
+Saint Lucia,Maize (corn),2025,116.42,
+Saint Vincent and the Grenadines,Maize (corn),2025,107.9,
+Saudi Arabia,Barley,2025,1300.0,LCU
+Saudi Arabia,Maize (corn),2025,1670.0,LCU
+Saudi Arabia,Wheat,2025,3180.0,LCU
+Senegal,Maize (corn),2025,162.81,
+Senegal,Rice,2025,133.7,
+Serbia,Barley,2025,183.37,
+Serbia,Maize (corn),2025,17365.3,LCU
+Serbia,Wheat,2025,18809.1,LCU
+Serbia and Montenegro,Barley,2005,7952.1,LCU
+Serbia and Montenegro,Maize (corn),2005,6463.6,LCU
+Serbia and Montenegro,Wheat,2005,7513.4,LCU
+Sierra Leone,Maize (corn),2025,35.84,
+Sierra Leone,Rice,2025,159.91,
+Slovakia,Barley,2025,206.9,LCU
+Slovakia,Maize (corn),2025,186.3,LCU
+Slovakia,Wheat,2025,198.1,LCU
+Slovenia,Barley,2025,149.27,
+Slovenia,Maize (corn),2025,141.02,
+Slovenia,Wheat,2025,118.42,
+Solomon Islands,Rice,2024,150500.0,LCU
+South Africa,Barley,2025,4500.0,LCU
+South Africa,Maize (corn),2025,5716.8,LCU
+South Africa,Rice,2025,160.46,
+South Africa,Wheat,2025,5504.5,LCU
+Spain,Barley,2025,116.07,
+Spain,Maize (corn),2025,115.51,
+Spain,Rice,2025,218.14,
+Spain,Wheat,2025,107.29,
+Sri Lanka,Maize (corn),2025,142574.5,LCU
+Sri Lanka,Rice,2025,134537.0,LCU
+Sudan,Wheat,2025,93.49,
+Sudan (former),Maize (corn),2008,575.0,LCU
+Sudan (former),Rice,2008,2430.0,LCU
+Sudan (former),Wheat,2011,1738.0,LCU
+Suriname,Maize (corn),2025,1163.88,
+Suriname,Rice,2025,2812.92,
+Sweden,Barley,2025,2377.0,LCU
+Sweden,Wheat,2025,2516.0,LCU
+Switzerland,Barley,2025,101.94,
+Switzerland,Maize (corn),2025,117.8,
+Switzerland,Rice,2024,1000.0,LCU
+Switzerland,Wheat,2025,120.68,
+Syrian Arab Republic,Barley,2025,489.32,
+Syrian Arab Republic,Maize (corn),2025,266.66,
+Syrian Arab Republic,Wheat,2025,597.75,
+Tajikistan,Barley,2025,342.92,
+Tajikistan,Maize (corn),2025,122.73,
+Tajikistan,Rice,2025,182.77,
+Tajikistan,Wheat,2025,119.42,
+Thailand,Barley,2025,119.91,
+Thailand,Maize (corn),2025,8610.0,LCU
+Thailand,Rice,2025,10300.0,LCU
+Thailand,Wheat,2025,120.11,
+Timor-Leste,Maize (corn),2025,270.24,
+Timor-Leste,Rice,2025,81.98,
+Togo,Maize (corn),2025,121.07,
+Togo,Rice,2025,95.63,
+Tonga,Maize (corn),2025,7650.0,LCU
+Trinidad and Tobago,Maize (corn),2025,95.59,
+Trinidad and Tobago,Rice,2025,100.47,
+Tunisia,Barley,2025,159.85,
+Tunisia,Wheat,2025,219.57,
+Turkmenistan,Barley,2025,182.97,
+Turkmenistan,Maize (corn),2025,174.97,
+Turkmenistan,Rice,2025,173.18,
+Turkmenistan,Wheat,2025,184.7,
+Türkiye,Barley,2025,1317.3,
+Türkiye,Maize (corn),2025,1450.66,
+Türkiye,Rice,2025,1878.49,
+Türkiye,Wheat,2025,1430.42,
+Ukraine,Barley,2025,225.6,
+Ukraine,Maize (corn),2025,168.9,
+Ukraine,Rice,2025,699.18,
+Ukraine,Wheat,2025,164.2,
+United Kingdom of Great Britain and Northern Ireland,Barley,2025,161.5,LCU
+United Kingdom of Great Britain and Northern Ireland,Wheat,2025,191.5,LCU
+United Republic of Tanzania,Maize (corn),2025,118.91,
+United Republic of Tanzania,Rice,2025,122.42,
+United Republic of Tanzania,Wheat,2025,137.64,
+United States of America,Barley,2025,275.1,LCU
+United States of America,Maize (corn),2025,168.9,LCU
+United States of America,Rice,2025,370.4,LCU
+United States of America,Wheat,2025,202.8,LCU
+Uruguay,Barley,2025,184.92,
+Uruguay,Maize (corn),2025,326.7,
+Uruguay,Rice,2025,143.23,
+Uruguay,Wheat,2025,286.22,
+Uzbekistan,Barley,2025,3588463.3,LCU
+Uzbekistan,Maize (corn),2025,3233542.2,LCU
+Uzbekistan,Rice,2025,13590500.0,LCU
+Uzbekistan,Wheat,2025,3374320.5,LCU
+Vanuatu,Maize (corn),2025,124.7,
+Venezuela (Bolivarian Republic of),Maize (corn),2014,7828.0,LCU
+Venezuela (Bolivarian Republic of),Rice,2014,5000.0,LCU
+Viet Nam,Maize (corn),2025,6447807.5,LCU
+Viet Nam,Rice,2025,9039494.1,LCU
+Yemen,Barley,2025,1373.57,
+Yemen,Maize (corn),2025,1111.36,
+Yemen,Wheat,2025,1116.99,
+Zambia,Maize (corn),2025,1069.38,
+Zambia,Rice,2025,392.66,
+Zimbabwe,Barley,2003,770000.0,LCU
+Zimbabwe,Maize (corn),2023,1245458.0,LCU
+Zimbabwe,Rice,2023,3077348.0,LCU
+Zimbabwe,Wheat,2022,67167.0,LCU

@@ -1,0 +1,2 @@
+# Final Adversarial Review — Phase 10 (6 reviewers)
+1. Agronomy: bound+cultivar claims bounded correctly. 2. Modeling: negative upland result is the strongest claim — kept prominent. 3. Hydrology: scenario demand labeled; allocation caveat explicit. 4. Economics: missing Romania costs is scope-limit not fatal because claims are conditional. 5. Statistics: scenario-vs-observed framing correct. 6. Editorial: genuine narrow novelty (system-separated gates + Hokkaido validation + tail-risk). Fatal: none. Major: none unresolved.

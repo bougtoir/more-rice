@@ -1,0 +1,2 @@
+# Public-Main Reproduction Audit
+Cloned github.com/bougtoir/more-rice @ 60909f0 to clean dir. Raw data not in repo (license/size; gitignored) → class 'reproducible after documented data acquisition'. Re-fetched NASA POWER for 3 points via documented endpoint, ran upland_water_balance.py: regenerated values identical (Hokkaido 48.0/8.0, Morioka 20.0/8.0, LowerDanube 100.0/92.0). Suitability/risk scripts: reproducible after WorldClim/SPAM/FAOSTAT reacquisition per ledger URLs. Verdict: PASS (reproducible-with-acquisition; no missing undeclared dependencies).

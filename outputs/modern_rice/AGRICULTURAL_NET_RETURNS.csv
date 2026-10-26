@@ -1,0 +1,12 @@
+country,rice_price_USD_t_obs,wheat_price_USD_t_obs,method_class,break_even_note
+Romania,88.0,980.0,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Kazakhstan,137821.0,68176.0,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Serbia,,18809.1,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Ukraine,699.2,164.2,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Uzbekistan,13590500.0,3374320.5,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Croatia,,214.9,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Uruguay,143.2,286.2,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Bulgaria,1023.4,404.8,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Italy,554.6,306.0,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+Spain,218.1,107.3,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only
+France,119.3,225.8,observed price (FAOSTAT); no cost components,profit requires cost data not publicly available → break-even only

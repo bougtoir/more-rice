@@ -1,0 +1,12 @@
+region,rice_status,climate_class,water,economics,risk_benefit,environment,priority_class
+LowerDanube_RO,existing marginal,A/B thermal (1750 GDD),OK (stress 7.6),price observed,P 20.3->10.9%,moderate,2 field-trial candidate
+Balkan_Osijek,no rice,B borderline (1606),OK (1.5),proxy,analog Hungary,moderate,2 field-trial candidate
+SUkraine_Kherson,no rice,B (1672),OK,proxy,own corr -0.18,war caveat,3 research-only
+CentralAsia_Tashkent,existing,A thermal (2129),UNACCEPTABLE (123.0),observed,corr 0.19,water,4 excluded: hydrologically unsustainable
+KazakhstanN,marginal,B/C borderline,OK (34.6),proxy,P 21.2->3.0%,cold edge,3 research-only
+Uruguay_RGDS,existing expansion,A (model feasible),OK (12.1),observed,analog Argentina,low,1 evidence-supported expansion candidate
+Hokkaido_JP,existing,model fails; real cultivation,-,-,-,model miss,documented exception
+England,none,D (722 GDD; below ~900 cold-extreme benchmark),-,-,-,-,4 unsuitable under current technology
+NFrance,none,"borderline (983, near Hokkaido 903 but no cultivar pool)",-,-,-,-,5 insufficient evidence / borderline
+Germany,none,D (899),-,-,-,-,4 unsuitable
+Denmark_SSweden_SNorway_Baltic,none,D (405-825 GDD),-,-,-,-,4 unsuitable under current technology

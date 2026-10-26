@@ -16,6 +16,13 @@ POINTS = {
  "Hokkaido_JP": (43.2, 143.0), "SJapan": (33.6, 130.6),
  "Bangladesh": (23.8, 90.4), "California": (38.5, -121.5),
  "Spain_Andalucia": (37.4, -5.9), "DanubeDelta": (45.2, 29.5),
+ # Phase 5: cold-region external validation + European reassessment points
+ "Asahikawa_JP": (43.8, 142.4), "Morioka_JP": (39.7, 141.1),
+ "Shenyang_CN": (41.8, 123.4), "Seoul_KR": (37.6, 127.0),
+ "Vercelli_IT": (45.3, 8.4), "Denmark_Aarhus": (56.2, 10.2),
+ "Lund_SE": (55.7, 13.2), "Oslo_NO": (59.9, 10.7),
+ "Tallinn_EE": (59.4, 24.8), "Vilnius_LT": (54.7, 25.3),
+ "Warsaw_PL": (52.2, 21.0), "Edinburgh_UK": (55.9, -3.2),
 }
 P = {k: f"nasa_power_{k}.json" for k in POINTS}
 

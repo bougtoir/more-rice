@@ -1,12 +1,12 @@
-# FINAL GATE DECISION — Phase 4
+# FINAL GO/NO-GO — Phase 5
 
 Gates:
-- A (data availability): PASS — GMIA, WB stress, FAOSTAT, NASA POWER, WorldClim/SPAM all acquired w/ ledger.
-- B (daily climate risk): PASS — daily metrics overturned 1 candidate, confirmed thermal boundary, documented Hokkaido exception.
-- C (irrigation/water): PASS as audit — classification produced; no region endorsed for water-stressed irrigation.
-- D (economics): PARTIAL — producer prices in; cost side unavailable → margins unproven.
-- E (simultaneous-constraint candidates): PARTIAL — tiered candidates produced (High: Lower Danube for trials; Medium: Osijek/Kherson/Tashkent-water-conditional/KazakhstanN/Uruguay; Removed: England, N. France, Germany, C. Chile) — but allocation + margins unproven.
+- A Agronomic validity: PASS — cultivar-aware cold bound (≈900 GDD10 japonica+transplant) now documented and externally validated (JP/China/Korea/N.Italy sites); Hokkaido false-negative explained, not forced.
+- B Crop-risk model validity: PASS — portfolio results reproduced; uncertainty flagged.
+- C Water & economic feasibility: PARTIAL — basin screen done (Central Asia excluded: 123% stress); economics = prices only, break-even framing.
+- D Scholarly novelty: PASS (narrow) — the simultaneous cultivar-aware + water-constrained + tail-risk + non-rice-comparator frame is distinct.
+- E Robust regional recommendations: PASS (bounded) — evidence-supported: Uruguay/Rio Grande do Sul margin; field-trial: Lower Danube, Osijek; research-only: Kherson, KazakhstanN; excluded: Central Asia (water), UK/Germany/Denmark/Scandinavia/Baltic (thermal); insufficient evidence: N. France borderline.
 
-**Verdict: CONDITIONAL GO.** Expansion recommendation is bounded to lower-Danube trial-scale + conditional Danube/steppe screening; the portfolio result (rice cuts tail-risk where wheat–rice failure correlation is low/negative, beating the potato comparator in Romania & Kazakhstan, losing in Serbia) is a defensible, honest positive; water allocation and cost-side evidence remain the open conditions.
+**Verdict: CONDITIONAL GO (Gate C partial).** Not full GO → no manuscript preparation per spec. The previous categorical exclusion of UK/Germany/northern Europe remains defensible: their observed minima (405–825 GDD) sit below even the Hokkaido cold bound (~900) AND lack the japonica cultivar pool + transplant/warm-water management system — a double constraint, not just latitude.
 
-No manuscript submission without user approval; medieval path still requires human archive checks (PARES Reg. 6–7, Orihuela codex).
+Path to full GO: cost-side data (e.g. FAO/FADN-type farm accountancy) + basin mass-balance for the two field-trial regions.

@@ -1,0 +1,8 @@
+site,gdd10,coldsnap_nights,frostfree,observation,model_verdict
+Hokkaido (E. Hokkaido point),903,68.6,195,documented commercial rice,FALSE NEGATIVE: model says infeasible
+Asahikawa_JP,901,63.3,194,documented commercial rice,FALSE NEGATIVE (consistent)
+Morioka_JP,1136,48.7,218,documented commercial rice,FALSE NEGATIVE (borderline)
+Shenyang_CN,1627,31.5,202,documented rice belt,consistent with feasible
+Seoul_KR,1578,23.2,255,documented rice belt,consistent with feasible
+Vercelli_IT,1224,38.2,299,documented Po rice district,consistent/borderline
+Hokkaido-type Europe analog (none),,,,no documented rice below ~900 GDD in Europe,Europe minimum observed 652-825

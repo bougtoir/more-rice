@@ -1,0 +1,23 @@
+country,rice_source,n_years,wheat_rice_resid_corr,P_joint_lt_-15pct
+Romania,Romania,64,-0.079,0.062
+Bulgaria,Bulgaria,64,0.114,0.094
+Serbia,analog:Hungary,19,-0.044,0.0
+Ukraine,Ukraine,33,-0.181,0.03
+Chile,Chile,64,-0.06,0.016
+Kazakhstan,Kazakhstan,33,0.188,0.03
+Uzbekistan,Uzbekistan,33,-0.311,0.03
+France,France,64,0.283,0.016
+Germany,analog:Italy,64,0.228,0.031
+United Kingdom of Great Britain and Northern Ireland,analog:Italy,64,0.284,0.016
+Italy,Italy,64,0.137,0.0
+Spain,Spain,64,0.079,0.031
+Portugal,Portugal,64,-0.181,0.016
+Greece,Greece,64,0.068,0.031
+Hungary,Hungary,64,-0.075,0.062
+Croatia,analog:Greece,33,0.055,0.03
+Poland,analog:Hungary,64,-0.039,0.0
+Japan,Japan,64,0.116,0.0
+Bangladesh,Bangladesh,64,-0.579,0.0
+United States of America,United States of America,64,-0.07,0.0
+Argentina,Argentina,64,0.036,0.0
+Australia,Australia,64,0.096,0.047

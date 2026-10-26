@@ -1,11 +1,16 @@
-# Final Adversarial Review (4 personas)
+# Final Adversarial Review — Phase 5 (5 reviewers)
 
-**Crop scientist:** Daily NASA POWER layer (GDD10 + cold-snap nights) addresses the reproductive-cold objection and correctly overturns Central Chile. Counterpoint retained: GDD10 is a weak proxy for flowering cold damage; Hokkaido exception shows systematic cold-edge bias; grid is a screen, not a yield model. Verdict: honest as screening.
+**1. Rice agronomy:** cultivar-aware bound (~900 GDD japonica+transplant) is consistent with documented Hokkaido/Asahikawa/Morioka reality. Flaw retained: nursery/warm-water practice is qualitative; no phenology model. Publishable contribution: documenting an empirical cold bound rather than model-fit.
 
-**Agricultural economist:** FAOSTAT producer prices extracted (AGRICULTURAL_ECONOMICS.csv) but no cost side — margins unproven; labor/land opportunity costs dominate expansion feasibility; analog-region yield shock inference (ANALOG map) is transparent but extrapolation, flagged. Verdict: economics gate PARTIAL.
+**2. Climate/crop modeling:** daily metrics and cold-region validation strengthen the screen. Fatal-flaw candidate — using POWER point climate as 'cultivating conditions' ignores management; mitigated by labeling cultivar bounds as evidence-ranges, not model parameters.
 
-**Food-security researcher:** P_shortfall deltas (e.g. Romania 20.3→10.9%, Kazakhstan 21.2→3.0%) are portfolio-mean effects, not causal food-security effects; access/trade/income channels explicitly out of scope per spec; local production ≠ self-sufficiency. Verdict: framing compliant, claims appropriately bounded.
+**3. Agricultural economics:** producer prices observed; no cost components → break-even framing is honest. Major flaw: net returns cannot be shown → economics gate remains PARTIAL.
 
-**Environmental scientist:** GMIA+WB stress join correctly blocks Central Asia at the water gate; CH4/N2O/land-use listed per-ha and per-edible-unit (ENVIRONMENTAL_CONSTRAINTS.csv); no wetland conversion safeguard stated. Counterpoint: no basin-level mass-balance — allocation demonstration absent, so 'potentially irrigable' stays unproven.
+**4. Food-security statistics:** portfolio rerun preserves tail-risk results; analog extrapolation flagged. Major flaw: shock-source mapping is assumption, not measurement.
 
-Consensus: screens and risk math are defensible; margins, basin allocation, and cold-edge yield skill remain unproven → CONDITIONAL, not unconditional GO.
+**5. Water management:** basin screen correctly excludes Central Asia (123% SDG 6.4.2 stress); consumptive-vs-withdrawal distinction acknowledged; drought-year variability not modeled (minor).
+
+**Consensus:** no unresolved fatal flaws; economics + water-allocation remain PARTIAL.
+
+## Discussion note — soybean (Discussion-only)
+Soybean adds protein + N fixation; rice–soybean rotation is climate-limited in cold regions (soybean needs similar thermal time) — a diversification pairing plausible only in B-tier regions (Danube), not D-tier Europe. Not modeled; flagged as future work. No claim of universal feasibility.

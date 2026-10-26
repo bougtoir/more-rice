@@ -1,0 +1,6 @@
+cultivar_group,parameter,value_or_range,evidence_base,source_type,uncertainty
+conventional temperate japonica,GDD10 season requirement,~1300-1700,"Shenyang 1627, Seoul 1578, Po 1556 (documented rice areas)",NASA POWER + literature,±150
+early-maturing temperate japonica (Hokkaido class),GDD10 season requirement,~900-1100,"Hokkaido 903, Asahikawa 901, Morioka 1136",NASA POWER at documented cultivation,uncertain: management-dependent
+cold-tolerant japonica,flowering cold sensitivity,cold-snap nights tolerated ~60-70,Hokkaido/Asahikawa ~63-69 nights<12C,NASA POWER,practice: deep warm-water + delayed transplant
+upland rice,water requirement,no flooding; rainfall >=800mm,literature (IRRI/Bouman),review,yield penalty vs paddy
+irrigated lowland,water requirement,"flooded, 1000-1500mm season",FAO/GMIA+lit,standard,consumptive use dominant

@@ -1,0 +1,12 @@
+prior_study,what_it_established,what_it_did_not_establish,our_specific_addition,evidence,residual_limitation
+van Oort & Zwart 2018,rice suitability under climate change,"no cultivar-management decomposition, no water-system gate, no tail-risk/economics",Hokkaido empirical bound + 3-system water gates + portfolio,"climate metrics, water balance, portfolio CSVs",transfer of cultivar package undemonstrated in EU
+Renard & Tilman 2019,crop diversity stabilizes national production,generic diversification; no crop-specific feasibility or comparator,"rice-specific, comparator-tested (potato) portfolio",FOOD_SECURITY_TAIL_RISK.csv,"modeled, not observed failures"
+Gaupp et al. 2020,simultaneous breadbasket failure risk,no adoption feasibility,candidate-region feasibility joined to failure stats,scenario portfolio,"joint wheat-rice failure inferred, not observed"
+Mehrabi & Ramankutty 2019,synchronized crop failure,no cultivation-system analysis,same,same,same
+Siebert et al. 2015,irrigated-area maps,no feasibility verdict,GMIA used as gate input,IRRIGATION layer,no delivery proof
+Monaco et al. 2016,Italian rice costs/water options,Italy only,break-even transfer with observed-vs-proxy labels,AGRICULTURAL_COST_REGISTRY.csv,not Romanian-observed costs
+Guglielmo et al. 2025,4 Italian rice farms margins,"Italy only, 2022 drought",same,same,same
+Salam et al. 2022,WEAP allocation Iron Gates-Zimnicea; no agri deficit,allocation model not farm-level,mainstem-vs-delivery framing,LOWER_DANUBE_HYDROLOGY_SOURCE_REGISTRY.csv,infrastructure unresolved
+Lovat et al. 2025,vertical-farm ~$10/kg floor,CEA not field staple,CEA exclusion boundary,CEA registries,not in main analysis
+Farrell et al. 2006,rice cold tolerance at reproductive stage,screening not EU deployment,Hokkaido bound context,CULTIVAR_PARAMETER_REGISTRY.csv,breeding vs management not separable
+Zhang et al. 2017,drought effects rice vs wheat,meta-analysis not EU upland,our EU-specific modeled deficits,DAILY_SOIL_WATER_BALANCE.csv,"modeled stress, not failure"

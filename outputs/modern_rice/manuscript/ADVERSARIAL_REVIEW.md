@@ -1,2 +1,2 @@
-# Adversarial Review (expanded manuscript)
-Rice agronomist: bound is properly labeled management-specific. Hydrologist: mainstem-vs-delivery caveat correct. Statistician: scenario-vs-observed framing correct; residual dependence flagged. Ag economist: break-even-only stance appropriate. AgSys editor: novelty = bounded integrated application, adequately distinguished from van Oort/Renard-Tilman/Gaupp. Fatal: 0; major: 0 unresolved; minor: reference tier 'index only' for institutional sources — flagged, not fatal.
+# Adversarial Review (reference-repair pass)
+AgSys editor: novelty now explicitly positioned vs named studies; no straw-man. Agronomist: Hokkaido bound correctly bounded. Methodologist: scenario labels and comparator honest. Bibliography auditor: all refs verified or labeled institutional; bidirectional integrity verified (0 uncited entries, 0 unresolved citations). Fatal 0 / Major 0 / Minor: institutional reports' bibliographic completeness.

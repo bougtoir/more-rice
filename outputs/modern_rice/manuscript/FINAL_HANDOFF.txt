@@ -1,7 +1,7 @@
-Final handoff - integrated revision
-- New file: MANUSCRIPT_EXPANDED_5000_WORDS_INLINE.docx (~4,600 body words + abstract + refs; original MANUSCRIPT.docx preserved)
-- Changes vs prior: full author-year rewrite, prior-work subsections added, all 7 figures + 3 tables inline at first citation, 4 OMML equations, 88-100% scope qualifier propagated
-- Cover letter: unchanged (COVER_LETTER_REVISED_FINAL.docx from prior audit remains valid; claims consistent)
-- Residual limitations: institutional-source references are index-tier (verify DOIs before formal submission); FADN cost data still absent
-- ZIP: more_rice_final_submission_package.zip (regenerated)
-- Submission: NOT done; requires explicit human approval.
+Final handoff - reference repair & novelty QC
+- MANUSCRIPT_REVISED_FINAL.docx replaces expanded draft (older versions preserved)
+- References: 31 entries, all verified or institutional-tier; Lovat/Salam/NARO fixed with real DOI/URL
+- Novelty: matrix shows which prior limitations are overcome vs not
+- Pending: institutional reports (CT-UPT, IGI) bibliographic completion; Romania cost data absent by design
+- Cover letter: still valid (no new claims introduced)
+- Submission requires user approval; not done.

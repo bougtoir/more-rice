@@ -1,0 +1,28 @@
+GRAPHICAL ABSTRACT — HANDOFF
+=============================
+
+UPLOAD THIS FILE:
+  GRAPHICAL_ABSTRACT_FINAL.png  (2656 x 1062 px, RGB, 5:2 ratio)
+
+Meets Elsevier graphical-abstract baseline: >=1328x531 px, same ~5:2
+ratio as the 500x200 ScienceDirect window, separate-file upload.
+
+Editable master (do not upload unless requested):
+  GRAPHICAL_ABSTRACT_FINAL.svg  (Arial live text, 2500x1000 viewBox)
+
+If the submission system insists on TIFF:
+  convert GRAPHICAL_ABSTRACT_FINAL.png -density 300 GRAPHICAL_ABSTRACT_FINAL.tif
+
+If PDF/EPS is required:
+  cairosvg GRAPHICAL_ABSTRACT_FINAL.svg -> pdf, or open SVG in
+  Inkscape and "Save As -> EPS" (fonts: use Arial, already compliant).
+
+Preview check file (not for upload):
+  GRAPHICAL_ABSTRACT_PREVIEW.png (664x266, simulates TOC thumbnail)
+
+Traceability: GRAPHICAL_ABSTRACT_SOURCE_MAP.md
+Requirements: GRAPHICAL_ABSTRACT_JOURNAL_REQUIREMENTS.md
+QC:           GRAPHICAL_ABSTRACT_QC.md (verdict READY)
+Regenerate:   python3 make_ga.py  (requires cairosvg)
+
+Submission of the manuscript itself still requires explicit user approval.

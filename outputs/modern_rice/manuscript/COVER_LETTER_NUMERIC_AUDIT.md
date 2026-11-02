@@ -1,0 +1,3 @@
+# Cover-Letter Numeric Audit
+Baseline: public main @ 6f1fe12; spec letter vs stored COVER_LETTER.docx differ -> treated as editorial revision, audited on its merits.
+Findings: CL-01 (900 GDD10) MATCH - empirical management-specific bound, sites 901/903/1136 (regenerated identically from public clone + NASA POWER refetch). CL-02/03/05/06/07/08/09/10 MATCH. CL-04 MISMATCH (scope): 88-100% is correct only for the 12 continental European cells evaluated; Nordic/Baltic cells are 64-84% (Denmark/Lund 64, Vilnius 84, Lund 64), Warsaw 88, Berlin 88. Severities: 1 moderate scope issue, no fatal numeric errors.

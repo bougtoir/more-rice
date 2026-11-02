@@ -1,0 +1,13 @@
+verified_full_citation,DOI_or_ID,domain,what_not_tested,our_specific_result,verdict
+van Oort & Zwart 2018 GCB 24:1029-1045,10.1111/gcb.13967,"rice suitability, climate change","climatic suitability only; no cultivar-management decomposition, no water-system gate, no economics, no tail-risk",our Hokkaido bound + 3-system gates + portfolio,new increment
+Zabel et al. 2014 PLoS ONE e107522,10.1371/journal.pone.0107522,global crop suitability grid,suitability mapping only,our feasibility-gate framing,incremental
+Renard & Tilman 2019 Nature 571:257-260,10.1038/s41586-019-1316-y,crop diversity stabilizes national production,generic diversification; no specific crop gates or comparators,our comparator-tested rice application,application
+Gaupp et al. 2020 Nat Clim Change 10:54-57,10.1038/s41558-019-0600-z,simultaneous breadbasket failure risk,"global breadbaskets, not adoption feasibility",our candidate-region feasibility + tail-risk,complementary
+Mehrabi & Ramankutty 2019 Nat Ecol Evol 3:780-786,10.1038/s41559-019-0862-x,synchronized crop failure,no adoption-system analysis,same,complementary
+Siebert et al. 2015 HESS 19:1521,10.5194/hess-19-1521-2015,irrigated-area mapping,no feasibility verdict,our Danube gate use,input
+Ray et al. 2015 Nat Commun 6:5989,10.1038/ncomms6989,yield variability drivers,no diversification portfolio,method basis,input
+Monaco et al. 2016 Water 8:336,10.3390/w8080336,Italian rice costs/water options,Italy only,our observed-cost anchor,input
+Guglielmo et al. 2025 Agriculture 15:1797,10.3390/agriculture15171797,4 Italian rice farms,Italy only,same,input
+Fick & Hijmans 2017 Int J Climatol 37:4302,10.1002/joc.5086,WorldClim 2,data source,input,input
+You et al. 2014 ESSD 6:73-88,10.5194/essd-6-73-2014,SPAM method,data source,input,input
+Lobell et al. 2011 Science 333:616,10.1126/science.1204531,climate trends & production,background,background,known

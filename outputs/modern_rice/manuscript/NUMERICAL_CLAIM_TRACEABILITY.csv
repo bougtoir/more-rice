@@ -1,0 +1,9 @@
+claim,value,source_file,tier
+GDD10 Hokkaido,901-1136,DAILY_CLIMATE_POINT_METRICS.csv,A-clone-reproduced
+EU cells Rhine/Alsace/Loire/Berlin/Saxony,957/1080/1108/1089/969,DAILY_CLIMATE_POINT_METRICS.csv,A
+upland deficit cont EU,88-100%,DAILY_SOIL_WATER_BALANCE.csv,A
+upland deficit Nordic/Baltic,64-84%,DAILY_SOIL_WATER_BALANCE.csv,A
+Danube Q99/mean,1100/5420 m3/s,LOWER_DANUBE_HYDROLOGY_SOURCE_REGISTRY.csv,B
+scenario demand,~24 m3/s at 250kha,computed,B
+tail risk RO/KZ,20.3->10.9 / 21.2->3.0,FOOD_SECURITY_TAIL_RISK.csv,B
+Italy costs,1470-2430 EUR/ha,AGRICULTURAL_COST_REGISTRY.csv,B

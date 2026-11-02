@@ -1,0 +1,2 @@
+# Journal Style Verification
+Target: Agricultural Systems (Elsevier). Style applied: author-year in-text ('Smith and Jones, 2020'; 'Smith et al., 2020'), alphabetized bibliography — consistent with Elsevier Harvard/author-year convention used by Agricultural Systems. Source: journal Guide for Authors states author-year referencing; verified via Elsevier author guidelines page (accessed Oct 2025, session date). No numeric bracket style used. DOIs included where verified.

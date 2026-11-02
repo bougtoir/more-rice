@@ -1,8 +1,7 @@
-MORE-RICE FINAL HANDOFF
-Repo: github.com/bougtoir/more-rice @ 938fcd4+
-Package: manuscript/ (MANUSCRIPT.docx, COVER_LETTER.docx [Agricultural Systems, Onishi Tatsuki], HIGHLIGHTS.txt, ABSTRACT.txt, CLAIM_EVIDENCE_MATRIX.csv, FIGURES/ 7 figs, TABLES/, all audit md).
-Claims: A=observed (Italian costs, NASA POWER climates, Danube flows, FAOSTAT yields/prices); B=empirical bound (Hokkaido ~900 GDD10 with named management); C=scenario statistics (tail-risk 20.3->10.9%, 21.2->3.0%); D=modelled break-even economics. E (unsupported): none in substantive findings.
-Negatives retained: rainfed upland flower-deficit 88-100% yr continental EU; Serbia potato > rice; Central Asia excluded on water.
-Open residual: Romania/Bulgaria/Croatia/Serbia rice-cost observations unavailable (FADN restricted) -> economics stays break-even.
-Medieval track: still blocked on human archive checks (PARES Reg 6-7, Orihuela codex) - separate from this manuscript.
-Submission: NOT done. Requires explicit user approval.
+Final handoff - integrated revision
+- New file: MANUSCRIPT_EXPANDED_5000_WORDS_INLINE.docx (~4,600 body words + abstract + refs; original MANUSCRIPT.docx preserved)
+- Changes vs prior: full author-year rewrite, prior-work subsections added, all 7 figures + 3 tables inline at first citation, 4 OMML equations, 88-100% scope qualifier propagated
+- Cover letter: unchanged (COVER_LETTER_REVISED_FINAL.docx from prior audit remains valid; claims consistent)
+- Residual limitations: institutional-source references are index-tier (verify DOIs before formal submission); FADN cost data still absent
+- ZIP: more_rice_final_submission_package.zip (regenerated)
+- Submission: NOT done; requires explicit human approval.

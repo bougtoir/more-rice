@@ -1,0 +1,2 @@
+# Adversarial Review (expanded manuscript)
+Rice agronomist: bound is properly labeled management-specific. Hydrologist: mainstem-vs-delivery caveat correct. Statistician: scenario-vs-observed framing correct; residual dependence flagged. Ag economist: break-even-only stance appropriate. AgSys editor: novelty = bounded integrated application, adequately distinguished from van Oort/Renard-Tilman/Gaupp. Fatal: 0; major: 0 unresolved; minor: reference tier 'index only' for institutional sources — flagged, not fatal.

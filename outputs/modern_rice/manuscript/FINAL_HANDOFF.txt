@@ -1,7 +1,1 @@
-Final handoff - reference repair & novelty QC
-- MANUSCRIPT_REVISED_FINAL.docx replaces expanded draft (older versions preserved)
-- References: 31 entries, all verified or institutional-tier; Lovat/Salam/NARO fixed with real DOI/URL
-- Novelty: matrix shows which prior limitations are overcome vs not
-- Pending: institutional reports (CT-UPT, IGI) bibliographic completion; Romania cost data absent by design
-- Cover letter: still valid (no new claims introduced)
-- Submission requires user approval; not done.
+Canonical: MANUSCRIPT_FINAL_ORDER_CORRECTED.docx (+QA PDF). Previous versions preserved. Two defects repaired; no scientific changes. Submission requires explicit user approval.

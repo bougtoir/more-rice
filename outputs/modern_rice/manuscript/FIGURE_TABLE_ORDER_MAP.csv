@@ -1,0 +1,11 @@
+item,first_citation_order,placement,invariant
+Figure 1,1,inline after first-citation para,PASS
+Figure 2,2,inline after first-citation para,PASS
+Figure 3,3,inline after first-citation para,PASS
+Figure 4,4,inline after first-citation para,PASS
+Figure 5,5,inline after first-citation para,PASS
+Figure 6,6,inline after first-citation para,PASS
+Figure 7,7,inline after first-citation para,PASS
+Table 1,1,inline,PASS
+Table 2,2,inline,PASS
+Table 3,3,inline,PASS

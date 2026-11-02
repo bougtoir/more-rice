@@ -1,0 +1,32 @@
+new_position,sort_key,citation_key,in_text,status
+1,allen,"Allen et al., 1998",cited,verified
+2,beillouin,"Beillouin et al., 2021",cited,verified
+3,bouman,"Bouman et al., 2007",cited,verified
+4,center for technology,"CT-UPT, 2014",cited,verified
+5,fao,"FAO, 2024",cited,verified
+6,farrell,"Farrell et al., 2006",cited,verified
+7,fick,"Fick and Hijmans, 2017",cited,verified
+8,gaupp,"Gaupp et al., 2020",cited,verified
+9,guglielmo,"Guglielmo et al., 2025",cited,verified
+10,hargreaves,"Hargreaves and Samani, 1985",cited,verified
+11,ifpri,"IFPRI, 2019",cited,verified
+12,igi,"IGI, 2023",cited,verified
+13,lobell,"Lobell et al., 2011",cited,verified
+14,lovat,"Lovat et al., 2025",cited,verified
+15,maff,"MAFF, 2024",cited,verified
+16,mehrabi,"Mehrabi and Ramankutty, 2019",cited,verified
+17,molden,"Molden, 2007",cited,verified
+18,monaco,"Monaco et al., 2016",cited,verified
+19,naro,"NARO, 2020",cited,verified
+20,porter,"Porter et al., 2014",cited,verified
+21,ray,"Ray et al., 2015",cited,verified
+22,renard,"Renard and Tilman, 2019",cited,verified
+23,salam,"Salam et al., 2022",cited,verified
+24,siebert,"Siebert et al., 2015",cited,verified
+25,un-water,"UN-Water, 2021",cited,verified
+26,van oort,"van Oort and Zwart, 2018",cited,verified
+27,van oort,"van Oort et al., 2015",cited,verified
+28,white,"White et al., 2011",cited,verified
+29,you,"You et al., 2014",cited,verified
+30,zabel,"Zabel et al., 2014",cited,verified
+31,zhang,"Zhang et al., 2017",cited,verified

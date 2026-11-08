@@ -51,6 +51,10 @@ pg = cw.power_gdd_pipeline - cw.grid_gdd_pipeline
 d120 = dd[(dd.seasonal_depth_mm == 1000) & (dd.season_days == 120)].set_index("area_ha")
 mq = reg.loc[reg.datum.str.startswith("min flow"), "value"].iloc[0].split()[0].split("/")
 ci = lambda c, k: f3(rb.loc[c, k])
+lfall = pd.read_csv(os.path.join(AG, "HYDROLOGICAL_LOW_FLOW_RESULTS.csv"))
+lfc = lfall[lfall.station.str.startswith("Orsova") & (lfall.period == "all")].set_index("statistic")
+lfr = lfall[lfall.station.str.startswith("Orsova") & lfall.period.str.startswith("1972")].set_index("statistic")
+lfo = lfc.value_m3s.dropna().astype(float)
 N = dict(
     inc_Mha=f1(inc / 1e6), T_star=f0(Ts), T_star_cal=f0(cal["T_star_calJunSep"]),
     pct_thermal_pass=f1(100 * sh(Ts, "5m_native")), pct_pass_900=f1(100 * sh(900, "5m_native")), pct_pass_1000=f1(100 * sh(1000, "5m_native")),
@@ -73,9 +77,13 @@ N = dict(
     eu_rice_kha=f0(val["rice_ha_total"] / 1e3), val_thermal=f1(100 * (1 - val["thermal_fail"] / (val["rice_ha_total"] - val["rice_ha_no_incumbent_cells"]))),
     val_aei=f1(100 * val["thermal_pass_irrig_infra_present"] / (val["rice_ha_total"] - val["rice_ha_no_incumbent_cells"])),
     rho=f2(rho), rho_p=f"{rp:.4f}", rho_n=str(int(m.sum())), hok_flower=f0(sb.loc["Hokkaido_JP", "P_flower_deficit_10d_pct"]),
-    dan_mean=f0(float(reg.loc[reg.datum.str.startswith("mean discharge"), "value"].iloc[0].split()[0])), dan_q90=f"{float(mq[0]):,.0f}", dan_q95=f"{float(mq[1]):,.0f}", dan_q99=f"{float(mq[2]):,.0f}",
-    dan_q=f0(d120.loc[250000, "demand_m3s"]), dan_pct=f0(d120.loc[250000, "pct_of_Q99"]), dan_pct_mean=f1(d120.loc[250000, "pct_of_mean"]),
-    dan_q_100=f0(d120.loc[100000, "demand_m3s"]), dan_pct_100=f1(d120.loc[100000, "pct_of_Q99"]),
+    dan_mean=f0(lfo["JunSep_mean_median"]), dan_lf_med=f0(lfo["JunSep_min_daily_median"]), dan_lf_p10=f0(lfo["JunSep_min_daily_P10"]), dan_lf_low=f0(lfo["JunSep_min_daily_lowest"]),
+    dan_lf_lo=f0(lfc.loc["JunSep_min_daily_median", "ci95_lo"]), dan_lf_hi=f0(lfc.loc["JunSep_min_daily_median", "ci95_hi"]), dan_lf_n=str(int(lfc.loc["JunSep_min_daily_median", "n_years"])),
+    dan_lf_reg_p10=f0(lfr.loc["JunSep_min_daily_P10", "value_m3s"]),
+    dan_q=f0(d120.loc[250000, "demand_m3s"]), dan_pct=f1(d120.loc[250000, "pct_of_lowflow_median"]), dan_pct_p10=f1(d120.loc[250000, "pct_of_lowflow_P10"]), dan_pct_mean=f1(d120.loc[250000, "pct_of_mean"]),
+    dan_pct_gross=f1(lfc.loc["JunSep_min_daily_median", "gross_pct"]), dan_pct_gross_low=f1(lfc.loc["JunSep_min_daily_lowest", "gross_pct"]),
+    dan_yrs10=f0(float(lfc.loc["share_years_gross_over_JunSep_min_gt_10pct", "gross_pct"])), dan_yrs20=f1(float(lfc.loc["share_years_gross_over_JunSep_min_gt_20pct", "gross_pct"])),
+    dan_q_100=f0(d120.loc[100000, "demand_m3s"]), dan_pct_100=f1(d120.loc[100000, "pct_of_lowflow_median"]),
     ro_A=ci("Romania", "P_A"), ro_B=ci("Romania", "P_B_rice"), ro_D=ci("Romania", "P_D_potato"), ro_lo=ci("Romania", "diff_CI95_lo"), ro_hi=ci("Romania", "diff_CI95_hi"),
     kz_A=ci("Kazakhstan", "P_A"), kz_B=ci("Kazakhstan", "P_B_rice"), kz_lo=ci("Kazakhstan", "diff_CI95_lo"), kz_hi=ci("Kazakhstan", "diff_CI95_hi"),
     rs_B=ci("Serbia", "P_B_rice"), rs_D=ci("Serbia", "P_D_potato"),
@@ -126,7 +134,7 @@ assert 1 <= len(keywords.split(";")) <= 7
 FIGS = {"framework": ("Figure_framework", "Gate framework. Five sequential, non-compensatory gates evaluated for a transferable cold-region japonica rice system on incumbent arable land. Passing all gates identifies a candidate for next-stage feasibility assessment, not an allocation or converted area."),
         "map": ("Figure_map_gates", f"(a) GDD10 for 29 April–11 September from WorldClim 2.1 (5′, 1970–2000), with the grid-calibrated Hokkaido bound T* = {N['T_star']} (white) and the point-derived 900 GDD10 (red, dashed). (b) Gate class of 5′ cells with incumbent arable land ≥1% of cell area. AEI, area equipped for irrigation (GMIA v5). Circles mark NASA POWER point cells. ETRS89-LAEA projection. Cells outside the European domain (Natural Earth Europe excluding Russia) are not classified."),
         "scale": ("Figure_scale_sensitivity", "Sensitivity of the thermal gate. (a) Share of incumbent arable land passing as a function of the GDD10 threshold for two seasonal windows (vertical lines: T* and 900). (b) Share passing by native resolution (2.5′, 5′, 10′) and after aggregation of 5′ GDD10 to 30′ and 60′. (c) NASA POWER point-cell GDD10 (2000–2024) versus the containing WorldClim 5′ cell (1970–2000); dotted line 1:1."),
-        "water": ("Figure_water", f"Water geography. (a) Grid Jun–Sep climatic deficit D (WorldClim 10′) versus the share of years with >10 flowering-stage deficit days from the daily bucket model at NASA POWER point cells (Spearman ρ = {N['rho']}, n = {N['rho_n']}); colour shows latitude. (b) Continuous-equivalent paddy water demand on the Lower Danube as a percentage of Iron Gates Q99 low flow ({N['dan_q99']} m³/s) for three seasonal depths over 120 days; mainstem comparison only."),
+        "water": ("Figure_water", f"Water geography. (a) Grid Jun–Sep climatic deficit D (WorldClim 10′) versus the share of years with >10 flowering-stage deficit days from the daily bucket model at NASA POWER point cells (Spearman ρ = {N['rho']}, n = {N['rho_n']}); colour shows latitude. (b) Continuous-equivalent paddy water demand on the Lower Danube as a percentage of the median Jun–Sep minimum daily discharge observed at Orsova (GRDC 6742200, {N['dan_lf_n']} years 1920–1990; {N['dan_lf_med']} m³/s) for three seasonal depths over 120 days; mainstem comparison only, not allocable water."),
         "risk": ("Figure_risk", "Corrected food-supply portfolio scenarios. (a) Modeled probability that portfolio calories fall below 80% of their mean for the incumbent portfolio (A), 20% rice substitution (B) and 20% potato comparator (D). (b) Change B − A with 95% moving-block bootstrap intervals (3-year blocks, 2,000 resamples). * Rice shocks and yield level from an analog country.")}
 fig_order = [k for p in body_p if p.startswith("[[FIGURE:") for k in [p[9:-2]]]
 FIGNUM = {k: i + 1 for i, k in enumerate(fig_order)}
@@ -138,7 +146,7 @@ TABS["data"] = ("Data sources and their role.", ["Dataset", "Version / period", 
     ["FAO GMIA v5 area equipped for irrigation", "circa 2005–2008", "5′", "Irrigation-infrastructure gate", "CC BY-NC-SA 3.0 IGO"],
     ["FAOSTAT QCL yields", "1961–2024", "national", "Portfolio risk scenarios", "CC BY 4.0"],
     ["Natural Earth admin-0", "1:50m v5.1", "vector", "Country assignment", "Public domain"],
-    ["Iron Gates discharge statistics; WEAP allocation", "literature", "reach", "Lower Danube mainstem check", "cited sources"]])
+    ["GRDC daily discharge via EStreams v1.4 indices (Orsova, Bazias); WEAP allocation", "1920–1990 / 1991–2008", "station", "Lower Danube mainstem check", "CC BY-NC 4.0 (EStreams); GRDC terms"]])
 sel = ["Spain", "Italy", "France", "Romania", "Bulgaria", "Hungary", "Ukraine", "Serbia", "Croatia", "Germany", "Poland", "United Kingdom"]
 rows = []
 for c in sel + ["EUROPE_DOMAIN_TOTAL"]:
@@ -176,7 +184,7 @@ def base_doc():
 OMML_Q = ('<m:oMath xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><m:r><m:t>Q=</m:t></m:r>'
           '<m:f><m:num><m:r><m:t>A\u00b7D</m:t></m:r></m:num><m:den><m:r><m:t>T</m:t></m:r></m:den></m:f></m:oMath>')
 def add_runs(par, text):
-    text = re.sub(r"\bT\*(?=[\s,.;:)=}\]]|$)", "T\x00", text)
+    text = re.sub(r"\bT\*(?=[\s,.;:)=}\]]|$)", "\x00", text)
     for seg in re.split(r"(Q = A·D/T)", text):
         if seg == "Q = A·D/T":
             par._p.append(parse_xml(OMML_Q)); continue
@@ -230,6 +238,9 @@ def build_ms(embed, path):
   d.add_heading("References", level=1)
   for ref in refs:
       p = d.add_paragraph(); p.paragraph_format.left_indent = Cm(1.27); p.paragraph_format.first_line_indent = Cm(-1.27); add_runs(p, ref)
+  for cp in d.paragraphs:
+      if re.match(r"(Figure|Table) \d+\. ", cp.text):
+          for cr in cp.runs: cr.font.size = Pt(10)
   d.save(path)
 MS = os.path.join(SUB, "APPLIED_GEOGRAPHY_MANUSCRIPT_FINAL.docx"); build_ms(False, MS)
 MSI = os.path.join(SUB, "APPLIED_GEOGRAPHY_MANUSCRIPT_INLINE_REVIEW_COPY.docx"); build_ms(True, MSI)
@@ -272,7 +283,7 @@ for x in ["[Date]", "The Editors, Applied Geography", f"Re: Submission of a rese
           f"I am submitting a research article that asks a geographic question: on which existing arable land could a cold-region rice cultivation system be transferred beyond traditional growing regions, and how does the answer change with the climate data source, the seasonal window, the domain and the spatial resolution? Proposals for rice outside its traditional regions usually rest on a single climatic threshold. My analysis shows that such a threshold is a property of the data and scale on which it was measured as much as of the crop, and that once it is calibrated on the same grid where it is applied, the binding constraint moves from temperature to water.",
           f"Calibrating the Hokkaido cold bound on the WorldClim grid gives {N['T_star']} GDD10 (the 5th percentile of Hokkaido rice area), not the ~900 GDD10 obtained from point data. On {N['inc_Mha']} Mha of incumbent arable land in Europe, {N['pct_thermal_pass']}% meets this thermal gate, but only {N['pct_aei']}% also has mapped irrigation infrastructure, and {N['pct_deficit']}% faces a summer rainfed deficit. Transplanting the point-derived threshold would instead exclude almost all of Germany. I treat {N['T_star']} GDD10 as an empirical, system-specific reference rather than a physiological constant, and I report how the shares change with the threshold, the window, the AEI cut-off, the domain definition and the resolution. I believe this scale and denominator sensitivity, rather than the suitability map itself, is the contribution most relevant to readers of Applied Geography.",
           "The manuscript speaks to the journal's interest in spatially explicit resource assessment and land-use decision problems. It builds on land-suitability, cold-margin rice and irrigation studies published in Applied Geography and adds an explicit land denominator, non-compensatory gates and an analysis of the modifiable areal unit problem. I state plainly that climate suitability and mapped infrastructure are not operational feasibility: the gates identify candidates for next-stage assessment, not converted area, water allocations or policy effects, and no field validation is claimed.",
-          f"An earlier version was considered by Agricultural Systems and declined on scope grounds, with the advice to submit to a more land-use-oriented journal. I have re-analysed the work substantially and corrected several errors, which I disclose here. The Lower Danube water demand of a 250,000 ha paddy scenario is ~{N['dan_q']} m³/s (net), not ~24 m³/s; relative to a reported low flow of {N['dan_q99']} m³/s this is about {N['dan_pct']}%, not ~2%, and I present this ratio as indicative because the primary hydrological source could not be fully verified. The thermal window used by the original code was 29 April–11 September, not June–September. An implementation inconsistency in the portfolio-risk model set the rice contribution to zero for analog countries, and rice yields are now converted from paddy to milled equivalent. The European shares are now computed for Europe only; the earlier processing window also included North Africa and Anatolia. The modeled supply-risk results are reported with their uncertainty and are not robust in most countries.",
+          f"An earlier version was declined by another journal on scope grounds; I have re-analysed the work and corrected several errors. The Lower Danube demand of a 250,000 ha paddy scenario is ~{N['dan_q']} m³/s net, not ~24 m³/s, and it is now compared with observed June–September minimum daily discharge at Orsova (GRDC data, 1920–1990; median {N['dan_lf_med']} m³/s), about {N['dan_pct']}%, replacing an unverified low-flow value. The European shares are computed for Europe only, rice yields are converted from paddy to milled equivalent, an analog-country error in the risk model is fixed, and the modeled supply-risk results are not robust in most countries.",
           "The work is original, is not under consideration elsewhere, and I am its sole author. All code and derived outputs are openly available; the repository link is on the title page. I declare no competing interests. My use of AI-assisted tools is declared in the manuscript. I intend to publish under the subscription model.",
           "Suggested reviewers: [to be supplied by the author].", "Sincerely,", f"{AUTHOR}", AFFIL]:
     add_runs(c.add_paragraph(), x)

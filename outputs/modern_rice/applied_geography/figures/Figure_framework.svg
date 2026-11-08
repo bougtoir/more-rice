@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-08T08:39:54.725630</dc:date>
+    <dc:date>2026-11-08T09:09:28.178806</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 57.3525 32.148 57.3525 34.92
 L 57.3525 156.888 
 Q 57.3525 159.66 60.1425 159.66 
 z
-" clip-path="url(#p8f015fb701)" style="fill: #f0f0f0; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#paebd04cc90)" style="fill: #f0f0f0; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 180.1125 159.66 
@@ -53,7 +53,7 @@ Q 177.3225 32.148 177.3225 34.92
 L 177.3225 156.888 
 Q 177.3225 159.66 180.1125 159.66 
 z
-" clip-path="url(#p8f015fb701)" style="fill: #deebf7; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#paebd04cc90)" style="fill: #deebf7; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 300.0825 159.66 
@@ -66,7 +66,7 @@ Q 297.2925 32.148 297.2925 34.92
 L 297.2925 156.888 
 Q 297.2925 159.66 300.0825 159.66 
 z
-" clip-path="url(#p8f015fb701)" style="fill: #fde0c5; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#paebd04cc90)" style="fill: #fde0c5; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 420.0525 159.66 
@@ -79,7 +79,7 @@ Q 417.2625 32.148 417.2625 34.92
 L 417.2625 156.888 
 Q 417.2625 159.66 420.0525 159.66 
 z
-" clip-path="url(#p8f015fb701)" style="fill: #e5f5e0; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#paebd04cc90)" style="fill: #e5f5e0; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 540.0225 159.66 
@@ -92,7 +92,7 @@ Q 537.2325 32.148 537.2325 34.92
 L 537.2325 156.888 
 Q 537.2325 159.66 540.0225 159.66 
 z
-" clip-path="url(#p8f015fb701)" style="fill: #efedf5; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#paebd04cc90)" style="fill: #efedf5; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- G1 Thermal transfer -->
@@ -2679,7 +2679,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p8f015fb701">
+  <clipPath id="paebd04cc90">
    <rect x="51.7725" y="7.2" width="613.8" height="199.584"/>
   </clipPath>
  </defs>

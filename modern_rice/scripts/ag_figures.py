@@ -88,9 +88,9 @@ axs[0].set_xlabel("Grid climatic deficit D, Jun–Sep (mm; WorldClim 10′)"); a
 axs[0].set_title(f"(a) Rainfed balance: point model vs grid (Spearman ρ = {rho:.2f}, n = {m.sum()})", fontsize=9, loc="left"); fig.colorbar(sc, ax=axs[0], label="latitude (°N)")
 q = dd[(dd.season_days == 120)]
 for D_mm, mk in [(800, "o"), (1000, "s"), (1200, "^")]:
-    s_ = q[q.seasonal_depth_mm == D_mm]; axs[1].plot(s_.area_ha / 1000, s_.pct_of_Q99, marker=mk, label=f"{D_mm} mm / 120 d")
-axs[1].set_xlabel("Paddy area (thousand ha)"); axs[1].set_ylabel("Continuous-equivalent demand (% of Iron Gates Q99)"); axs[1].legend(fontsize=7)
-axs[1].set_title("(b) Lower Danube: mainstem demand vs Q99 low flow (1,100 m³/s)", fontsize=9, loc="left")
+    s_ = q[q.seasonal_depth_mm == D_mm]; axs[1].plot(s_.area_ha / 1000, s_.pct_of_lowflow_median, marker=mk, label=f"{D_mm} mm / 120 d")
+axs[1].set_xlabel("Paddy area (thousand ha)"); axs[1].set_ylabel("Net demand (% of median Jun–Sep\nminimum daily flow, Orsova)"); axs[1].legend(fontsize=7)
+axs[1].set_title("(b) Lower Danube: demand vs observed Jun–Sep low flow (Orsova)", fontsize=9, loc="left")
 for e in ["png", "svg", "pdf"]: fig.savefig(os.path.join(FIG, f"Figure_water.{e}"), dpi=600 if e == "png" else None)
 plt.close(fig)
 # ---------------- Figure 5: corrected risk ----------------

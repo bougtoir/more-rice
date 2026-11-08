@@ -13,5 +13,5 @@
 | Suggested reviewer 3 | [ ] |
 | Opposed reviewers | [ ] |
 | Gated EM checklist confirmed | [ ] |
-| CT-UPT / Q99 source evidence | [ ] |
+| Optional: GRDC daily data request for 6742200/6742201 (see CT_UPT_SOURCE_RESOLUTION.md) | [ ] |
 | Savoini et al. (2025) byline checked | [ ] |

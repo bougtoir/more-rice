@@ -1,0 +1,45 @@
+station,period,n_years,statistic,value_m3s,ci95_lo,ci95_hi,net_pct,gross_pct,area_sensitivity_pct
+Orsova (GRDC 6742200),all,71,JunSep_min_daily_median,2749,2473,2858,8.8,11.7,-1.3
+Orsova (GRDC 6742200),all,71,JunSep_min_daily_P10,2199,1879,2269,11.0,14.6,-1.3
+Orsova (GRDC 6742200),all,71,JunSep_min_daily_lowest,1410,,,17.1,22.8,-1.3
+Orsova (GRDC 6742200),all,71,JunSep_mean_median,5051,4691,5400,4.8,6.4,-1.3
+Orsova (GRDC 6742200),all,71,annual_min_daily_median,2239,,,10.8,14.4,
+Orsova (GRDC 6742200),all,71,share_years_gross_over_JunSep_min_gt_10pct,,,,,76.1,
+Orsova (GRDC 6742200),all,71,share_years_gross_over_JunSep_min_gt_20pct,,,,,1.4,
+Orsova (GRDC 6742200),all,71,share_years_gross_over_JunSep_min_gt_30pct,,,,,0.0,
+Orsova (GRDC 6742200),1920-1971 (pre-Iron Gates I),52,JunSep_min_daily_median,2802,2534,3002,8.6,11.5,-1.3
+Orsova (GRDC 6742200),1920-1971 (pre-Iron Gates I),52,JunSep_min_daily_P10,2241,2077,2371,10.8,14.3,-1.3
+Orsova (GRDC 6742200),1920-1971 (pre-Iron Gates I),52,JunSep_min_daily_lowest,1813,,,13.3,17.7,-1.3
+Orsova (GRDC 6742200),1920-1971 (pre-Iron Gates I),52,JunSep_mean_median,5094,4603,5527,4.7,6.3,-1.3
+Orsova (GRDC 6742200),1972-1990 (regulated),19,JunSep_min_daily_median,2470,2260,2838,9.8,13.0,-1.3
+Orsova (GRDC 6742200),1972-1990 (regulated),19,JunSep_min_daily_P10,1854,1410,2310,13.0,17.3,-1.3
+Orsova (GRDC 6742200),1972-1990 (regulated),19,JunSep_min_daily_lowest,1410,,,17.1,22.8,-1.3
+Orsova (GRDC 6742200),1972-1990 (regulated),19,JunSep_mean_median,4859,4512,5459,5.0,6.6,-1.3
+Bazias (GRDC 6742201),all,18,JunSep_min_daily_median,2534,2280,2785,9.5,12.7,-1.3
+Bazias (GRDC 6742201),all,18,JunSep_min_daily_P10,1945,1490,2356,12.4,16.5,-1.3
+Bazias (GRDC 6742201),all,18,JunSep_min_daily_lowest,1490,,,16.2,21.6,-1.3
+Bazias (GRDC 6742201),all,18,JunSep_mean_median,4557,3716,5305,5.3,7.1,-1.3
+Bazias (GRDC 6742201),all,18,annual_min_daily_median,2412,,,10.0,13.3,
+Bazias (GRDC 6742201),all,18,share_years_gross_over_JunSep_min_gt_10pct,,,,,94.4,
+Bazias (GRDC 6742201),all,18,share_years_gross_over_JunSep_min_gt_20pct,,,,,5.6,
+Bazias (GRDC 6742201),all,18,share_years_gross_over_JunSep_min_gt_30pct,,,,,0.0,
+Orsova (GRDC 6742200),all,71,annual_7day_min_median,2381,,,10.1,13.5,
+Orsova (GRDC 6742200),all,71,annual_7day_min_P10,1803,,,13.4,17.8,
+Orsova (GRDC 6742200),all,71,annual_7day_min_lowest,1362,,,17.7,23.6,
+Orsova (GRDC 6742200),all,71,annual_min_daily_median,2239,,,10.8,14.4,
+Orsova (GRDC 6742200),all,71,annual_min_daily_P10,1680,,,14.4,19.1,
+Orsova (GRDC 6742200),all,71,annual_min_daily_lowest,1074,,,22.4,29.9,
+Orsova (GRDC 6742200),all,71,JunSep_min_daily_P10_estimator_linear,2199,,,11.0,14.6,
+Orsova (GRDC 6742200),all,71,JunSep_min_daily_P10_estimator_lower,2199,,,11.0,14.6,
+Orsova (GRDC 6742200),all,71,JunSep_min_daily_P10_estimator_median_unbiased,2148,,,11.2,15.0,
+Orsova (GRDC 6742200),all,71,JunSep_min_daily_P10_estimator_weibull,2123,,,11.4,15.1,
+Bazias (GRDC 6742201),all,18,annual_7day_min_median,2506,,,9.6,12.8,
+Bazias (GRDC 6742201),all,18,annual_7day_min_P10,1979,,,12.2,16.2,
+Bazias (GRDC 6742201),all,18,annual_7day_min_lowest,1542,,,15.6,20.9,
+Bazias (GRDC 6742201),all,18,annual_min_daily_median,2412,,,10.0,13.3,
+Bazias (GRDC 6742201),all,18,annual_min_daily_P10,1899,,,12.7,16.9,
+Bazias (GRDC 6742201),all,18,annual_min_daily_lowest,1490,,,16.2,21.6,
+Bazias (GRDC 6742201),all,18,JunSep_min_daily_P10_estimator_linear,1945,,,12.4,16.5,
+Bazias (GRDC 6742201),all,18,JunSep_min_daily_P10_estimator_lower,1753,,,13.8,18.3,
+Bazias (GRDC 6742201),all,18,JunSep_min_daily_P10_estimator_median_unbiased,1799,,,13.4,17.9,
+Bazias (GRDC 6742201),all,18,JunSep_min_daily_P10_estimator_weibull,1727,,,14.0,18.6,

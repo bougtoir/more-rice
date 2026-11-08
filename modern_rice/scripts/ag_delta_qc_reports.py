@@ -20,7 +20,7 @@ def md_table(df): return df.to_markdown(index=False)
 
 # ---------- claim diff ----------
 claims = [
- ("C01", "Lower Danube 250,000 ha paddy needs ~24 m³/s (~2% of Q99)", f"~{N['dan_q']} m³/s net ({N['dan_q_gross']} m³/s gross at 75% conveyance); ~{N['dan_pct']}% of a reported Q99 of {N['dan_q99']} m³/s (indicative)", "DANUBE_DEMAND_VS_LOWFLOW.csv; LOWER_DANUBE_HYDROLOGY_SOURCE_REGISTRY.csv", "ag_danube_demand.py", "Abstract; 2.3; 3.4; cover letter", "Figure 4b", "DEMAND VERIFIED (hand calc); Q99 SOURCE UNVERIFIED", "CT-UPT (2014) primary document not located; station/period/exceedance definition unknown; discharge is not allocable water"),
+ ("C01", "Lower Danube 250,000 ha paddy needs ~24 m³/s (~2% of Q99); later ~22% of an unverified 1,100 m³/s 'Q99' (CT-UPT 2014)", f"~{N['dan_q']} m³/s net ({N['dan_q_gross']} m³/s gross at 75%); {N['dan_pct']}% (net) / {N['dan_pct_gross']}% (gross) of the median observed Jun–Sep minimum daily discharge at Orsova (GRDC 6742200, 1920–1990, {N['dan_lf_med']} m³/s); CT-UPT Q99 and the 21.9%/29.2% ratios REMOVED", "HYDROLOGICAL_LOW_FLOW_RESULTS.csv; DANUBE_DEMAND_VS_LOWFLOW.csv", "ag_danube_lowflow.py; ag_danube_demand.py", "Abstract; highlights; 2.3; 3.4; cover letter", "Figure 4b; Table 1", "DEMAND VERIFIED (hand calc); LOW FLOW from GRDC-derived EStreams indices (independently recomputed); CT-UPT PRIMARY SOURCE NOT VERIFIED", "Seasonal minimum, not flow-duration Q99; record ends 1990; discharge ≠ allocable water"),
  ("C02", "Thermal window Jun–Sep (prose) while code used pseudo-DOY 29 Apr–11 Sep", "Both windows reported; pipeline window labelled 29 Apr–11 Sep; calendar Jun–Sep with own T*", "POINT_GDD_WINDOW_SENSITIVITY.csv; EUROPE_WINDOW_SENSITIVITY.json", "ag_grid_gates.py", "2.2; 3.1; 3.3", "Figure 3a", "VERIFIED independently (POWER daily recomputation)", "Window choice remains a modelling convention"),
  ("C03", "Universal ~900 GDD10 Hokkaido threshold", f"{N['T_star']} GDD10 = rice-area-weighted P05 of Hokkaido cells on the same WorldClim 5′ grid; empirical, system-specific reference", "GRID_THERMAL_CALIBRATION.json", "ag_grid_gates.py; delta_qc/indep/spatial_indep.py", "Abstract; 2.2; 3.1", "Figure 2a; Figure 3", "VERIFIED independently (589.6 reproduced)", "WorldClim 1970–2000 normals; monthly approximation ~29 GDD10 low at Hokkaido point; cultivar/management not modelled"),
  ("C04", "Thermal gate met on 94.2% of 'European' arable land (106.9–107.1 Mha)", f"{N['pct_thermal_pass']}% of {N['inc_Mha']} Mha in Europe (Natural Earth Europe excluding Russia)", "EUROPE_DOMAIN_SENSITIVITY.csv; EUROPE_GATE_CASCADE_BY_COUNTRY.csv", "ag_grid_gates.py", "Abstract; highlights; 2.1; 3.2", "Table 2; Figure 2b", "FAILED then REPAIRED (domain included N Africa/Anatolia/Caucasus); repaired value verified independently", "Domain definition remains a choice; rectangle/EU27 sensitivities reported"),
@@ -95,19 +95,10 @@ Independent reproduction (separate code, `delta_qc/indep/spatial_indep.txt`) of 
 
 W("LOWER_DANUBE_WATER_AND_SOURCE_AUDIT.md", f"""
 # Lower Danube water gate — arithmetic and source audit
-Verdict: **DEMAND PASS; Q99 SOURCE UNVERIFIED → HOLD**
-
-## Independent arithmetic
-V = 250,000 ha × 10⁴ m²/ha × 1.000 m = 2.50 × 10⁹ m³. T = 120 d × 86,400 s/d = 1.0368 × 10⁷ s. Q = V/T = **241.1 m³/s** (net field requirement). The pipeline value ({N['dan_q']} m³/s) uses exactly these assumptions (`ag_danube_demand.py`: `A*1e4*D_mm/1000/(days*86400)`). The legacy ~24 m³/s was a factor-of-10 error.
-- Gross abstraction at conveyance efficiency 0.75: {N['dan_q_gross']} m³/s; at 0.6: 402 m³/s. Return flows (percolation/drainage) partly re-enter the river downstream; not modelled.
-- Temporal demand: the 120-day continuous equivalent understates peak demand during land soaking/puddling.
-- Ratio to reported mean discharge 5,420 m³/s: 4.4%; to reported 1,100 m³/s: 21.9%.
-
-## Source verification
-- The values (mean 5,420; "minimum flow with 90/95/99% certainty" 1,460/1,320/1,100 m³/s; annual stock 174 × 10⁹ m³) come from the project registry `LOWER_DANUBE_HYDROLOGY_SOURCE_REGISTRY.csv`, entry "CT-UPT Iron Gates ecohydrology (2014)", tagged "peer-reviewed" in an earlier session.
-- Searches on 2026-11-08 (Crossref bibliographic queries; web search) did not locate the primary document, its author list, the gauge (Iron Gates I / Orsova / Drobeta), the period or the exceedance definition. **The existence and content of this source are therefore unconfirmed.** "Minimum flow with 99% certainty" may be a duration-curve or annual-minimum statistic; it is not confirmed to equal Q99.
-- Manuscript action taken: the 1,100 m³/s value is now described as "a reported low-flow statistic", explicitly stated as not confirmed against the primary document; ratios are "indicative only"; the text states that river discharge is not allocable irrigation water (environmental flow, navigation, hydropower, existing abstractions; the demand would sit on tributaries/canal commands rather than at the gauge).
-- Required evidence to lift HOLD: the CT-UPT primary document (or an alternative citable source such as GRDC/INHGA station statistics for Orsova/Iron Gates with period and exceedance definition). If no source is produced, remove the Q99 ratio and keep only the absolute demand (241 m³/s) and the mean-discharge comparison from a verified source.
+Verdict: **DEMAND PASS; CT-UPT Q99 REMOVED (primary source not verified); replaced by observed GRDC-derived Jun–Sep minima at Orsova**
+- Demand: 250,000 ha × 1,000 mm / 120 d = 241.1 m³/s net; 321.5 m³/s gross at 0.75 (see IRRIGATION_DEMAND_INDEPENDENT_CHECK.md).
+- Low flow: median Jun–Sep minimum daily discharge at Orsova {N['dan_lf_med']} m³/s ({N['dan_lf_n']} years), 10th percentile {N['dan_lf_p10']}, lowest {N['dan_lf_low']} m³/s. Net/median {N['dan_pct']}%; gross/median {N['dan_pct_gross']}%; gross/lowest {N['dan_pct_gross_low']}%.
+- Details: CT_UPT_SOURCE_RESOLUTION.md, HYDROLOGICAL_LOW_FLOW_ANALYSIS.md, HYDROLOGICAL_STATION_AND_DATA_PROVENANCE.csv.
 """)
 
 rows = []
@@ -173,11 +164,11 @@ out.to_csv(os.path.join(QC, "CLOSEST_PRIOR_STUDIES_MATRIX.csv"), index=False)
 
 W("REFERENCE_AND_SOURCE_AUDIT.md", f"""
 # Reference and source audit (delta)
-- 31 references, APA 7. Journal/dataset DOIs were checked against Crossref/DataCite (2026-11-08); see `REFERENCES_AND_CITATIONS_AUDIT.md` for the per-item record.
+- 31 references, APA 7 (CT-UPT 2014 removed; do Nascimento et al. 2024 added). Journal/dataset DOIs were checked against Crossref/DataCite (2026-11-08); see `REFERENCES_AND_CITATIONS_AUDIT.md` for the per-item record.
 - Bai et al. (2010), Agronomy Journal 102(1), 9–16, doi:10.2134/agronj2009.0085 — re-verified on Crossref (authors Bai, Chen, Dobermann, Yang, Cassman, Zhang). Replaces the non-existent "White et al. 2011" citation.
 - You et al. (2014) — journal corrected in the previous delta; unchanged.
 - **Savoini et al. (2025)**, Agriculture 15(17), 1797, doi:10.3390/agriculture15171797 — Crossref stores given/family names swapped for the first three authors ("Savoini, Guglielmo"; "De Marinis, Pietro"; "Casson, Andrea"). The citation was previously rendered "Guglielmo, S., Pietro, D. M., Andrea, C." and is now "Savoini, G., De Marinis, P., Casson, A., Narote, A. D., Guidetti, R., Bocchi, S., & Vaglia, V." This correction is inferred from the Crossref name fields; the article PDF byline was not inspected (author action).
-- **CT-UPT (2014)** — grey literature; primary document not located; existence, authorship and content unconfirmed (see water audit). Status: SOURCE UNVERIFIED.
+- **CT-UPT (2014)** — PRIMARY SOURCE NOT VERIFIED; removed from text and reference list (see CT_UPT_SOURCE_RESOLUTION.md).\n- **do Nascimento et al. (2024)**, Scientific Data 11, 879, doi:10.1038/s41597-024-03706-1 — verified on Crossref (8 authors); dataset v1.4 doi:10.5281/zenodo.17598150 verified on DataCite.
 - Institutional/data references (MAFF 2024, FAO 2024, IFPRI 2019, NASA POWER 2025, WorldClim, Natural Earth, GMIA) point to official landing pages; versions are recorded in `modern_rice/data/RAW_ACQUISITION_LEDGER_2026-11-08.csv`.
 - No reviewer identities, e-mails or affiliations were invented.
 """)
@@ -189,7 +180,7 @@ W("TEXT_FIGURE_TABLE_NUMERIC_CONSISTENCY_AUDIT.md", f"""
 - DOCX XML (final manuscript): 0 `wp:anchor`, figures supplied as separate files; 3 native `w:tbl`; 1 OMML equation (Q = A·D/T as a fraction); headings Times New Roman black; body Times New Roman 12 pt.
 - Inline review copy: 5 `wp:inline`, 0 `wp:anchor`; order of first appearance Figure 1, Table 1, Figure 2, Table 2, Figure 3, Figure 4, Figure 5, Table 3, each placed after its first-citing paragraph; rendered PDF pages inspected (no cropping).
 - Literal markdown asterisks: fixed a bug where `T*` pairs were consumed as italic markers (e.g. "from 92.2% at T to 54.9%"); `T*` is now italic T with superscript asterisk.
-- Withdrawn claims searched across manuscript, inline copy, cover letter, highlights, metadata, tables and README: no remaining "~24 m³/s", "~2% of Q99", "17.6%/94.2% of European arable land" (now only as explicitly labelled rectangle sensitivity), "90% of mean", or Serbia potato dominance as a finding. README does not contain these claims (README describes the repository's other project; unchanged).
+- Withdrawn claims searched across manuscript, inline copy, cover letter, highlights, metadata, tables and README: no remaining "~24 m³/s", "~2% of Q99", "CT-UPT", "1,100 m³/s Q99", "21.9%", "29.2%", "17.6%/94.2% of European arable land" (now only as explicitly labelled rectangle sensitivity), "90% of mean", or Serbia potato dominance as a finding. README does not contain these claims (README describes the repository's other project; unchanged).
 - Highlights, abstract and cover letter use the same values: {N['pct_thermal_pass']}%, {N['pct_aei']}%, {N['dan_q']} m³/s, {N['kz_excl']}%/{N['ro_excl']}%.
 """)
 
@@ -199,7 +190,7 @@ Desk-rejection risk: **medium–high**.
 1. *Is this new?* Climate-threshold suitability mapping is established (Zabel et al., 2014; Yang et al., 2023). The informative elements are (a) source/window/scale dependence of a transferred cold bound (589 vs ~900 GDD10 changes Germany from 3% to 97% pass), (b) an explicit incumbent-arable denominator with a domain sensitivity, (c) non-compensatory separation of thermal and water gates. The general idea that crop diversity ≠ risk diversity is not claimed as novel.
 2. *Is 92% vs 16% informative?* It reframes the binding constraint (water/infrastructure, not temperature) on existing arable land; but it is partly expected from known European irrigation geography. Its value lies in quantifying how much a transferred threshold mis-locates the constraint.
 3. *Domain error found in this QC*: the earlier "European" denominator included North Africa/Anatolia; corrected. A reviewer would have found this.
-4. *Q99 source unverified*: a reviewer can challenge the 22% ratio; HOLD until sourced.
+4. *Low flow*: the unverified CT-UPT Q99 was removed; the replacement is a GRDC-derived seasonal minimum (not a flow-duration Q99) from a record ending in 1990, and only 19 post-dam years. A reviewer may ask for post-1990 daily data (GRDC request prepared).
 5. *AEI* is c. 2010 equipped area; no water rights; the manuscript says so.
 6. *Risk model* is ancillary and weak (CIs mostly include zero); could be moved to supplement.
 7. *Old climatology* (1970–2000) and monthly GDD; quantified bias small.
@@ -226,7 +217,7 @@ W("REVIEWER_AND_SUBMISSION_METADATA_TEMPLATE.md", f"""
 | Suggested reviewer 3 | [ ] |
 | Opposed reviewers | [ ] |
 | Gated EM checklist confirmed | [ ] |
-| CT-UPT / Q99 source evidence | [ ] |
+| Optional: GRDC daily data request for 6742200/6742201 (see CT_UPT_SOURCE_RESOLUTION.md) | [ ] |
 | Savoini et al. (2025) byline checked | [ ] |
 """)
 print("audits written to", QC)

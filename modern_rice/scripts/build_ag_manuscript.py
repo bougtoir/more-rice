@@ -5,6 +5,9 @@ Every number in the text is filled from outputs/modern_rice/applied_geography
 (or the registry CSVs) via placeholders in modern_rice/manuscript_ag/manuscript_template.md.
 Outputs go to outputs/modern_rice/applied_geography/submission/.
 """
+from docx.oxml import parse_xml
+from docx.oxml.ns import qn
+from docx.shared import RGBColor
 import os, re, json, shutil, subprocess, zipfile, numpy as np, pandas as pd
 from docx import Document
 from docx.shared import Pt, Inches, Cm
@@ -163,17 +166,29 @@ assert TABNUM == {"data": 1, "cascade": 2, "risk": 3}, TABNUM
 def base_doc():
     d = Document(); st = d.styles["Normal"]; st.font.name = "Times New Roman"; st.font.size = Pt(12)
     st.paragraph_format.line_spacing = 2.0; st.paragraph_format.space_after = Pt(0)
+    for hn in ["Heading 1", "Heading 2", "Heading 3", "Title"]:
+        hs = d.styles[hn]; hs.font.name = "Times New Roman"; hs.font.color.rgb = RGBColor(0, 0, 0)
+        rpr = hs.element.get_or_add_rPr(); rf = rpr.find(qn("w:rFonts"))
+        if rf is not None:
+            for a in ["w:asciiTheme", "w:hAnsiTheme", "w:eastAsiaTheme", "w:cstheme"]: rf.attrib.pop(qn(a), None)
     for s in d.sections: s.left_margin = s.right_margin = s.top_margin = s.bottom_margin = Inches(1)
     return d
+OMML_Q = ('<m:oMath xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><m:r><m:t>Q=</m:t></m:r>'
+          '<m:f><m:num><m:r><m:t>A\u00b7D</m:t></m:r></m:num><m:den><m:r><m:t>T</m:t></m:r></m:den></m:f></m:oMath>')
 def add_runs(par, text):
-    for chunk in re.split(r"(\*[^*]+\*)", text):
-        if not chunk: continue
-        ital = chunk.startswith("*") and chunk.endswith("*")
-        for k, part in enumerate((chunk[1:-1] if ital else chunk).split("³")):
-            if k:
-                sr = par.add_run("3"); sr.font.superscript = True; sr.italic = ital
-            if part:
-                r = par.add_run(part); r.italic = ital
+    text = re.sub(r"\bT\*(?=[\s,.;:)=}\]]|$)", "T\x00", text)
+    for seg in re.split(r"(Q = A·D/T)", text):
+        if seg == "Q = A·D/T":
+            par._p.append(parse_xml(OMML_Q)); continue
+        for chunk in re.split(r"(\*[^*]+\*)", seg):
+            if not chunk: continue
+            ital = chunk.startswith("*") and chunk.endswith("*")
+            for part in re.split(r"(³|\x00)", chunk[1:-1] if ital else chunk):
+                if part in ("³", "\x00"):
+                    if part == "\x00": r = par.add_run("T"); r.italic = True
+                    sr = par.add_run("3" if part == "³" else "*"); sr.font.superscript = True; sr.italic = ital
+                elif part:
+                    r = par.add_run(part); r.italic = ital
 def add_table(d, key):
     cap, hdr, rows = TABS[key]
     p = d.add_paragraph(); p.paragraph_format.space_before = Pt(18); p.paragraph_format.keep_with_next = True

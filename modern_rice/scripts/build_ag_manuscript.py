@@ -18,7 +18,7 @@ MR = os.path.join(ROOT, "outputs", "modern_rice"); AG = os.path.join(MR, "applie
 SUB = os.path.join(AG, "submission"); os.makedirs(SUB, exist_ok=True)
 TPL = os.path.join(ROOT, "modern_rice", "manuscript_ag", "manuscript_template.md")
 REPO_URL = "https://github.com/bougtoir/more-rice"
-AUTHOR, AFFIL, EMAIL = "Tatsuki Onishi", "Data Science and AI Innovation Research Promotion Center, Shiga University, Japan", "[corresponding e-mail to be entered by the author]"
+AUTHOR, AFFIL, EMAIL = "Onishi Tatsuki", "Data Science and AI Innovation Research Promotion Center, Shiga University, Japan", "[corresponding e-mail to be entered by the author]"
 
 # ---------------- numbers ----------------
 cal = json.load(open(os.path.join(AG, "GRID_THERMAL_CALIBRATION.json")))
@@ -35,6 +35,7 @@ rb = pd.read_csv(os.path.join(AG, "RISK_PORTFOLIO_BASELINE_CORRECTED.csv")).set_
 rr = pd.read_csv(os.path.join(AG, "RISK_PORTFOLIO_ROBUSTNESS.csv")).set_index("country")
 sb = pd.read_csv(os.path.join(MR, "DAILY_SOIL_WATER_BALANCE.csv")).set_index("point")
 cost = pd.read_csv(os.path.join(MR, "AGRICULTURAL_COST_REGISTRY.csv"))
+aei = pd.read_csv(os.path.join(AG, "EUROPE_AEI_THRESHOLD_SENSITIVITY.csv")).set_index("aei_min")
 f0 = lambda x: f"{x:,.0f}"; f1 = lambda x: f"{x:,.1f}"; f2 = lambda x: f"{x:.2f}"; f3 = lambda x: f"{x:.3f}"
 inc = tot.incumbent_ha
 def sh(T, scale, col="europe_inc_share_pass"): return float(sen[(sen.threshold == T) & (sen.scale == scale)][col].iloc[0])
@@ -74,6 +75,8 @@ N = dict(
     rs_B=ci("Serbia", "P_B_rice"), rs_D=ci("Serbia", "P_D_potato"),
     ro_rob=f0(100 * rr.loc["Romania", "share_B_lt_A"]), ro_excl=f0(100 * rr.loc["Romania", "share_CI_excl_0"]), kz_excl=f0(100 * rr.loc["Kazakhstan", "share_CI_excl_0"]),
     bg_rob=f0(100 * rr.loc["Bulgaria", "share_B_lt_A"]), hu_rob=f0(100 * rr.loc["Hungary", "share_B_lt_A"]), fr_rob=f0(100 * rr.loc["France", "share_B_lt_A"]),
+    pct_aei5=f1(100 * aei.loc[0.05, "inc_share_thermal_pass_aei"]), pct_aei20=f1(100 * aei.loc[0.20, "inc_share_thermal_pass_aei"]),
+    rice_aei5=f1(100 * aei.loc[0.05, "existing_rice_share_aei"]), rice_aei20=f1(100 * aei.loc[0.20, "existing_rice_share_aei"]),
     it_cost=cost.loc[cost.item == "total production cost flooded", "value"].iloc[0].replace("-", "–"),
     it_gm=cost.loc[cost.item == "gross margin conventional", "value"].iloc[0].replace("-", "–"))
 for k in ["ro_lo", "ro_hi", "kz_lo", "kz_hi"]: N[k] = N[k].replace("-", "−")
@@ -183,30 +186,33 @@ def add_figure(d, key, embed=True):
     r = p.add_run(f"Figure {FIGNUM[key]}. "); r.bold = True; p.add_run(cap)
 
 # ---------------- anonymized manuscript ----------------
-d = base_doc()
-p = d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; r = p.add_run(title); r.bold = True; r.font.size = Pt(14)
-d.add_heading("Abstract", level=1); d.add_paragraph(abstract)
-p = d.add_paragraph(); r = p.add_run("Keywords: "); r.bold = True; p.add_run(keywords)
-for bp in body_p:
-    if bp.startswith("## "): d.add_heading(bp[3:], level=2)
-    elif bp.startswith("# "): d.add_heading(bp[2:], level=1)
-    elif bp.startswith("[[FIGURE:"): add_figure(d, bp[9:-2])
-    elif bp.startswith("[[TABLE:"): add_table(d, bp[8:-2])
-    else: add_runs(d.add_paragraph(), resolve(bp))
-for dp in decl_p:
-    if dp.startswith("## "): d.add_heading(dp[3:], level=2)
-    else: d.add_paragraph(dp)
-d.add_heading("References", level=1)
-for ref in refs:
-    p = d.add_paragraph(); p.paragraph_format.left_indent = Cm(1.27); p.paragraph_format.first_line_indent = Cm(-1.27); add_runs(p, ref)
-MS = os.path.join(SUB, "APPLIED_GEOGRAPHY_MANUSCRIPT_FINAL.docx"); d.save(MS)
+def build_ms(embed, path):
+  d = base_doc()
+  p = d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; r = p.add_run(title); r.bold = True; r.font.size = Pt(14)
+  d.add_heading("Abstract", level=1); d.add_paragraph(abstract)
+  p = d.add_paragraph(); r = p.add_run("Keywords: "); r.bold = True; p.add_run(keywords)
+  for bp in body_p:
+      if bp.startswith("## "): d.add_heading(bp[3:], level=2)
+      elif bp.startswith("# "): d.add_heading(bp[2:], level=1)
+      elif bp.startswith("[[FIGURE:"): add_figure(d, bp[9:-2], embed)
+      elif bp.startswith("[[TABLE:"): add_table(d, bp[8:-2])
+      else: add_runs(d.add_paragraph(), resolve(bp))
+  for dp in decl_p:
+      if dp.startswith("## "): d.add_heading(dp[3:], level=2)
+      else: d.add_paragraph(dp)
+  d.add_heading("References", level=1)
+  for ref in refs:
+      p = d.add_paragraph(); p.paragraph_format.left_indent = Cm(1.27); p.paragraph_format.first_line_indent = Cm(-1.27); add_runs(p, ref)
+  d.save(path)
+MS = os.path.join(SUB, "APPLIED_GEOGRAPHY_MANUSCRIPT_FINAL.docx"); build_ms(False, MS)
+MSI = os.path.join(SUB, "APPLIED_GEOGRAPHY_MANUSCRIPT_INLINE_REVIEW_COPY.docx"); build_ms(True, MSI)
 
 # ---------------- title page ----------------
 t = base_doc()
 p = t.add_paragraph(); r = p.add_run(title); r.bold = True; r.font.size = Pt(14)
 for line in [f"Author: {AUTHOR}", f"Affiliation: {AFFIL}", f"Corresponding author: {AUTHOR}, {AFFIL}. E-mail: {EMAIL}",
              f"Code and data repository: {REPO_URL}",
-             "CRediT author contribution statement: Tatsuki Onishi: Conceptualization, Methodology, Software, Formal analysis, Data curation, Visualization, Writing – original draft, Writing – review & editing.",
+             "ORCID: 0000-0001-7261-9062", "CRediT author contribution statement: Onishi Tatsuki: Conceptualization, Methodology, Software, Formal analysis, Data curation, Visualization, Writing – original draft, Writing – review & editing.",
              "Declaration of competing interest: The author declares no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
              "Acknowledgments: None.", "Funding: This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors."]:
     t.add_paragraph(line)
@@ -231,6 +237,19 @@ ART = os.path.join(SUB, "figures"); os.makedirs(ART, exist_ok=True)
 for k in fig_order:
     for e in ["png", "pdf"]: shutil.copy(os.path.join(FIG, f"{FIGS[k][0]}.{e}"), os.path.join(ART, f"Figure_{FIGNUM[k]}.{e}"))
 
+
+# ---------------- cover letter ----------------
+c = base_doc(); c.styles["Normal"].paragraph_format.line_spacing = 1.15; c.styles["Normal"].paragraph_format.space_after = Pt(8)
+for x in ["[Date]", "The Editors, Applied Geography", f"Re: Submission of a research article, \u201c{title}\u201d",
+          "Dear Editors,",
+          f"We submit a research article that asks a geographic question: where on existing arable land a cold-region rice cultivation system could be transferred, and how the answer changes with data source, seasonal window and spatial scale. Calibrating the Hokkaido thermal bound on the same grid where it is applied lowers it from ~900 to {N['T_star']} GDD10. This moves the binding constraint for {N['inc_Mha']} Mha of European arable land from temperature to irrigation infrastructure and water allocation. Only {N['pct_aei']}% of that land combines thermal compatibility with existing irrigation infrastructure, and the classification of land near the bound depends on resolution.",
+          "The manuscript speaks to the journal's interest in spatially explicit resource assessment and land-use decision problems. It builds on land-suitability, cold-margin rice and irrigation studies published in Applied Geography and adds an explicit land denominator, non-compensatory gates and a scale-sensitivity analysis.",
+          f"An earlier version was considered by Agricultural Systems and declined on scope grounds, with the advice to submit to a more land-use-oriented journal. This version has been substantially re-analysed. It corrects an error in the Lower Danube water-demand calculation (a 250,000 ha scenario requires ~{N['dan_q']} m³/s, {N['dan_pct']}% of Q99, not ~2%) and an implementation inconsistency in the portfolio-risk model. The candidate regions are framed as targets for next-stage feasibility assessment only.",
+          "The work is original, is not under consideration elsewhere, and has a single author. All code and derived outputs are openly available; the repository link is on the title page. The author declares no competing interests. Use of AI-assisted tools is declared in the manuscript. We intend to publish under the subscription model.",
+          "Suggested reviewers: [to be supplied by the author].", "Sincerely,", f"{AUTHOR}", AFFIL]:
+    c.add_paragraph(x)
+CL = os.path.join(SUB, "APPLIED_GEOGRAPHY_COVER_LETTER.docx"); c.save(CL)
+
 # ---------------- metadata + checks ----------------
 def wc(s): return len(re.findall(r"\S+", s))
 words = wc(abstract) + wc(keywords) + sum(wc(re.sub(r"^#+ ", "", p)) for p in body_p if not p.startswith("[[")) + sum(wc(FIGS[k][1]) for k in FIGS) \
@@ -245,5 +264,5 @@ with open(os.path.join(SUB, "APPLIED_GEOGRAPHY_ABSTRACT_AND_METADATA.txt"), "w")
     for x in highlights: f.write(f"- {x} ({len(x)} chars)\n")
     f.write(f"\nTotal word count (title, abstract, keywords, text, captions, tables, declarations, references): {words}\nFigures: {len(fig_order)}; Tables: {len(tab_order)}; References: {len(refs)}\n")
     f.write("Publishing route intended: Subscription (no open access fee). No option selected in any system.\n")
-subprocess.run(["soffice", "--headless", "--convert-to", "pdf", "--outdir", SUB, MS], check=True, capture_output=True)
+for pth in [MS, MSI, CL]: subprocess.run(["soffice", "--headless", "--convert-to", "pdf", "--outdir", SUB, pth], check=True, capture_output=True)
 print(json.dumps({"words": words, "abstract_words": wc(abstract), "highlights_len": [len(x) for x in highlights], "figs": FIGNUM, "tabs": TABNUM, "refs": len(refs), "newlines_in_runs": nl}, indent=0))

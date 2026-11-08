@@ -14,6 +14,6 @@ Highlights:
 - A 250,000 ha Lower Danube paddy scenario needs ~22% of Q99 low flow (67 chars)
 - Modeled supply-risk gains from rice are robust only in a few countries (70 chars)
 
-Total word count (title, abstract, keywords, text, captions, tables, declarations, references): 5061
+Total word count (title, abstract, keywords, text, captions, tables, declarations, references): 5091
 Figures: 5; Tables: 3; References: 31
 Publishing route intended: Subscription (no open access fee). No option selected in any system.

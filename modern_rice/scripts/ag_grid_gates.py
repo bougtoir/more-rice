@@ -211,4 +211,11 @@ json.dump({"T_star_calJunSep": TSTARc, "inc_share_thermal_pass_pipeline": float(
            "inc_share_thermal_pass_calJunSep": float(inc[valid & thc].sum() / inc[valid].sum()),
            "inc_share_agree": float(inc[valid & (thermal == thc)].sum() / inc[valid].sum())},
           open(os.path.join(OUT, "EUROPE_WINDOW_SENSITIVITY.json"), "w"), indent=1)
+
+# AEI threshold sensitivity
+ar = []
+for a_ in [0.05, 0.10, 0.20]:
+    ar.append(dict(aei_min=a_, inc_share_thermal_pass_aei=float(inc[valid & thermal & (aei_sh >= a_)].sum() / inc[valid].sum()),
+                   existing_rice_share_aei=float(rice[np.isfinite(g5) & (inc > 0) & thermal & (aei_sh >= a_)].sum() / rice[np.isfinite(g5) & (inc > 0)].sum())))
+pd.DataFrame(ar).to_csv(os.path.join(OUT, "EUROPE_AEI_THRESHOLD_SENSITIVITY.csv"), index=False); print(pd.DataFrame(ar))
 print("done")

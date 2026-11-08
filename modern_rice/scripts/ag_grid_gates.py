@@ -99,6 +99,10 @@ ne = ne.cx[W - 5:E + 5, S - 5:N + 5].reset_index(drop=True)
 tr5 = from_origin(W, N, 1 / 12, 1 / 12)
 cid = rasterize([(g, i + 1) for i, g in enumerate(ne.geometry)], out_shape=(ny, nx), transform=tr5, fill=0, dtype="int32")
 names = {i + 1: n for i, n in enumerate(ne["NAME_EN"] if "NAME_EN" in ne else ne["NAME"])}
+# study domain: Natural Earth CONTINENT == Europe, excluding Russia (truncated by the 45E window edge);
+# the rectangle alone would also include North Africa, Anatolia and the Caucasus
+EUR_SEL = (ne["CONTINENT"] == "Europe") & (ne["ADMIN"] != "Russia")
+eur = rasterize([(g, 1) for g in ne[EUR_SEL].geometry], out_shape=(ny, nx), transform=tr5, fill=0, dtype="uint8").astype(bool)
 
 # ---------------- calibration on the same grid ----------------
 def calib():
@@ -144,7 +148,7 @@ print(cw.to_string())
 # ---------------- gate cascade ----------------
 thermal = g5 >= TSTAR
 cls = np.zeros((ny, nx), np.int8)
-valid = np.isfinite(g5) & (inc > 0)
+valid = np.isfinite(g5) & (inc > 0) & eur
 cls[valid & ~thermal] = 1
 cls[valid & thermal & (aei_sh < AEI_MIN) & (D > 0)] = 2
 cls[valid & thermal & (aei_sh < AEI_MIN) & (D <= 0)] = 3
@@ -164,14 +168,14 @@ for c in np.unique(cid[valid]):
     for k in [1, 4]: r[f"rice_ha_in_{LAB[k]}"] = round(rice[(cid == c) & (cls == k)].sum(), 0)
     rows.append(r)
 ct = pd.DataFrame(rows).sort_values("incumbent_ha", ascending=False)
-tot = ct.drop(columns="country").sum(); tot["country"] = "EUROPE_WINDOW_TOTAL"
+tot = ct.drop(columns="country").sum(); tot["country"] = "EUROPE_DOMAIN_TOTAL"
 ct = pd.concat([ct, tot.to_frame().T]); ct.to_csv(os.path.join(OUT, "EUROPE_GATE_CASCADE_BY_COUNTRY.csv"), index=False)
 print(ct.tail(25).to_string())
 
 # ---------------- validation: existing European rice in gate classes ----------------
-vr = {"rice_ha_total": float(rice[np.isfinite(g5)].sum())}
-for k, l in LAB.items(): vr[l] = float(rice[cls == k].sum())
-vr["rice_ha_no_incumbent_cells"] = float(rice[np.isfinite(g5) & (inc <= 0)].sum())
+vr = {"rice_ha_total": float(rice[np.isfinite(g5) & eur].sum())}
+for k, l in LAB.items(): vr[l] = float(rice[(cls == k) & eur].sum())
+vr["rice_ha_no_incumbent_cells"] = float(rice[np.isfinite(g5) & (inc <= 0) & eur].sum())
 json.dump(vr, open(os.path.join(OUT, "EUROPE_RICE_VALIDATION.json"), "w"), indent=1); print("validation", vr)
 
 # ---------------- scale / aggregation / threshold sensitivity ----------------
@@ -216,6 +220,16 @@ json.dump({"T_star_calJunSep": TSTARc, "inc_share_thermal_pass_pipeline": float(
 ar = []
 for a_ in [0.05, 0.10, 0.20]:
     ar.append(dict(aei_min=a_, inc_share_thermal_pass_aei=float(inc[valid & thermal & (aei_sh >= a_)].sum() / inc[valid].sum()),
-                   existing_rice_share_aei=float(rice[np.isfinite(g5) & (inc > 0) & thermal & (aei_sh >= a_)].sum() / rice[np.isfinite(g5) & (inc > 0)].sum())))
+                   existing_rice_share_aei=float(rice[valid & thermal & (aei_sh >= a_)].sum() / rice[valid].sum())))
 pd.DataFrame(ar).to_csv(os.path.join(OUT, "EUROPE_AEI_THRESHOLD_SENSITIVITY.csv"), index=False); print(pd.DataFrame(ar))
+# domain sensitivity (rectangle vs Europe definitions)
+dom = []
+for lab, sel in [("rectangle_-11_45E_34_71.5N", None), ("Europe_excl_Russia (primary)", EUR_SEL), ("Europe_incl_Russia_west_of_45E", ne["CONTINENT"] == "Europe"),
+                 ("EU27", ne["ADMIN"].isin(["Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czechia", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Sweden"]))]:
+    mk = np.ones((ny, nx), bool) if sel is None else rasterize([(g, 1) for g in ne[sel].geometry], out_shape=(ny, nx), transform=tr5, fill=0, dtype="uint8").astype(bool)
+    v = np.isfinite(g5) & (inc > 0) & mk
+    dom.append(dict(domain=lab, incumbent_Mha=round(inc[v].sum() / 1e6, 2), thermal_pass_share=round(inc[v & thermal].sum() / inc[v].sum(), 4),
+                    thermal_aei_share=round(inc[v & thermal & (aei_sh >= AEI_MIN)].sum() / inc[v].sum(), 4),
+                    aei_share_among_thermal_pass=round(inc[v & thermal & (aei_sh >= AEI_MIN)].sum() / inc[v & thermal].sum(), 4)))
+pd.DataFrame(dom).to_csv(os.path.join(OUT, "EUROPE_DOMAIN_SENSITIVITY.csv"), index=False); print(pd.DataFrame(dom).to_string())
 print("done")

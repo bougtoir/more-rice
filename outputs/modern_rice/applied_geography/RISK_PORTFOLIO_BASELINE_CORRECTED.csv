@@ -1,23 +1,23 @@
 country,evidence_class,rice_source,n_years,detrend,rice_yield_scale,f,threshold_basis,P_A,P_B_rice,P_D_potato,diff_B_minus_A,diff_CI95_lo,diff_CI95_hi,cv_A,cv_B
-Romania,own,Romania,64,linear,1.0,0.2,own_mean,0.203,0.109,0.172,-0.094,-0.172,0.0,0.195,0.151
-Bulgaria,own,Bulgaria,64,linear,1.0,0.2,own_mean,0.203,0.172,0.188,-0.031,-0.109,0.016,0.213,0.177
-Serbia,analog,analog:Hungary,19,linear,1.0,0.2,own_mean,0.211,0.0,0.053,-0.211,-0.263,0.0,0.14,0.117
-Ukraine,own,Ukraine,33,linear,1.0,0.2,own_mean,0.0,0.03,0.03,0.03,-0.061,0.03,0.115,0.099
-Chile,own,Chile,64,linear,1.0,0.2,own_mean,0.078,0.062,0.062,-0.016,-0.125,0.031,0.139,0.113
-Kazakhstan,own,Kazakhstan,33,linear,1.0,0.2,own_mean,0.212,0.03,0.091,-0.182,-0.273,-0.03,0.216,0.143
-Uzbekistan,own,Uzbekistan,33,linear,1.0,0.2,own_mean,0.061,0.0,0.061,-0.061,-0.212,0.0,0.165,0.119
-France,own,France,64,linear,1.0,0.2,own_mean,0.109,0.062,0.125,-0.047,-0.109,0.0,0.137,0.125
-Germany,analog,analog:Italy,64,linear,1.0,0.2,own_mean,0.031,0.0,0.031,-0.031,-0.047,0.0,0.099,0.085
-United Kingdom of Great Britain and Northern Ireland,analog,analog:Italy,64,linear,1.0,0.2,own_mean,0.031,0.0,0.016,-0.031,-0.062,0.0,0.106,0.09
-Italy,own,Italy,64,linear,1.0,0.2,own_mean,0.016,0.0,0.0,-0.016,-0.047,0.0,0.097,0.077
-Spain,own,Spain,64,linear,1.0,0.2,own_mean,0.094,0.047,0.047,-0.047,-0.094,0.0,0.163,0.115
-Portugal,own,Portugal,64,linear,1.0,0.2,own_mean,0.125,0.094,0.125,-0.031,-0.078,0.0,0.144,0.131
-Greece,own,Greece,64,linear,1.0,0.2,own_mean,0.094,0.062,0.094,-0.031,-0.141,0.0,0.203,0.153
-Hungary,own,Hungary,64,linear,1.0,0.2,own_mean,0.188,0.156,0.156,-0.031,-0.094,0.031,0.198,0.175
-Croatia,analog,analog:Greece,33,linear,1.0,0.2,own_mean,0.061,0.03,0.03,-0.03,-0.091,0.0,0.109,0.088
-Poland,analog,analog:Hungary,64,linear,1.0,0.2,own_mean,0.016,0.031,0.016,0.016,-0.047,0.047,0.11,0.102
-Japan,own,Japan,64,linear,1.0,0.2,own_mean,0.047,0.031,0.031,-0.016,-0.062,0.0,0.11,0.08
-Bangladesh,own,Bangladesh,64,linear,1.0,0.2,own_mean,0.328,0.266,0.25,-0.062,-0.109,0.0,0.281,0.247
-United States of America,own,United States of America,64,linear,1.0,0.2,own_mean,0.016,0.0,0.0,-0.016,-0.062,0.0,0.085,0.071
-Argentina,own,Argentina,64,linear,1.0,0.2,own_mean,0.047,0.016,0.031,-0.031,-0.062,0.0,0.117,0.091
-Australia,own,Australia,64,linear,1.0,0.2,own_mean,0.156,0.078,0.047,-0.078,-0.172,-0.031,0.193,0.118
+Romania,own,Romania,64,linear,1.0,0.2,own_mean,0.203,0.109,0.172,-0.094,-0.156,0.0,0.195,0.157
+Bulgaria,own,Bulgaria,64,linear,1.0,0.2,own_mean,0.203,0.172,0.188,-0.031,-0.094,0.016,0.213,0.186
+Serbia,analog,analog:Hungary,19,linear,1.0,0.2,own_mean,0.211,0.0,0.053,-0.211,-0.263,0.0,0.14,0.123
+Ukraine,own,Ukraine,33,linear,1.0,0.2,own_mean,0.0,0.03,0.03,0.03,-0.061,0.03,0.115,0.103
+Chile,own,Chile,64,linear,1.0,0.2,own_mean,0.078,0.094,0.062,0.016,-0.109,0.047,0.139,0.12
+Kazakhstan,own,Kazakhstan,33,linear,1.0,0.2,own_mean,0.212,0.061,0.091,-0.152,-0.242,0.0,0.216,0.155
+Uzbekistan,own,Uzbekistan,33,linear,1.0,0.2,own_mean,0.061,0.0,0.061,-0.061,-0.212,0.0,0.165,0.127
+France,own,France,64,linear,1.0,0.2,own_mean,0.109,0.094,0.125,-0.016,-0.109,0.0,0.137,0.128
+Germany,analog,analog:Italy,64,linear,1.0,0.2,own_mean,0.031,0.0,0.031,-0.031,-0.047,0.0,0.099,0.089
+United Kingdom of Great Britain and Northern Ireland,analog,analog:Italy,64,linear,1.0,0.2,own_mean,0.031,0.0,0.016,-0.031,-0.047,0.0,0.106,0.094
+Italy,own,Italy,64,linear,1.0,0.2,own_mean,0.016,0.0,0.0,-0.016,-0.047,0.0,0.097,0.082
+Spain,own,Spain,64,linear,1.0,0.2,own_mean,0.094,0.047,0.047,-0.047,-0.094,0.0,0.163,0.127
+Portugal,own,Portugal,64,linear,1.0,0.2,own_mean,0.125,0.125,0.125,0.0,-0.078,0.0,0.144,0.134
+Greece,own,Greece,64,linear,1.0,0.2,own_mean,0.094,0.109,0.094,0.016,-0.125,0.016,0.203,0.165
+Hungary,own,Hungary,64,linear,1.0,0.2,own_mean,0.188,0.156,0.156,-0.031,-0.062,0.031,0.198,0.181
+Croatia,analog,analog:Greece,33,linear,1.0,0.2,own_mean,0.061,0.03,0.03,-0.03,-0.091,0.0,0.109,0.093
+Poland,analog,analog:Hungary,64,linear,1.0,0.2,own_mean,0.016,0.031,0.016,0.016,-0.031,0.031,0.11,0.103
+Japan,own,Japan,64,linear,1.0,0.2,own_mean,0.047,0.031,0.031,-0.016,-0.047,0.0,0.11,0.087
+Bangladesh,own,Bangladesh,64,linear,1.0,0.2,own_mean,0.328,0.266,0.25,-0.062,-0.094,0.0,0.281,0.257
+United States of America,own,United States of America,64,linear,1.0,0.2,own_mean,0.016,0.0,0.0,-0.016,-0.062,0.0,0.085,0.075
+Argentina,own,Argentina,64,linear,1.0,0.2,own_mean,0.047,0.016,0.031,-0.031,-0.062,0.0,0.117,0.097
+Australia,own,Australia,64,linear,1.0,0.2,own_mean,0.156,0.109,0.047,-0.047,-0.125,0.0,0.193,0.127

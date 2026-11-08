@@ -1,0 +1,15 @@
+point,window,n_years,gdd_daily,gdd_monthly_mean,bias_monthly_minus_daily
+Hokkaido_JP,calendar_Jun_Sep,25,941.0,938.3,-2.8
+Hokkaido_JP,pipeline_29Apr_11Sep,25,903.2,873.9,-29.4
+Rhine_DE,calendar_Jun_Sep,25,931.1,930.7,-0.3
+Rhine_DE,pipeline_29Apr_11Sep,25,956.8,947.4,-9.5
+Saxony_DE,calendar_Jun_Sep,25,935.2,931.8,-3.4
+Saxony_DE,pipeline_29Apr_11Sep,25,969.2,956.3,-12.9
+Alsace_FR,calendar_Jun_Sep,25,1037.0,1035.9,-1.0
+Alsace_FR,pipeline_29Apr_11Sep,25,1079.6,1073.3,-6.4
+Berlin_DE,calendar_Jun_Sep,25,1049.0,1048.5,-0.5
+Berlin_DE,pipeline_29Apr_11Sep,25,1089.3,1082.5,-6.8
+Loire_FR,calendar_Jun_Sep,25,1100.6,1100.6,-0.0
+Loire_FR,pipeline_29Apr_11Sep,25,1107.5,1104.4,-3.1
+LowerDanube_RO,calendar_Jun_Sep,25,1668.3,1668.3,0.0
+LowerDanube_RO,pipeline_29Apr_11Sep,25,1750.4,1750.4,-0.1

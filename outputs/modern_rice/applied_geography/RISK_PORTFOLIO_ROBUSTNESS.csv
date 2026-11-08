@@ -1,23 +1,23 @@
 country,evidence_class,n_cells,share_B_lt_A,share_CI_excl_0,share_D_le_B
-Argentina,own,24.0,1.0,0.0,0.833
-Australia,own,24.0,1.0,0.833,1.0
-Bangladesh,own,24.0,0.417,0.0,0.875
-Bulgaria,own,24.0,0.708,0.042,0.25
-Chile,own,24.0,0.375,0.0,1.0
-Croatia,analog,24.0,0.792,0.0,0.375
-France,own,24.0,0.208,0.0,0.5
-Germany,analog,24.0,0.375,0.0,0.667
-Greece,own,24.0,0.875,0.208,0.708
-Hungary,own,24.0,0.375,0.0,0.792
-Italy,own,24.0,1.0,0.0,1.0
-Japan,own,24.0,1.0,0.0,0.708
-Kazakhstan,own,24.0,1.0,0.792,0.708
+Argentina,own,24.0,0.625,0.0,0.875
+Australia,own,24.0,1.0,0.667,1.0
+Bangladesh,own,24.0,0.375,0.0,1.0
+Bulgaria,own,24.0,0.375,0.0,0.75
+Chile,own,24.0,0.083,0.0,1.0
+Croatia,analog,24.0,0.333,0.0,0.708
+France,own,24.0,0.125,0.0,0.5
+Germany,analog,24.0,0.25,0.0,0.667
+Greece,own,24.0,0.667,0.083,0.917
+Hungary,own,24.0,0.333,0.0,0.917
+Italy,own,24.0,0.667,0.0,1.0
+Japan,own,24.0,1.0,0.0,1.0
+Kazakhstan,own,24.0,1.0,0.583,0.833
 Poland,analog,24.0,0.0,0.0,0.833
-Portugal,own,24.0,0.292,0.0,0.542
-Romania,own,24.0,1.0,0.417,0.0
-Serbia,analog,24.0,0.417,0.0,0.667
-Spain,own,24.0,1.0,0.458,1.0
-Ukraine,own,24.0,0.0,0.0,0.667
-United Kingdom of Great Britain and Northern Ireland,analog,24.0,0.583,0.0,0.667
-United States of America,own,24.0,0.625,0.0,1.0
-Uzbekistan,own,24.0,0.458,0.0,0.708
+Portugal,own,24.0,0.167,0.0,0.917
+Romania,own,24.0,1.0,0.167,0.0
+Serbia,analog,24.0,0.375,0.0,0.792
+Spain,own,24.0,1.0,0.083,1.0
+Ukraine,own,24.0,0.0,0.0,0.792
+United Kingdom of Great Britain and Northern Ireland,analog,24.0,0.333,0.0,0.75
+United States of America,own,24.0,0.375,0.0,1.0
+Uzbekistan,own,24.0,0.25,0.0,0.833

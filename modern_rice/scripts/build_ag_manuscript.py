@@ -25,7 +25,7 @@ cal = json.load(open(os.path.join(AG, "GRID_THERMAL_CALIBRATION.json")))
 win = json.load(open(os.path.join(AG, "EUROPE_WINDOW_SENSITIVITY.json")))
 val = json.load(open(os.path.join(AG, "EUROPE_RICE_VALIDATION.json")))
 cas = pd.read_csv(os.path.join(AG, "EUROPE_GATE_CASCADE_BY_COUNTRY.csv")).set_index("country")
-tot = cas.loc["EUROPE_WINDOW_TOTAL"]
+tot = cas.loc["EUROPE_DOMAIN_TOTAL"]
 sen = pd.read_csv(os.path.join(AG, "EUROPE_SCALE_THRESHOLD_SENSITIVITY.csv"))
 pw = pd.read_csv(os.path.join(AG, "POINT_GDD_WINDOW_SENSITIVITY.csv")).set_index("point")
 cw = pd.read_csv(os.path.join(AG, "POINT_GRID_CROSSWALK.csv")).set_index("point")
@@ -36,6 +36,9 @@ rr = pd.read_csv(os.path.join(AG, "RISK_PORTFOLIO_ROBUSTNESS.csv")).set_index("c
 sb = pd.read_csv(os.path.join(MR, "DAILY_SOIL_WATER_BALANCE.csv")).set_index("point")
 cost = pd.read_csv(os.path.join(MR, "AGRICULTURAL_COST_REGISTRY.csv"))
 aei = pd.read_csv(os.path.join(AG, "EUROPE_AEI_THRESHOLD_SENSITIVITY.csv")).set_index("aei_min")
+gdm = pd.read_csv(os.path.join(AG, "GDD_DAILY_VS_MONTHLY.csv"))
+gdp = gdm[gdm.window == "pipeline_29Apr_11Sep"].set_index("point").bias_monthly_minus_daily
+dom = pd.read_csv(os.path.join(AG, "EUROPE_DOMAIN_SENSITIVITY.csv")).set_index("domain")
 f0 = lambda x: f"{x:,.0f}"; f1 = lambda x: f"{x:,.1f}"; f2 = lambda x: f"{x:.2f}"; f3 = lambda x: f"{x:.3f}"
 inc = tot.incumbent_ha
 def sh(T, scale, col="europe_inc_share_pass"): return float(sen[(sen.threshold == T) & (sen.scale == scale)][col].iloc[0])
@@ -77,6 +80,11 @@ N = dict(
     bg_rob=f0(100 * rr.loc["Bulgaria", "share_B_lt_A"]), hu_rob=f0(100 * rr.loc["Hungary", "share_B_lt_A"]), fr_rob=f0(100 * rr.loc["France", "share_B_lt_A"]),
     pct_aei5=f1(100 * aei.loc[0.05, "inc_share_thermal_pass_aei"]), pct_aei20=f1(100 * aei.loc[0.20, "inc_share_thermal_pass_aei"]),
     rice_aei5=f1(100 * aei.loc[0.05, "existing_rice_share_aei"]), rice_aei20=f1(100 * aei.loc[0.20, "existing_rice_share_aei"]),
+    hok_mbias=f0(-gdp["Hokkaido_JP"]), eu_mbias_min=f0(-gdp.drop("Hokkaido_JP").max()), eu_mbias_max=f0(-gdp.drop("Hokkaido_JP").min()),
+    rect_Mha=f1(dom.iloc[0].incumbent_Mha), rect_pass=f1(100 * dom.iloc[0].thermal_pass_share), rect_aei=f1(100 * dom.iloc[0].thermal_aei_share),
+    eu27_pass=f1(100 * dom.loc["EU27"].thermal_pass_share), eu27_aei=f1(100 * dom.loc["EU27"].thermal_aei_share),
+    aei_cond=f1(100 * tot.inc_ha_thermal_pass_irrig_infra_present / (inc - tot.inc_ha_thermal_fail)),
+    dan_q_gross=f0(d120.loc[250000, "demand_m3s"] / 0.75),
     it_cost=cost.loc[cost.item == "total production cost flooded", "value"].iloc[0].replace("-", "–"),
     it_gm=cost.loc[cost.item == "gross margin conventional", "value"].iloc[0].replace("-", "–"))
 for k in ["ro_lo", "ro_hi", "kz_lo", "kz_hi"]: N[k] = N[k].replace("-", "−")
@@ -113,10 +121,10 @@ assert 1 <= len(keywords.split(";")) <= 7
 
 # ---------------- figures and tables ----------------
 FIGS = {"framework": ("Figure_framework", "Gate framework. Five sequential, non-compensatory gates evaluated for a transferable cold-region japonica rice system on incumbent arable land. Passing all gates identifies a candidate for next-stage feasibility assessment, not an allocation or converted area."),
-        "map": ("Figure_map_gates", f"(a) GDD10 for 29 April–11 September from WorldClim 2.1 (5′, 1970–2000), with the grid-calibrated Hokkaido bound T* = {N['T_star']} (white) and the point-derived 900 GDD10 (red, dashed). (b) Gate class of 5′ cells with incumbent arable land ≥1% of cell area. AEI, area equipped for irrigation (GMIA v5). Circles mark NASA POWER point cells. ETRS89-LAEA projection; the analysis window includes parts of North Africa and Anatolia."),
+        "map": ("Figure_map_gates", f"(a) GDD10 for 29 April–11 September from WorldClim 2.1 (5′, 1970–2000), with the grid-calibrated Hokkaido bound T* = {N['T_star']} (white) and the point-derived 900 GDD10 (red, dashed). (b) Gate class of 5′ cells with incumbent arable land ≥1% of cell area. AEI, area equipped for irrigation (GMIA v5). Circles mark NASA POWER point cells. ETRS89-LAEA projection. Cells outside the European domain (Natural Earth Europe excluding Russia) are not classified."),
         "scale": ("Figure_scale_sensitivity", "Sensitivity of the thermal gate. (a) Share of incumbent arable land passing as a function of the GDD10 threshold for two seasonal windows (vertical lines: T* and 900). (b) Share passing by native resolution (2.5′, 5′, 10′) and after aggregation of 5′ GDD10 to 30′ and 60′. (c) NASA POWER point-cell GDD10 (2000–2024) versus the containing WorldClim 5′ cell (1970–2000); dotted line 1:1."),
         "water": ("Figure_water", f"Water geography. (a) Grid Jun–Sep climatic deficit D (WorldClim 10′) versus the share of years with >10 flowering-stage deficit days from the daily bucket model at NASA POWER point cells (Spearman ρ = {N['rho']}, n = {N['rho_n']}); colour shows latitude. (b) Continuous-equivalent paddy water demand on the Lower Danube as a percentage of Iron Gates Q99 low flow ({N['dan_q99']} m³/s) for three seasonal depths over 120 days; mainstem comparison only."),
-        "risk": ("Figure_risk", "Corrected food-supply portfolio scenarios. (a) Modeled probability that portfolio calories fall below 90% of their mean for the incumbent portfolio (A), 20% rice substitution (B) and 20% potato comparator (D). (b) Change B − A with 95% moving-block bootstrap intervals (3-year blocks, 2,000 resamples). * Rice shocks and yield level from an analog country.")}
+        "risk": ("Figure_risk", "Corrected food-supply portfolio scenarios. (a) Modeled probability that portfolio calories fall below 80% of their mean for the incumbent portfolio (A), 20% rice substitution (B) and 20% potato comparator (D). (b) Change B − A with 95% moving-block bootstrap intervals (3-year blocks, 2,000 resamples). * Rice shocks and yield level from an analog country.")}
 fig_order = [k for p in body_p if p.startswith("[[FIGURE:") for k in [p[9:-2]]]
 FIGNUM = {k: i + 1 for i, k in enumerate(fig_order)}
 TABS = {}
@@ -130,9 +138,9 @@ TABS["data"] = ("Data sources and their role.", ["Dataset", "Version / period", 
     ["Iron Gates discharge statistics; WEAP allocation", "literature", "reach", "Lower Danube mainstem check", "cited sources"]])
 sel = ["Spain", "Italy", "France", "Romania", "Bulgaria", "Hungary", "Ukraine", "Serbia", "Croatia", "Germany", "Poland", "United Kingdom"]
 rows = []
-for c in sel + ["EUROPE_WINDOW_TOTAL"]:
+for c in sel + ["EUROPE_DOMAIN_TOTAL"]:
     r = cas.loc[c]; i = r.incumbent_ha
-    rows.append(["Analysis window total" if c == "EUROPE_WINDOW_TOTAL" else c, f1(i / 1e6), f1(100 * r.inc_ha_thermal_fail / i), f1(100 * r.inc_ha_thermal_pass_no_irrig_infra_rainfed_deficit / i),
+    rows.append(["Europe domain total" if c == "EUROPE_DOMAIN_TOTAL" else c, f1(i / 1e6), f1(100 * r.inc_ha_thermal_fail / i), f1(100 * r.inc_ha_thermal_pass_no_irrig_infra_rainfed_deficit / i),
                  f1(100 * r.inc_ha_thermal_pass_irrig_infra_present / i), f0(r.rice_ha_SPAM2010 / 1e3)])
 TABS["cascade"] = (f"Exposure of incumbent arable land to the gate cascade by country (T* = {N['T_star']} GDD10; AEI ≥10%). Percentages of incumbent arable area; the remainder (thermal gate met, no infrastructure, D ≤ 0) is <1% everywhere.",
                    ["Country", "Incumbent arable (Mha)", "Thermal not met (%)", "Thermal met, no AEI, D>0 (%)", "Thermal met, AEI ≥10% (%)", "Rice 2010 (kha)"], rows)
@@ -246,10 +254,11 @@ for k in fig_order:
 c = base_doc(); c.styles["Normal"].paragraph_format.line_spacing = 1.15; c.styles["Normal"].paragraph_format.space_after = Pt(8)
 for x in ["[Date]", "The Editors, Applied Geography", f"Re: Submission of a research article, \u201c{title}\u201d",
           "Dear Editors,",
-          f"We submit a research article that asks a geographic question: where on existing arable land a cold-region rice cultivation system could be transferred, and how the answer changes with data source, seasonal window and spatial scale. Calibrating the Hokkaido thermal bound on the same grid where it is applied lowers it from ~900 to {N['T_star']} GDD10. This moves the binding constraint for {N['inc_Mha']} Mha of European arable land from temperature to irrigation infrastructure and water allocation. Only {N['pct_aei']}% of that land combines thermal compatibility with existing irrigation infrastructure, and the classification of land near the bound depends on resolution.",
-          "The manuscript speaks to the journal's interest in spatially explicit resource assessment and land-use decision problems. It builds on land-suitability, cold-margin rice and irrigation studies published in Applied Geography and adds an explicit land denominator, non-compensatory gates and a scale-sensitivity analysis.",
-          f"An earlier version was considered by Agricultural Systems and declined on scope grounds, with the advice to submit to a more land-use-oriented journal. This version has been substantially re-analysed. It corrects an error in the Lower Danube water-demand calculation (a 250,000 ha scenario requires ~{N['dan_q']} m³/s, {N['dan_pct']}% of Q99, not ~2%) and an implementation inconsistency in the portfolio-risk model. The candidate regions are framed as targets for next-stage feasibility assessment only.",
-          "The work is original, is not under consideration elsewhere, and has a single author. All code and derived outputs are openly available; the repository link is on the title page. The author declares no competing interests. Use of AI-assisted tools is declared in the manuscript. We intend to publish under the subscription model.",
+          f"I am submitting a research article that asks a geographic question: on which existing arable land could a cold-region rice cultivation system be transferred beyond traditional growing regions, and how does the answer change with the climate data source, the seasonal window, the domain and the spatial resolution? Proposals for rice outside its traditional regions usually rest on a single climatic threshold. My analysis shows that such a threshold is a property of the data and scale on which it was measured as much as of the crop, and that once it is calibrated on the same grid where it is applied, the binding constraint moves from temperature to water.",
+          f"Calibrating the Hokkaido cold bound on the WorldClim grid gives {N['T_star']} GDD10 (the 5th percentile of Hokkaido rice area), not the ~900 GDD10 obtained from point data. On {N['inc_Mha']} Mha of incumbent arable land in Europe, {N['pct_thermal_pass']}% meets this thermal gate, but only {N['pct_aei']}% also has mapped irrigation infrastructure, and {N['pct_deficit']}% faces a summer rainfed deficit. Transplanting the point-derived threshold would instead exclude almost all of Germany. I treat {N['T_star']} GDD10 as an empirical, system-specific reference rather than a physiological constant, and I report how the shares change with the threshold, the window, the AEI cut-off, the domain definition and the resolution. I believe this scale and denominator sensitivity, rather than the suitability map itself, is the contribution most relevant to readers of Applied Geography.",
+          "The manuscript speaks to the journal's interest in spatially explicit resource assessment and land-use decision problems. It builds on land-suitability, cold-margin rice and irrigation studies published in Applied Geography and adds an explicit land denominator, non-compensatory gates and an analysis of the modifiable areal unit problem. I state plainly that climate suitability and mapped infrastructure are not operational feasibility: the gates identify candidates for next-stage assessment, not converted area, water allocations or policy effects, and no field validation is claimed.",
+          f"An earlier version was considered by Agricultural Systems and declined on scope grounds, with the advice to submit to a more land-use-oriented journal. I have re-analysed the work substantially and corrected several errors, which I disclose here. The Lower Danube water demand of a 250,000 ha paddy scenario is ~{N['dan_q']} m³/s (net), not ~24 m³/s; relative to a reported low flow of {N['dan_q99']} m³/s this is about {N['dan_pct']}%, not ~2%, and I present this ratio as indicative because the primary hydrological source could not be fully verified. The thermal window used by the original code was 29 April–11 September, not June–September. An implementation inconsistency in the portfolio-risk model set the rice contribution to zero for analog countries, and rice yields are now converted from paddy to milled equivalent. The European shares are now computed for Europe only; the earlier processing window also included North Africa and Anatolia. The modeled supply-risk results are reported with their uncertainty and are not robust in most countries.",
+          "The work is original, is not under consideration elsewhere, and I am its sole author. All code and derived outputs are openly available; the repository link is on the title page. I declare no competing interests. My use of AI-assisted tools is declared in the manuscript. I intend to publish under the subscription model.",
           "Suggested reviewers: [to be supplied by the author].", "Sincerely,", f"{AUTHOR}", AFFIL]:
     add_runs(c.add_paragraph(), x)
 CL = os.path.join(SUB, "APPLIED_GEOGRAPHY_COVER_LETTER.docx"); c.save(CL)

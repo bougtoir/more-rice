@@ -13,6 +13,8 @@ Sensitivity grid: substitution share f in {0.1,0.2,0.3}; detrending
 expansion beyond current rice districts); shortfall threshold relative to
 {own scenario mean (as original), baseline A mean}. Moving-block bootstrap
 (block 3 yr, 2000 draws) gives a 95% interval for P_B - P_A.
+Rice yields are converted from paddy to milled equivalent (x0.67) before
+applying the milled-rice energy density.
 Outputs are modeled scenario statistics, not observed food-crisis incidence.
 """
 import os, numpy as np, pandas as pd
@@ -42,6 +44,7 @@ def resid(deg):
     return R
 
 rng = np.random.default_rng(20261108)
+MILL = 0.67  # FAOSTAT rice yield is paddy; KCAL["Rice"] is per g milled rice (milling extraction ~0.67)
 def pshort(x, thr): return float((x < thr).mean())
 rows = []
 for deg, dname in [(1, "linear"), (2, "quadratic")]:
@@ -65,7 +68,7 @@ for deg, dname in [(1, "linear"), (2, "quadratic")]:
             pr = R[(c, "Potatoes")]
             pot = np.array([latest[(c, "Potatoes")] * np.exp(pr.get(y, 0.0)) * KCAL["Potatoes"] for y in yrs])
         for scale in [1.0, 0.75]:
-            rice = np.array([scale * rlev * np.exp(rs[y]) * KCAL["Rice"] for y in yrs])
+            rice = np.array([scale * MILL * rlev * np.exp(rs[y]) * KCAL["Rice"] for y in yrs])
             for f in [0.1, 0.2, 0.3]:
                 A = base; B = (1 - f) * base + f * rice
                 D = (1 - f) * base + f * pot if pot is not None else None

@@ -21,7 +21,7 @@ M = [("01_APPLIED_GEOGRAPHY_MANUSCRIPT_FINAL.docx", f"{SUB}/APPLIED_GEOGRAPHY_MA
 M += [(os.path.basename(p), p) for p in sorted(glob.glob(f"{FA}/2[3-7]_*.md"))]
 M += [("28_FINAL_PR_MERGE_RECOMMENDATION.md", f"{FA}/FINAL_PR_MERGE_RECOMMENDATION.md"), ("30_FINAL_SUBMISSION_GATE.md", f"{FA}/30_FINAL_SUBMISSION_GATE.md")]
 M += [(f"{30+i}_FIGURE_{i}_FINAL.png", f"{ART}/Figure_{i}.png") for i in range(1, 6)]
-assert len(M) == 35, len(M)
+assert len(M) == 34, len(M)
 for dst, src in M: shutil.copy(src, os.path.join(DL, dst))
 d = docx.Document(os.path.join(SUB, "APPLIED_GEOGRAPHY_TABLES_EDITABLE.docx"))
 with pd.ExcelWriter(os.path.join(DL, "36_TABLES_FINAL.xlsx")) as xw:

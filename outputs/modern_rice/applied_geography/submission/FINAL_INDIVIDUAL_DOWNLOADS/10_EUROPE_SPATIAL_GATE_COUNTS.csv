@@ -1,0 +1,5 @@
+domain,n_cells,incumbent_ha,incumbent_ha_missing_climate,n_cells_missing_climate,thermal_fail_ha,thermal_pass_ha,thermal_pass_aei_ha,thermal_pass_no_infra_deficit_ha,thermal_pass_no_infra_nonneg_balance_ha,thermal_pass_pct,thermal_aei_pct,spam_rice_ha,spam_rice_in_thermal_aei_ha,canonical_incumbent_Mha,canonical_thermal_pass_pct,canonical_thermal_aei_pct,abs_diff_incumbent_Mha,abs_diff_thermal_pp,abs_diff_thermal_aei_pp
+Europe_excl_Russia (primary),82621,69699806,0,0,5473208,64226598,11142061,52987054.0,77107.0,92.15,15.99,496516,406105,69.7,92.15,16.01,0.0,0.0,0.02
+EU27 (sensitivity),60005,46588148,0,0,3214152,43373996,9414737,,,93.1,20.21,468889,386468,46.59,93.1,20.23,0.002,0.0,0.02
+Europe_incl_Russia_west_of_45E (sensitivity),103428,85622234,0,0,5678966,79943268,11806745,,,93.37,13.79,646990,552737,85.62,93.37,13.81,0.002,0.0,0.02
+"rectangle_-11_45E_34_71.5N (sensitivity, superseded headline)",123643,107118046,330,8,6199003,100919043,18837702,,,94.21,17.59,767100,580539,107.12,94.21,17.6,0.002,0.0,0.01

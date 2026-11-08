@@ -4,7 +4,7 @@ Requirements as archived from the official Guide for Authors (`delta_qc/JOURNAL_
 
 | Requirement | Observed | Pass |
 |---|---|---|
-| Article type / length 4,500–8,000 words (all text incl. refs, captions) | 6116 words (python-docx text count) | PASS |
+| Article type / length 4,500–8,000 words (all text incl. refs, captions) | 6124 words (python-docx text count) | PASS |
 | Abstract ≤ 250 words | 248 words | PASS |
 | 1–7 keywords | 7 keywords | PASS |
 | Highlights 3–5, ≤ 85 characters each | 5 highlights, max 80 chars | PASS |

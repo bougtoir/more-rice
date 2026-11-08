@@ -10,9 +10,9 @@ Keywords (7): rice; land suitability; cultivation-system transfer; irrigation in
 Highlights:
 - A cold-region rice bound shifts by ~300 GDD10 between point and grid climate data (81 chars)
 - Calibrated on one grid, the thermal gate is met on 92.2% of European arable land (80 chars)
-- Irrigation infrastructure, not temperature, limits rice transfer in Europe (74 chars)
+- Mapped irrigation infrastructure, not temperature, is the binding screening gate (80 chars)
 - A 250,000 ha Lower Danube paddy area needs ~241 m³/s, a large share of low flow (79 chars)
-- Modeled supply-risk gains from rice are robust only in a few countries (70 chars)
+- Modeled supply-risk reductions from rice are mostly within sampling uncertainty (79 chars)
 
 Total word count (title, abstract, keywords, text, captions, tables, declarations, references): 5452
 Figures: 5; Tables: 3; References: 31

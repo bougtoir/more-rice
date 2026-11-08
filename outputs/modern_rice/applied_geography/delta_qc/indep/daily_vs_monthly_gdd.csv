@@ -1,0 +1,13 @@
+point,window,daily_GDD,monthly_mean_GDD,bias,lon,lat
+Hokkaido_JP,JunSep,941,938,-3,143.0,43.2
+Hokkaido_JP,29Apr11Sep,903,874,-29,143.0,43.2
+Rhine_DE,JunSep,931,931,0,6.9,50.9
+Rhine_DE,29Apr11Sep,957,947,-9,6.9,50.9
+Saxony_DE,JunSep,935,932,-3,13.7,51.0
+Saxony_DE,29Apr11Sep,969,956,-13,13.7,51.0
+Alsace_FR,JunSep,1037,1036,-1,7.4,48.5
+Alsace_FR,29Apr11Sep,1080,1073,-6,7.4,48.5
+Berlin_DE,JunSep,1049,1048,0,13.4,52.5
+Berlin_DE,29Apr11Sep,1089,1083,-7,13.4,52.5
+LowerDanube_RO,JunSep,1668,1668,0,25.9,43.9
+LowerDanube_RO,29Apr11Sep,1750,1750,0,25.9,43.9

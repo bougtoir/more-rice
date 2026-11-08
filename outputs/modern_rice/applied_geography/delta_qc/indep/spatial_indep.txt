@@ -1,0 +1,7 @@
+admin1 not available: list index out of range
+Hokkaido rice ha 114121.10022162646 P05 589.6010437011719 P01 487.90503692626953 P50 861.1730194091797
+rectangle (as in script): inc 107.12 Mha | thermal pass 94.2% | thermal+AEI 17.6% (18.86 Mha) | AEI among thermal-pass 18.7% | nan-GDD inc 0.000 Mha
+NE CONTINENT==Europe (incl. European Russia part in window): inc 85.62 Mha | thermal pass 93.4% | thermal+AEI 13.8% (11.82 Mha) | AEI among thermal-pass 14.8% | nan-GDD inc 0.000 Mha
+Europe excl Russia/Belarus/Ukraine/Moldova: inc 52.63 Mha | thermal pass 89.8% | thermal+AEI 18.6% (9.79 Mha) | AEI among thermal-pass 20.7% | nan-GDD inc 0.000 Mha
+EU27: inc 46.59 Mha | thermal pass 93.1% | thermal+AEI 20.2% (9.42 Mha) | AEI among thermal-pass 21.7% | nan-GDD inc 0.000 Mha
+NON-Europe part of rectangle: inc 21.27 Mha | thermal pass 97.9% | thermal+AEI 33.0% (7.02 Mha) | AEI among thermal-pass 33.7% | nan-GDD inc 0.000 Mha

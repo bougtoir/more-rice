@@ -10,9 +10,9 @@ rice; land suitability; cultivation-system transfer; irrigation infrastructure; 
 # HIGHLIGHTS
 - A cold-region rice bound shifts by ~{bound_shift} GDD10 between point and grid climate data
 - Calibrated on one grid, the thermal gate is met on {pct_thermal_pass}% of European arable land
-- Irrigation infrastructure, not temperature, limits rice transfer in Europe
+- Mapped irrigation infrastructure, not temperature, is the binding screening gate
 - A 250,000 ha Lower Danube paddy area needs ~{dan_q} m³/s, a large share of low flow
-- Modeled supply-risk gains from rice are robust only in a few countries
+- Modeled supply-risk reductions from rice are mostly within sampling uncertainty
 
 # 1. Introduction
 Diversifying staple crops is promoted as a response to correlated harvest failures, because temperature and precipitation anomalies co-move across breadbaskets and the probability of simultaneous failure is changing (Gaupp et al., 2020; Mehrabi & Ramankutty, 2019; Ray et al., 2015). Diversity can stabilise national production (Renard & Tilman, 2019), but adding a crop reduces risk only where the crop can actually be grown, where its resource demands can be met, and where its failures are not synchronous with those of incumbent crops. Each of these conditions has a geography, and each depends on scale.
@@ -46,7 +46,7 @@ Cells with incumbent arable area are assigned to one of four classes: (1) therma
 To assess the modifiable areal unit problem (Jelinski & Wu, 1996), the share of incumbent arable land passing thresholds T ∈ {T*, 800, 900, 1,000, 1,100} is computed at native 2.5′, 5′ and 10′ resolution and after aggregating the 5′ GDD10 field to 30′ and 60′ block means. For each configuration we report the area disagreement with the 2.5′ result. We also compare NASA POWER point values with the WorldClim 5′ cell that contains each point.
 
 ## 2.6 Economic parity
-Observed temperate paddy costs exist in the audited sources only for Italy: total costs {it_cost} €/ha and gross margins {it_gm} €/ha for conventional systems (Guglielmo et al., 2025; Monaco et al., 2016). Rice-specific costs for Romania, Bulgaria, Croatia and Serbia were not found in public sources. Economics is therefore treated as a break-even condition: rice must match the incumbent margin per hectare. It is not treated as an observed regional profitability.
+Observed temperate paddy costs exist in the audited sources only for Italy: total costs {it_cost} €/ha and gross margins {it_gm} €/ha for conventional systems (Savoini et al., 2025; Monaco et al., 2016). Rice-specific costs for Romania, Bulgaria, Croatia and Serbia were not found in public sources. Economics is therefore treated as a break-even condition: rice must match the incumbent margin per hectare. It is not treated as an observed regional profitability.
 
 ## 2.7 Food-supply risk scenarios
 For each country, FAOSTAT yields (FAO, 2024) of wheat, barley, maize, rice and potato are log-detrended, and the residuals are used as yearly shocks to recent yield levels. The incumbent portfolio (A) is compared with a substitution of 20% of the incumbent area by rice (B) and by potato (D). The outcome is the modeled probability that portfolio calories fall below 80% of their mean. FAOSTAT rice yields refer to paddy and are converted to milled equivalent (factor 0.67) before applying the energy density of milled rice. Where a country has fewer than 15 years of rice yields, rice shocks and the rice yield level are both taken from an analog country. The original implementation combined analog shocks with a missing own-country rice level, which set the rice contribution to zero; we correct this and label such countries as analog evidence. Uncertainty in B − A is estimated by a moving-block bootstrap with 3-year blocks and 2,000 resamples (Künsch, 1989). Robustness is assessed over 24 configurations: substitution shares of 0.1, 0.2 and 0.3; linear or quadratic detrending; a rice yield scale of 1.0 or 0.75; and own-mean or baseline-mean thresholds. These are scenario statistics about modeled calorie variability, not estimates of observed food crises.
@@ -124,7 +124,6 @@ FAO. (2024). *FAOSTAT: Crops and livestock products* [dataset]. Food and Agricul
 Fick, S. E., & Hijmans, R. J. (2017). WorldClim 2: New 1-km spatial resolution climate surfaces for global land areas. *International Journal of Climatology, 37*(12), 4302–4315. https://doi.org/10.1002/joc.5086
 Gao, J., & Liu, Y. (2011). Climate warming and land use change in Heilongjiang Province, Northeast China. *Applied Geography, 31*(2), 476–482. https://doi.org/10.1016/j.apgeog.2010.11.005
 Gaupp, F., Hall, J., Hochrainer-Stigler, S., & Dadson, S. (2020). Changing risks of simultaneous global breadbasket failure. *Nature Climate Change, 10*, 54–57. https://doi.org/10.1038/s41558-019-0600-z
-Guglielmo, S., Pietro, D. M., Andrea, C., Narote, A. D., Guidetti, R., Bocchi, S., & Vaglia, V. (2025). Sustainability assessment of rice farming: Insights from four Italian farms under climate stress. *Agriculture, 15*(17), 1797. https://doi.org/10.3390/agriculture15171797
 Hargreaves, G. H., & Samani, Z. A. (1985). Reference crop evapotranspiration from temperature. *Applied Engineering in Agriculture, 1*(2), 96–99.
 IFPRI. (2019). *Global spatially-disaggregated crop production statistics data for 2010 version 2.0* [dataset]. Harvard Dataverse. https://doi.org/10.7910/DVN/PRFF8V
 Jelinski, D. E., & Wu, J. (1996). The modifiable areal unit problem and implications for landscape ecology. *Landscape Ecology, 11*(3), 129–140. https://doi.org/10.1007/BF02447512
@@ -140,6 +139,7 @@ Ray, D. K., Gerber, J. S., MacDonald, G. K., & West, P. C. (2015). Climate varia
 Renard, D., & Tilman, D. (2019). National food production stabilized by crop diversity. *Nature, 571*, 257–260. https://doi.org/10.1038/s41586-019-1316-y
 Saiko, T. A., & Zonn, I. S. (2000). Irrigation expansion and dynamics of desertification in the Circum-Aral region of Central Asia. *Applied Geography, 20*(4), 349–367. https://doi.org/10.1016/S0143-6228(00)00014-X
 Salam, S., Popescu, I., & Scrieciu, A. (2022). Defining a water–energy–food nexus framework for water allocation in the lower Danube between Iron Gates and Zimnicea. *Geo-Eco-Marina, 28*. https://doi.org/10.5281/zenodo.7491458
+Savoini, G., De Marinis, P., Casson, A., Narote, A. D., Guidetti, R., Bocchi, S., & Vaglia, V. (2025). Sustainability assessment of rice farming: Insights from four Italian farms under climate stress. *Agriculture, 15*(17), 1797. https://doi.org/10.3390/agriculture15171797
 Siebert, S., Henrich, V., Frenken, K., & Burke, J. (2013). *Global map of irrigation areas version 5* [dataset]. Rheinische Friedrich-Wilhelms-University and FAO. https://www.fao.org/aquastat/en/geospatial-information/global-maps-irrigated-areas/
 Tenerelli, P., & Carver, S. (2012). Multi-criteria, multi-objective and uncertainty analysis for agro-energy spatial modelling. *Applied Geography, 32*(2), 724–736. https://doi.org/10.1016/j.apgeog.2011.08.013
 Xu, E., & Zhang, H. (2013). Spatially-explicit sensitivity analysis for land suitability evaluation. *Applied Geography, 45*, 1–9. https://doi.org/10.1016/j.apgeog.2013.08.005

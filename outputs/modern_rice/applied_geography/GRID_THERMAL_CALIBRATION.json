@@ -1,0 +1,16 @@
+{
+ "hokkaido_rice_ha": 113967.80022143573,
+ "hokkaido_P01_pipeline": 487.0,
+ "hokkaido_P01_calJunSep": 546.0,
+ "hokkaido_P05_pipeline": 589.0,
+ "hokkaido_P05_calJunSep": 664.0,
+ "hokkaido_P10_pipeline": 637.0,
+ "hokkaido_P10_calJunSep": 722.0,
+ "hokkaido_P50_pipeline": 859.0,
+ "hokkaido_P50_calJunSep": 956.0,
+ "NH35plus_P01_pipeline": 769.0,
+ "NH35plus_P05_pipeline": 1036.0,
+ "NH35plus_rice_ha": 8766685.90390046,
+ "T_star_pipeline": 589.0,
+ "T_star_calJunSep": 664.0
+}

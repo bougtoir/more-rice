@@ -158,14 +158,18 @@ def base_doc():
     for s in d.sections: s.left_margin = s.right_margin = s.top_margin = s.bottom_margin = Inches(1)
     return d
 def add_runs(par, text):
-    for i, chunk in enumerate(re.split(r"(\*[^*]+\*)", text)):
+    for chunk in re.split(r"(\*[^*]+\*)", text):
         if not chunk: continue
-        r = par.add_run(chunk[1:-1] if chunk.startswith("*") and chunk.endswith("*") else chunk)
-        if chunk.startswith("*") and chunk.endswith("*"): r.italic = True
+        ital = chunk.startswith("*") and chunk.endswith("*")
+        for k, part in enumerate((chunk[1:-1] if ital else chunk).split("³")):
+            if k:
+                sr = par.add_run("3"); sr.font.superscript = True; sr.italic = ital
+            if part:
+                r = par.add_run(part); r.italic = ital
 def add_table(d, key):
     cap, hdr, rows = TABS[key]
     p = d.add_paragraph(); p.paragraph_format.space_before = Pt(18); p.paragraph_format.keep_with_next = True
-    r = p.add_run(f"Table {TABNUM[key]}. "); r.bold = True; p.add_run(cap)
+    r = p.add_run(f"Table {TABNUM[key]}. "); r.bold = True; add_runs(p, cap)
     t = d.add_table(rows=1 + len(rows), cols=len(hdr)); t.style = "Table Grid"
     for j, h in enumerate(hdr):
         c = t.cell(0, j); c.text = h; c.paragraphs[0].runs[0].bold = True
@@ -183,13 +187,13 @@ def add_figure(d, key, embed=True):
         p = d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.line_spacing = 1.0
         p.add_run().add_picture(os.path.join(FIG, fn + ".png"), width=Inches(6.3))
     p = d.add_paragraph(); p.paragraph_format.space_before = Pt(18)
-    r = p.add_run(f"Figure {FIGNUM[key]}. "); r.bold = True; p.add_run(cap)
+    r = p.add_run(f"Figure {FIGNUM[key]}. "); r.bold = True; add_runs(p, cap)
 
 # ---------------- anonymized manuscript ----------------
 def build_ms(embed, path):
   d = base_doc()
   p = d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; r = p.add_run(title); r.bold = True; r.font.size = Pt(14)
-  d.add_heading("Abstract", level=1); d.add_paragraph(abstract)
+  d.add_heading("Abstract", level=1); add_runs(d.add_paragraph(), abstract)
   p = d.add_paragraph(); r = p.add_run("Keywords: "); r.bold = True; p.add_run(keywords)
   for bp in body_p:
       if bp.startswith("## "): d.add_heading(bp[3:], level=2)
@@ -247,7 +251,7 @@ for x in ["[Date]", "The Editors, Applied Geography", f"Re: Submission of a rese
           f"An earlier version was considered by Agricultural Systems and declined on scope grounds, with the advice to submit to a more land-use-oriented journal. This version has been substantially re-analysed. It corrects an error in the Lower Danube water-demand calculation (a 250,000 ha scenario requires ~{N['dan_q']} m³/s, {N['dan_pct']}% of Q99, not ~2%) and an implementation inconsistency in the portfolio-risk model. The candidate regions are framed as targets for next-stage feasibility assessment only.",
           "The work is original, is not under consideration elsewhere, and has a single author. All code and derived outputs are openly available; the repository link is on the title page. The author declares no competing interests. Use of AI-assisted tools is declared in the manuscript. We intend to publish under the subscription model.",
           "Suggested reviewers: [to be supplied by the author].", "Sincerely,", f"{AUTHOR}", AFFIL]:
-    c.add_paragraph(x)
+    add_runs(c.add_paragraph(), x)
 CL = os.path.join(SUB, "APPLIED_GEOGRAPHY_COVER_LETTER.docx"); c.save(CL)
 
 # ---------------- metadata + checks ----------------
@@ -258,6 +262,7 @@ assert 4500 <= words <= 8000, words
 cited = set(re.findall(r"([A-Z][A-Za-zü\-]+(?: (?:&|et al\.)(?: [A-Z][A-Za-zü\-]+)?)?),? \(?(\d{4})", " ".join(body_p)))
 dx = Document(MS); nl = sum(("\n" in r.text or "\r" in r.text) for pp in dx.paragraphs for r in pp.runs)
 assert nl == 0, nl
+assert not any("³" in r.text for pp in dx.paragraphs for r in pp.runs), "unicode superscript in docx"
 assert REPO_URL not in " ".join(pp.text for pp in dx.paragraphs) and "Onishi" not in " ".join(pp.text for pp in dx.paragraphs)
 with open(os.path.join(SUB, "APPLIED_GEOGRAPHY_ABSTRACT_AND_METADATA.txt"), "w") as f:
     f.write(f"Title: {title}\n\nArticle type: Research article\n\nAbstract ({wc(abstract)} words):\n{abstract}\n\nKeywords ({len(keywords.split(';'))}): {keywords}\n\nHighlights:\n")

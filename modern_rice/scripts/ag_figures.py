@@ -48,7 +48,7 @@ for ext_ in ["png", "svg", "pdf"]: fig.savefig(os.path.join(FIG, f"Figure_map_ga
 plt.close(fig)
 # scale / threshold sensitivity
 s = pd.read_csv(os.path.join(O, "EUROPE_SCALE_THRESHOLD_SENSITIVITY.csv")); cv = pd.read_csv(os.path.join(O, "EUROPE_THRESHOLD_CURVE.csv"))
-fig, axs = plt.subplots(1, 3, figsize=(12, 3.8), constrained_layout=True)
+fig, axs = plt.subplots(2, 2, figsize=(11, 7.6), constrained_layout=True); axs = axs.ravel()
 axs[0].plot(cv["T"], cv.share_pipeline * 100, label="29 Apr–11 Sep window"); axs[0].plot(cv["T"], cv.share_calJunSep * 100, "--", label="calendar Jun–Sep")
 axs[0].axvline(T, color="k", lw=0.8); axs[0].axvline(900, color="r", lw=0.8, ls="--"); axs[0].set_xlabel("GDD10 threshold"); axs[0].set_ylabel("% incumbent arable passing"); axs[0].legend(fontsize=7); axs[0].set_title("(a) Threshold dependence (5′)", fontsize=9, loc="left")
 for thr, mk in [(T, "o"), (900, "s"), (1000, "^")]:
@@ -57,6 +57,12 @@ axs[1].set_xticks(range(5)); axs[1].set_xticklabels(["2.5′", "5′", "10′", 
 axs[2].scatter(pts.power_gdd_pipeline, pts.grid_gdd_pipeline, s=12); lim = [200, 2300]; axs[2].plot(lim, lim, "k:", lw=0.8)
 for _, r in pts[pts.point.isin(cand)].iterrows(): axs[2].annotate(r.point.split("_")[0], (r.power_gdd_pipeline, r.grid_gdd_pipeline), fontsize=6)
 axs[2].set_xlabel("NASA POWER point cell, 2000–2024"); axs[2].set_ylabel("WorldClim 5′ cell, 1970–2000"); axs[2].set_title("(c) Source/scale cross-walk of GDD10", fontsize=9, loc="left")
+dc = pd.read_csv(os.path.join(O, "GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv"))
+for blk, off, col, lab in [("1_threshold_path_pipeline_5m", -0.2, "C0", "29 Apr–11 Sep"), ("2_threshold_path_JunSep_5m", 0.2, "C1", "Jun–Sep")]:
+    q = dc[dc.block == blk].reset_index(drop=True); axs[3].bar(np.arange(len(q)) + off, q.germany_pass_pct, 0.38, color=col, label=lab)
+    for i, r in q.iterrows(): axs[3].text(i + off, r.germany_pass_pct + 1.5, f"{r.threshold_gdd10:.0f}", ha="center", fontsize=5.5, rotation=90)
+axs[3].set_xticks(range(6)); axs[3].set_xticklabels(["POWER pt\n2000–24", "POWER pt\n1981–2000", "monthly\nformula", "WorldClim\ncell at pt", "Hokkaido\nrice P50", "Hokkaido\nrice P05"], fontsize=6.5)
+axs[3].set_ylim(0, 112); axs[3].set_ylabel("% German incumbent arable passing"); axs[3].legend(fontsize=7, loc="upper left"); axs[3].set_title("(d) Germany: reference-construction path (5′ surface)", fontsize=9, loc="left")
 for ext_ in ["png", "svg", "pdf"]: fig.savefig(os.path.join(FIG, f"Figure_scale_sensitivity.{ext_}"), dpi=600 if ext_ == "png" else None)
 print("figs ok")
 # ---------------- Figure 1: gate framework ----------------

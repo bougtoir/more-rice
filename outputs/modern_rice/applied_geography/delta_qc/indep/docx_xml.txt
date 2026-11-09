@@ -1,0 +1,6 @@
+APPLIED_GEOGRAPHY_MANUSCRIPT_FINAL.docx | inline 0 anchor 0 omml 1 tables 3 | literal * : 8 | heading colors [RGBColor(0x00, 0x00, 0x00), RGBColor(0x00, 0x00, 0x00), RGBColor(0x00, 0x00, 0x00)]
+  seq: ['Figure 1.', 'Figure 1.', 'Table 1.', 'Table 1.', 'Figure 2.', 'Table 2.', 'Figure 3.', 'Figure 4.', 'Figure 5.', 'Table 3.']
+APPLIED_GEOGRAPHY_MANUSCRIPT_INLINE_REVIEW_COPY.docx | inline 5 anchor 0 omml 1 tables 3 | literal * : 8 | heading colors [RGBColor(0x00, 0x00, 0x00), RGBColor(0x00, 0x00, 0x00), RGBColor(0x00, 0x00, 0x00)]
+  seq: ['Figure 1.', '[[IMG]]', 'Figure 1.', 'Table 1.', 'Table 1.', '[[IMG]]', 'Figure 2.', 'Table 2.', '[[IMG]]', 'Figure 3.', '[[IMG]]', 'Figure 4.', '[[IMG]]', 'Figure 5.', 'Table 3.']
+APPLIED_GEOGRAPHY_COVER_LETTER.docx | inline 0 anchor 0 omml 0 tables 0 | literal * : 0 | heading colors [RGBColor(0x00, 0x00, 0x00), RGBColor(0x00, 0x00, 0x00), RGBColor(0x00, 0x00, 0x00)]
+  seq: []

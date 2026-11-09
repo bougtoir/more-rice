@@ -1,0 +1,11 @@
+claim,manuscript_location,canonical_result_ids,evidence_files,independent_check_ids (CLAIM_IMPLEMENTATION_INDEPENDENCE_MATRIX),status
+"Thermal reference T* = 589 GDD10 is system-specific, not physiological","2.2, 3.1",cal.T_star_pipeline,GRID_THERMAL_CALIBRATION.json; GERMANY_THERMAL_CONTRAST_INDEPENDENT_CHECK.json,C1,supported
+"Germany 96.6% vs 3.2% is a reference-construction (estimand) contrast, not a resolution effect","2.5, 3.3, Fig 3d",germany.*,final_audit/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.md/.csv,"C2, C3",supported; order-dependent path
+Europe excl. Russia denominator 69.7 Mha; 92.2% thermal pass; 16.0% thermal + AEI≥10%,"Abstract, 2.1, 3.2",domain.Europe_excl_Russia (primary).*,final_audit/EUROPE_SPATIAL_DENOMINATOR_AUDIT.md; EUROPE_SPATIAL_GATE_COUNTS.csv,C4,supported
+"Irrigation infrastructure, not temperature, is the binding screening gate","3.2, 4.1",domain.*.thermal_aei,EUROPE_GATE_CASCADE_BY_COUNTRY.csv; EUROPE_AEI_THRESHOLD_SENSITIVITY.csv,C4,supported as screening result; AEI ≠ operational feasibility
+Europe-wide share changes ≤ ~4 pp with resolution/aggregation; class changes are substantial locally,"3.3, Fig 3b","ms.max_scale_pts, ms.dis_900_60",EUROPE_SCALE_THRESHOLD_SENSITIVITY.csv,pipeline only,supported (not independently recomputed)
+Monthly-mean GDD underestimates daily GDD (≤29 GDD10 at points),4.4,ms.*,GDD_DAILY_VS_MONTHLY.csv; KNOWN_ANSWER_TEST_REPORT.md,C5,supported
+"250,000 ha Lower Danube scenario: net ~241 m³/s, gross ~321.5 m³/s",3.4,demand.*,DANUBE_DEMAND_VS_LOWFLOW.csv; DECISION_CRITICAL_NUMERICAL_AUDIT.md,C6,supported (scenario arithmetic)
+"Orsova Jun–Sep minimum daily discharge median 2,749 m³/s; gross = 11.7% of median, 22.8% of lowest",3.4,hydro.*,HYDROLOGICAL_LOW_FLOW_RESULTS.csv; delta_qc/HYDROLOGICAL_LOW_FLOW_ANALYSIS.md,"C7, C8",supported; not a Q99; not allocable water
+Rice substitution reduces modeled shortfall probability robustly only in Kazakhstan (58% of configurations),"3.5, Table 3, Fig 5","risk.*, robust.*",RISK_PORTFOLIO_*.csv,C9,supported as modeled statistic
+"Mapped suitability/AEI is not operational feasibility, permits, delivery capacity or economics","Abstract, 4.3, 4.4",—,manuscript text; EUROPE_DOMAIN_AND_MASK_PROVENANCE.md,—,interpretive constraint

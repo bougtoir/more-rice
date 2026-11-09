@@ -1,0 +1,19 @@
+             point      window  daily_GDD  monthly_mean_GDD  bias    lon   lat
+0      Hokkaido_JP      JunSep        941               938    -3  143.0  43.2
+1      Hokkaido_JP  29Apr11Sep        903               874   -29  143.0  43.2
+2         Rhine_DE      JunSep        931               931     0    6.9  50.9
+3         Rhine_DE  29Apr11Sep        957               947    -9    6.9  50.9
+4        Saxony_DE      JunSep        935               932    -3   13.7  51.0
+5        Saxony_DE  29Apr11Sep        969               956   -13   13.7  51.0
+6        Alsace_FR      JunSep       1037              1036    -1    7.4  48.5
+7        Alsace_FR  29Apr11Sep       1080              1073    -6    7.4  48.5
+8        Berlin_DE      JunSep       1049              1048     0   13.4  52.5
+9        Berlin_DE  29Apr11Sep       1089              1083    -7   13.4  52.5
+10  LowerDanube_RO      JunSep       1668              1668     0   25.9  43.9
+11  LowerDanube_RO  29Apr11Sep       1750              1750     0   25.9  43.9
+Hokkaido_JP WC5 pipe 645 cal 718 {4: 3.2, 5: 9.0, 6: 13.2, 7: 17.6, 8: 18.7, 9: 13.9}
+Rhine_DE WC5 pipe 901 cal 872 {4: 9.3, 5: 14.0, 6: 16.6, 7: 18.5, 8: 18.4, 9: 15.0}
+Saxony_DE WC5 pipe 808 cal 786 {4: 7.9, 5: 13.1, 6: 16.0, 7: 17.9, 8: 17.8, 9: 13.9}
+Alsace_FR WC5 pipe 617 cal 631 {4: 6.7, 5: 11.4, 6: 14.3, 7: 16.7, 8: 16.6, 9: 13.0}
+Berlin_DE WC5 pipe 938 cal 888 {4: 8.8, 5: 14.2, 6: 17.1, 7: 19.0, 8: 18.6, 9: 14.2}
+LowerDanube_RO WC5 pipe 1498 cal 1425 {4: 12.2, 5: 17.6, 6: 21.3, 7: 23.4, 8: 23.1, 9: 18.7}

@@ -1,0 +1,17 @@
+test,expected,observed,tolerance,result
+pipeline window length (days),136.0,136.0,1e-09,PASS
+calendar Jun-Sep length (days),122.0,122.0,1e-09,PASS
+"monthly formula, constant 15 °C, pipeline window",680.0,680.0,1e-09,PASS
+"monthly formula, constant 9 °C (below base) gives 0",0.0,0.0,1e-09,PASS
+"daily vs monthly agree when no day crosses base (12/8 °C months: daily 60, monthly 60)",60.0,60.0,1e-09,PASS
+monthly underestimates when days straddle base (daily 60 vs monthly 0),60.0,60.0,1e-09,PASS
+  ... monthly-mean value,0.0,0.0,1e-09,PASS
+"weighted P05 (weights 1,1,1,7 on 1..4)",1.0,1.0,1e-09,PASS
+weighted P50 (same),4.0,4.0,1e-09,PASS
+weighted P30 boundary (cum 0.3 exactly -> value 3),3.0,3.0,1e-09,PASS
+area-weighted pass share at T=589 (90/100),0.9,0.9,1e-09,PASS
+net demand Q = A·D/T (m³/s),241.1265,241.12654320987653,0.0001,PASS
+gross at 75% efficiency (m³/s),321.502,321.50205761316874,0.001,PASS
+paddy 5000 kg/ha × 0.67 × 3.65 kcal/g (Mkcal/ha),12.2275,12.2275,1e-09,PASS
+"shortfall indicator below 0.8 × mean (mean 9.4, thr 7.52)",0.2,0.2,1e-09,PASS
+rice blend last year 0.8·7+0.2·10,7.6,7.6000000000000005,1e-09,PASS

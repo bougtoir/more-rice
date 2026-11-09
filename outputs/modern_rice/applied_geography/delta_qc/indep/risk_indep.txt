@@ -1,0 +1,14 @@
+['kg/ha'] ['Rice'] ['Rice']
+{'country': 'Romania', 'rice_src': 'Romania', 'n': 64, 'P_A': np.float64(0.203), 'P_B': np.float64(0.109), 'rice_mean_share': np.float64(0.299), 'mill': 1.0}
+{'country': 'Romania', 'rice_src': 'Romania', 'n': 64, 'P_A': np.float64(0.203), 'P_B': np.float64(0.109), 'rice_mean_share': np.float64(0.222), 'mill': 0.67}
+{'country': 'Bulgaria', 'rice_src': 'Bulgaria', 'n': 64, 'P_A': np.float64(0.203), 'P_B': np.float64(0.172), 'rice_mean_share': np.float64(0.214), 'mill': 1.0}
+{'country': 'Bulgaria', 'rice_src': 'Bulgaria', 'n': 64, 'P_A': np.float64(0.203), 'P_B': np.float64(0.172), 'rice_mean_share': np.float64(0.154), 'mill': 0.67}
+{'country': 'Serbia', 'rice_src': 'Hungary', 'n': 19, 'P_A': np.float64(0.211), 'P_B': np.float64(0.0), 'rice_mean_share': np.float64(0.146), 'mill': 1.0}
+{'country': 'Serbia', 'rice_src': 'Hungary', 'n': 19, 'P_A': np.float64(0.211), 'P_B': np.float64(0.0), 'rice_mean_share': np.float64(0.103), 'mill': 0.67}
+{'country': 'Kazakhstan', 'rice_src': 'Kazakhstan', 'n': 33, 'P_A': np.float64(0.212), 'P_B': np.float64(0.03), 'rice_mean_share': np.float64(0.475), 'mill': 1.0}
+{'country': 'Kazakhstan', 'rice_src': 'Kazakhstan', 'n': 33, 'P_A': np.float64(0.212), 'P_B': np.float64(0.061), 'rice_mean_share': np.float64(0.378), 'mill': 0.67}
+{'country': 'Hungary', 'rice_src': 'Hungary', 'n': 64, 'P_A': np.float64(0.188), 'P_B': np.float64(0.156), 'rice_mean_share': np.float64(0.14), 'mill': 1.0}
+{'country': 'Hungary', 'rice_src': 'Hungary', 'n': 64, 'P_A': np.float64(0.188), 'P_B': np.float64(0.156), 'rice_mean_share': np.float64(0.099), 'mill': 0.67}
+{'country': 'France', 'rice_src': 'France', 'n': 64, 'P_A': np.float64(0.109), 'P_B': np.float64(0.062), 'rice_mean_share': np.float64(0.178), 'mill': 1.0}
+{'country': 'France', 'rice_src': 'France', 'n': 64, 'P_A': np.float64(0.109), 'P_B': np.float64(0.094), 'rice_mean_share': np.float64(0.127), 'mill': 0.67}
+synthetic: P_A 0.2 P_B 0.2 B_last 7.6000000000000005 zero-rice bug would give B=0.8A: 5.6000000000000005

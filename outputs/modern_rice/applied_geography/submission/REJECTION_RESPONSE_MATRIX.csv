@@ -1,0 +1,3 @@
+criticism,severity,manuscript_location,fix_type,status
+"Desk rejection letter text NOT supplied; only paraphrase in prompt: scope mismatch, EiC recommends a more land-use-oriented journal because of the scale of analysis",critical,whole manuscript,retarget + reframe to land-use geography,addressed by retarget to Applied Geography
+"(inferred from paraphrase) scale of analysis is regional/land-use rather than farming-system",high,Introduction/Methods,add explicit spatial unit, denominator and multi-scale analysis,addressed (grid gate screen, scale sensitivity)

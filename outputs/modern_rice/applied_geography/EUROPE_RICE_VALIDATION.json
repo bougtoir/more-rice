@@ -1,0 +1,8 @@
+{
+ "rice_ha_total": 501074.9999271482,
+ "thermal_fail": 4345.700005427003,
+ "thermal_pass_no_irrig_infra_rainfed_deficit": 85348.40006376058,
+ "thermal_pass_no_irrig_infra_rainfed_balance_nonneg": 617.8999999910593,
+ "thermal_pass_irrig_infra_present": 406208.69984867424,
+ "rice_ha_no_incumbent_cells": 4554.300009295344
+}

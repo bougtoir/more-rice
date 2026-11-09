@@ -1,0 +1,5 @@
+# Applied Geography scope and novelty (final)
+- Fit: spatially explicit resource assessment on existing arable land with an explicit denominator (69.7 Mha, Europe excl. Russia), non-compensatory gates, MAUP/domain/source sensitivity, and a station-based water check. Matches the journal's applied, policy-relevant spatial-analysis scope.
+- Novel elements: (1) the cold bound is a property of data source/window/scale (589 vs ~900 GDD10; Germany 96.6% vs 3.2%); (2) the binding screening gate is infrastructure/water, not temperature (92.2% vs 16.0%); (3) a hypothetical Lower Danube paddy sector is set against observed seasonal low flows (8.8% net of the median Jun–Sep minimum) while explicitly not claiming allocable water.
+- Weaknesses: suitability mapping is established; AEI c. 2010; 1970–2000 climatology; risk model ancillary and mostly non-robust; hydrology record ends 1990.
+- Desk-rejection risk: medium–high (unchanged by the hydrology revision, which removes a vulnerability rather than adds novelty).

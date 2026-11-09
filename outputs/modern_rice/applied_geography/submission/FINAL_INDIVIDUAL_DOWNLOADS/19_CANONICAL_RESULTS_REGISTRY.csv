@@ -1,0 +1,345 @@
+result_id,description,value,unit,source_file,selector
+cal.T_star_pipeline,T_star_pipeline,589.0,GDD10,outputs/modern_rice/applied_geography/GRID_THERMAL_CALIBRATION.json,T_star_pipeline
+cal.T_star_calJunSep,T_star_calJunSep,664.0,GDD10,outputs/modern_rice/applied_geography/GRID_THERMAL_CALIBRATION.json,T_star_calJunSep
+cal.hokkaido_P01_pipeline,hokkaido_P01_pipeline,487.0,GDD10,outputs/modern_rice/applied_geography/GRID_THERMAL_CALIBRATION.json,hokkaido_P01_pipeline
+cal.hokkaido_P10_pipeline,hokkaido_P10_pipeline,637.0,GDD10,outputs/modern_rice/applied_geography/GRID_THERMAL_CALIBRATION.json,hokkaido_P10_pipeline
+cal.hokkaido_P50_pipeline,hokkaido_P50_pipeline,859.0,GDD10,outputs/modern_rice/applied_geography/GRID_THERMAL_CALIBRATION.json,hokkaido_P50_pipeline
+cal.hokkaido_rice_ha,hokkaido_rice_ha,113967.80022143573,ha,outputs/modern_rice/applied_geography/GRID_THERMAL_CALIBRATION.json,hokkaido_rice_ha
+domain.rectangle_-11_45E_34_71.5N.incumbent,"incumbent arable, rectangle_-11_45E_34_71.5N",107.12,Mha,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,domain=rectangle_-11_45E_34_71.5N:incumbent_Mha
+domain.rectangle_-11_45E_34_71.5N.thermal,"thermal pass share, rectangle_-11_45E_34_71.5N",94.21,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_pass_share×100
+domain.rectangle_-11_45E_34_71.5N.thermal_aei,"thermal + AEI≥10% share, rectangle_-11_45E_34_71.5N",17.6,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_aei_share×100
+domain.Europe_excl_Russia (primary).incumbent,"incumbent arable, Europe_excl_Russia (primary)",69.7,Mha,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,domain=Europe_excl_Russia (primary):incumbent_Mha
+domain.Europe_excl_Russia (primary).thermal,"thermal pass share, Europe_excl_Russia (primary)",92.15,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_pass_share×100
+domain.Europe_excl_Russia (primary).thermal_aei,"thermal + AEI≥10% share, Europe_excl_Russia (primary)",16.01,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_aei_share×100
+domain.Europe_incl_Russia_west_of_45E.incumbent,"incumbent arable, Europe_incl_Russia_west_of_45E",85.62,Mha,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,domain=Europe_incl_Russia_west_of_45E:incumbent_Mha
+domain.Europe_incl_Russia_west_of_45E.thermal,"thermal pass share, Europe_incl_Russia_west_of_45E",93.37,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_pass_share×100
+domain.Europe_incl_Russia_west_of_45E.thermal_aei,"thermal + AEI≥10% share, Europe_incl_Russia_west_of_45E",13.81,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_aei_share×100
+domain.EU27.incumbent,"incumbent arable, EU27",46.59,Mha,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,domain=EU27:incumbent_Mha
+domain.EU27.thermal,"thermal pass share, EU27",93.1,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_pass_share×100
+domain.EU27.thermal_aei,"thermal + AEI≥10% share, EU27",20.23,%,outputs/modern_rice/applied_geography/EUROPE_DOMAIN_SENSITIVITY.csv,thermal_aei_share×100
+germany.00,"0_endpoints: T* = Hokkaido rice-area P05, WorldClim 5', pipeline window [5m, pipeline_29Apr_11Sep]",96.57,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 0; threshold 589.0
+germany.01,"0_endpoints: 900 GDD10 (rounded NASA POWER Hokkaido point, 2000-2024) [5m, pipeline_29Apr_11Sep]",3.23,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 1; threshold 900.0
+germany.02,"1_threshold_path_pipeline_5m: a POWER point 43.2N 143.0E, daily, 2000-2024 [5m, pipeline_29Apr_11Sep]",3.1,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 2; threshold 903.0
+germany.03,"1_threshold_path_pipeline_5m: b same point, daily, 1981-2000 (baseline harmonised) [5m, pipeline_29Apr_11Sep]",14.69,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 3; threshold 832.0
+germany.04,"1_threshold_path_pipeline_5m: c same point, 1981-2000, monthly-mean GDD formula [5m, pipeline_29Apr_11Sep]",41.5,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 4; threshold 767.0
+germany.05,"1_threshold_path_pipeline_5m: d WorldClim 5' cell at the same point (1970-2000) [5m, pipeline_29Apr_11Sep]",49.97,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 5; threshold 750.0
+germany.06,"1_threshold_path_pipeline_5m: e WorldClim rice-area P50 (Hokkaido) [5m, pipeline_29Apr_11Sep]",9.01,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 6; threshold 859.0
+germany.07,"1_threshold_path_pipeline_5m: f WorldClim rice-area P05 (= T*) [5m, pipeline_29Apr_11Sep]",96.57,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 7; threshold 589.0
+germany.08,"2_threshold_path_JunSep_5m: a POWER point daily 2000-2024 [5m, calendar_Jun_Sep]",0.76,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 8; threshold 941.0
+germany.09,"2_threshold_path_JunSep_5m: b POWER point daily 1981-2000 [5m, calendar_Jun_Sep]",3.04,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 9; threshold 872.0
+germany.10,"2_threshold_path_JunSep_5m: c POWER point monthly 1981-2000 [5m, calendar_Jun_Sep]",3.46,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 10; threshold 866.0
+germany.11,"2_threshold_path_JunSep_5m: d WorldClim cell at point [5m, calendar_Jun_Sep]",7.25,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 11; threshold 841.0
+germany.12,"2_threshold_path_JunSep_5m: e WorldClim rice P50 [5m, calendar_Jun_Sep]",0.49,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 12; threshold 956.0
+germany.13,"2_threshold_path_JunSep_5m: f WorldClim rice P05 [5m, calendar_Jun_Sep]",85.74,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 13; threshold 664.0
+germany.14,"2_window_mismatch: pipeline T* (589) applied to Jun-Sep surface (invalid mix) [5m, calendar_Jun_Sep]",96.93,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 14; threshold 589.0
+germany.15,"2_window_mismatch: 900 applied to Jun-Sep surface (invalid mix) [5m, calendar_Jun_Sep]",1.51,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 15; threshold 900.0
+germany.16,"3_point_location_pipeline_5m: POWER Asahikawa_JP daily 1981-2000 [5m, pipeline_29Apr_11Sep]",12.7,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 16; threshold 841.0
+germany.17,"3_point_location_pipeline_5m: WorldClim 5' cell at Asahikawa_JP [5m, pipeline_29Apr_11Sep]",1.61,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 17; threshold 932.0
+germany.18,"3_point_location_pipeline_5m: POWER Iwamizawa_Sorachi_JP daily 1981-2000 [5m, pipeline_29Apr_11Sep]",3.1,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 18; threshold 903.0
+germany.19,"3_point_location_pipeline_5m: WorldClim 5' cell at Iwamizawa_Sorachi_JP [5m, pipeline_29Apr_11Sep]",33.26,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 19; threshold 782.0
+germany.20,"3_point_location_pipeline_5m: POWER Sapporo_Ishikari_JP daily 1981-2000 [5m, pipeline_29Apr_11Sep]",8.59,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 20; threshold 861.0
+germany.21,"3_point_location_pipeline_5m: WorldClim 5' cell at Sapporo_Ishikari_JP [5m, pipeline_29Apr_11Sep]",0.87,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 21; threshold 957.0
+germany.22,"3_point_location_pipeline_5m: POWER Asahikawa_JP daily 2000-2024 [5m, pipeline_29Apr_11Sep]",3.17,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 22; threshold 901.0
+germany.23,"4_resolution_recalibrated: rice-area P05 recalibrated at 2.5m [2.5m, pipeline_29Apr_11Sep]",94.13,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 23; threshold 612.0
+germany.24,"4_resolution_fixed_900: 900 fixed [2.5m, pipeline_29Apr_11Sep]",3.55,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 24; threshold 900.0
+germany.25,"4_resolution_recalibrated: rice-area P05 recalibrated at 2.5m [2.5m, calendar_Jun_Sep]",78.35,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 25; threshold 682.0
+germany.26,"4_resolution_fixed_900: 900 fixed [2.5m, calendar_Jun_Sep]",1.56,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 26; threshold 900.0
+germany.27,"4_resolution_recalibrated: rice-area P05 recalibrated at 5m [5m, pipeline_29Apr_11Sep]",96.57,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 27; threshold 589.0
+germany.28,"4_resolution_fixed_900: 900 fixed [5m, pipeline_29Apr_11Sep]",3.23,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 28; threshold 900.0
+germany.29,"4_resolution_recalibrated: rice-area P05 recalibrated at 5m [5m, calendar_Jun_Sep]",85.74,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 29; threshold 664.0
+germany.30,"4_resolution_fixed_900: 900 fixed [5m, calendar_Jun_Sep]",1.51,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 30; threshold 900.0
+germany.31,"4_resolution_recalibrated: rice-area P05 recalibrated at 10m [10m, pipeline_29Apr_11Sep]",98.36,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 31; threshold 552.0
+germany.32,"4_resolution_fixed_900: 900 fixed [10m, pipeline_29Apr_11Sep]",3.0,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 32; threshold 900.0
+germany.33,"4_resolution_recalibrated: rice-area P05 recalibrated at 10m [10m, calendar_Jun_Sep]",96.2,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 33; threshold 603.0
+germany.34,"4_resolution_fixed_900: 900 fixed [10m, calendar_Jun_Sep]",1.2,% DE incumbent passing,outputs/modern_rice/applied_geography/GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,row 34; threshold 900.0
+hydro.00,Orsova (GRDC 6742200) all JunSep_min_daily_median,2749.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 0
+hydro.01,Orsova (GRDC 6742200) all JunSep_min_daily_P10,2199.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 1
+hydro.02,Orsova (GRDC 6742200) all JunSep_min_daily_lowest,1410.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 2
+hydro.03,Orsova (GRDC 6742200) all JunSep_mean_median,5051.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 3
+hydro.04,Orsova (GRDC 6742200) all annual_min_daily_median,2239.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 4
+hydro.08,Orsova (GRDC 6742200) 1920-1971 (pre-Iron Gates I) JunSep_min_daily_median,2802.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 8
+hydro.09,Orsova (GRDC 6742200) 1920-1971 (pre-Iron Gates I) JunSep_min_daily_P10,2241.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 9
+hydro.10,Orsova (GRDC 6742200) 1920-1971 (pre-Iron Gates I) JunSep_min_daily_lowest,1813.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 10
+hydro.11,Orsova (GRDC 6742200) 1920-1971 (pre-Iron Gates I) JunSep_mean_median,5094.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 11
+hydro.12,Orsova (GRDC 6742200) 1972-1990 (regulated) JunSep_min_daily_median,2470.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 12
+hydro.13,Orsova (GRDC 6742200) 1972-1990 (regulated) JunSep_min_daily_P10,1854.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 13
+hydro.14,Orsova (GRDC 6742200) 1972-1990 (regulated) JunSep_min_daily_lowest,1410.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 14
+hydro.15,Orsova (GRDC 6742200) 1972-1990 (regulated) JunSep_mean_median,4859.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 15
+hydro.16,Bazias (GRDC 6742201) all JunSep_min_daily_median,2534.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 16
+hydro.17,Bazias (GRDC 6742201) all JunSep_min_daily_P10,1945.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 17
+hydro.18,Bazias (GRDC 6742201) all JunSep_min_daily_lowest,1490.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 18
+hydro.19,Bazias (GRDC 6742201) all JunSep_mean_median,4557.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 19
+hydro.20,Bazias (GRDC 6742201) all annual_min_daily_median,2412.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 20
+hydro.24,Orsova (GRDC 6742200) all annual_7day_min_median,2381.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 24
+hydro.25,Orsova (GRDC 6742200) all annual_7day_min_P10,1803.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 25
+hydro.26,Orsova (GRDC 6742200) all annual_7day_min_lowest,1362.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 26
+hydro.27,Orsova (GRDC 6742200) all annual_min_daily_median,2239.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 27
+hydro.28,Orsova (GRDC 6742200) all annual_min_daily_P10,1680.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 28
+hydro.29,Orsova (GRDC 6742200) all annual_min_daily_lowest,1074.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 29
+hydro.30,Orsova (GRDC 6742200) all JunSep_min_daily_P10_estimator_linear,2199.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 30
+hydro.31,Orsova (GRDC 6742200) all JunSep_min_daily_P10_estimator_lower,2199.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 31
+hydro.32,Orsova (GRDC 6742200) all JunSep_min_daily_P10_estimator_median_unbiased,2148.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 32
+hydro.33,Orsova (GRDC 6742200) all JunSep_min_daily_P10_estimator_weibull,2123.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 33
+hydro.34,Bazias (GRDC 6742201) all annual_7day_min_median,2506.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 34
+hydro.35,Bazias (GRDC 6742201) all annual_7day_min_P10,1979.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 35
+hydro.36,Bazias (GRDC 6742201) all annual_7day_min_lowest,1542.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 36
+hydro.37,Bazias (GRDC 6742201) all annual_min_daily_median,2412.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 37
+hydro.38,Bazias (GRDC 6742201) all annual_min_daily_P10,1899.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 38
+hydro.39,Bazias (GRDC 6742201) all annual_min_daily_lowest,1490.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 39
+hydro.40,Bazias (GRDC 6742201) all JunSep_min_daily_P10_estimator_linear,1945.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 40
+hydro.41,Bazias (GRDC 6742201) all JunSep_min_daily_P10_estimator_lower,1753.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 41
+hydro.42,Bazias (GRDC 6742201) all JunSep_min_daily_P10_estimator_median_unbiased,1799.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 42
+hydro.43,Bazias (GRDC 6742201) all JunSep_min_daily_P10_estimator_weibull,1727.0,m³/s,outputs/modern_rice/applied_geography/HYDROLOGICAL_LOW_FLOW_RESULTS.csv,row 43
+demand.demand_m3s,"250,000 ha, 1,000 mm, 120 d: demand_m3s",241.1,m³/s,outputs/modern_rice/applied_geography/DANUBE_DEMAND_VS_LOWFLOW.csv,row 11:demand_m3s
+risk.Romania.P_A,Romania baseline P_A,0.203,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Romania
+risk.Romania.P_B_rice,Romania baseline P_B_rice,0.109,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Romania
+risk.Romania.P_D_potato,Romania baseline P_D_potato,0.172,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Romania
+risk.Romania.diff_CI95_lo,Romania baseline diff_CI95_lo,-0.156,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Romania
+risk.Romania.diff_CI95_hi,Romania baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Romania
+risk.Bulgaria.P_A,Bulgaria baseline P_A,0.203,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bulgaria
+risk.Bulgaria.P_B_rice,Bulgaria baseline P_B_rice,0.172,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bulgaria
+risk.Bulgaria.P_D_potato,Bulgaria baseline P_D_potato,0.188,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bulgaria
+risk.Bulgaria.diff_CI95_lo,Bulgaria baseline diff_CI95_lo,-0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bulgaria
+risk.Bulgaria.diff_CI95_hi,Bulgaria baseline diff_CI95_hi,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bulgaria
+risk.Serbia.P_A,Serbia baseline P_A,0.211,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Serbia
+risk.Serbia.P_B_rice,Serbia baseline P_B_rice,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Serbia
+risk.Serbia.P_D_potato,Serbia baseline P_D_potato,0.053,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Serbia
+risk.Serbia.diff_CI95_lo,Serbia baseline diff_CI95_lo,-0.263,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Serbia
+risk.Serbia.diff_CI95_hi,Serbia baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Serbia
+risk.Ukraine.P_A,Ukraine baseline P_A,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Ukraine
+risk.Ukraine.P_B_rice,Ukraine baseline P_B_rice,0.03,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Ukraine
+risk.Ukraine.P_D_potato,Ukraine baseline P_D_potato,0.03,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Ukraine
+risk.Ukraine.diff_CI95_lo,Ukraine baseline diff_CI95_lo,-0.061,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Ukraine
+risk.Ukraine.diff_CI95_hi,Ukraine baseline diff_CI95_hi,0.03,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Ukraine
+risk.Chile.P_A,Chile baseline P_A,0.078,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Chile
+risk.Chile.P_B_rice,Chile baseline P_B_rice,0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Chile
+risk.Chile.P_D_potato,Chile baseline P_D_potato,0.062,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Chile
+risk.Chile.diff_CI95_lo,Chile baseline diff_CI95_lo,-0.109,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Chile
+risk.Chile.diff_CI95_hi,Chile baseline diff_CI95_hi,0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Chile
+risk.Kazakhstan.P_A,Kazakhstan baseline P_A,0.212,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Kazakhstan
+risk.Kazakhstan.P_B_rice,Kazakhstan baseline P_B_rice,0.061,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Kazakhstan
+risk.Kazakhstan.P_D_potato,Kazakhstan baseline P_D_potato,0.091,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Kazakhstan
+risk.Kazakhstan.diff_CI95_lo,Kazakhstan baseline diff_CI95_lo,-0.242,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Kazakhstan
+risk.Kazakhstan.diff_CI95_hi,Kazakhstan baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Kazakhstan
+risk.Uzbekistan.P_A,Uzbekistan baseline P_A,0.061,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Uzbekistan
+risk.Uzbekistan.P_B_rice,Uzbekistan baseline P_B_rice,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Uzbekistan
+risk.Uzbekistan.P_D_potato,Uzbekistan baseline P_D_potato,0.061,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Uzbekistan
+risk.Uzbekistan.diff_CI95_lo,Uzbekistan baseline diff_CI95_lo,-0.212,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Uzbekistan
+risk.Uzbekistan.diff_CI95_hi,Uzbekistan baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Uzbekistan
+risk.France.P_A,France baseline P_A,0.109,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=France
+risk.France.P_B_rice,France baseline P_B_rice,0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=France
+risk.France.P_D_potato,France baseline P_D_potato,0.125,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=France
+risk.France.diff_CI95_lo,France baseline diff_CI95_lo,-0.109,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=France
+risk.France.diff_CI95_hi,France baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=France
+risk.Germany.P_A,Germany baseline P_A,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Germany
+risk.Germany.P_B_rice,Germany baseline P_B_rice,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Germany
+risk.Germany.P_D_potato,Germany baseline P_D_potato,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Germany
+risk.Germany.diff_CI95_lo,Germany baseline diff_CI95_lo,-0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Germany
+risk.Germany.diff_CI95_hi,Germany baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Germany
+risk.United Kingdom of Great Britain and Northern Ireland.P_A,United Kingdom of Great Britain and Northern Ireland baseline P_A,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United Kingdom of Great Britain and Northern Ireland
+risk.United Kingdom of Great Britain and Northern Ireland.P_B_rice,United Kingdom of Great Britain and Northern Ireland baseline P_B_rice,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United Kingdom of Great Britain and Northern Ireland
+risk.United Kingdom of Great Britain and Northern Ireland.P_D_potato,United Kingdom of Great Britain and Northern Ireland baseline P_D_potato,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United Kingdom of Great Britain and Northern Ireland
+risk.United Kingdom of Great Britain and Northern Ireland.diff_CI95_lo,United Kingdom of Great Britain and Northern Ireland baseline diff_CI95_lo,-0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United Kingdom of Great Britain and Northern Ireland
+risk.United Kingdom of Great Britain and Northern Ireland.diff_CI95_hi,United Kingdom of Great Britain and Northern Ireland baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United Kingdom of Great Britain and Northern Ireland
+risk.Italy.P_A,Italy baseline P_A,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Italy
+risk.Italy.P_B_rice,Italy baseline P_B_rice,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Italy
+risk.Italy.P_D_potato,Italy baseline P_D_potato,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Italy
+risk.Italy.diff_CI95_lo,Italy baseline diff_CI95_lo,-0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Italy
+risk.Italy.diff_CI95_hi,Italy baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Italy
+risk.Spain.P_A,Spain baseline P_A,0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Spain
+risk.Spain.P_B_rice,Spain baseline P_B_rice,0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Spain
+risk.Spain.P_D_potato,Spain baseline P_D_potato,0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Spain
+risk.Spain.diff_CI95_lo,Spain baseline diff_CI95_lo,-0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Spain
+risk.Spain.diff_CI95_hi,Spain baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Spain
+risk.Portugal.P_A,Portugal baseline P_A,0.125,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Portugal
+risk.Portugal.P_B_rice,Portugal baseline P_B_rice,0.125,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Portugal
+risk.Portugal.P_D_potato,Portugal baseline P_D_potato,0.125,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Portugal
+risk.Portugal.diff_CI95_lo,Portugal baseline diff_CI95_lo,-0.078,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Portugal
+risk.Portugal.diff_CI95_hi,Portugal baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Portugal
+risk.Greece.P_A,Greece baseline P_A,0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Greece
+risk.Greece.P_B_rice,Greece baseline P_B_rice,0.109,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Greece
+risk.Greece.P_D_potato,Greece baseline P_D_potato,0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Greece
+risk.Greece.diff_CI95_lo,Greece baseline diff_CI95_lo,-0.125,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Greece
+risk.Greece.diff_CI95_hi,Greece baseline diff_CI95_hi,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Greece
+risk.Hungary.P_A,Hungary baseline P_A,0.188,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Hungary
+risk.Hungary.P_B_rice,Hungary baseline P_B_rice,0.156,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Hungary
+risk.Hungary.P_D_potato,Hungary baseline P_D_potato,0.156,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Hungary
+risk.Hungary.diff_CI95_lo,Hungary baseline diff_CI95_lo,-0.062,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Hungary
+risk.Hungary.diff_CI95_hi,Hungary baseline diff_CI95_hi,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Hungary
+risk.Croatia.P_A,Croatia baseline P_A,0.061,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Croatia
+risk.Croatia.P_B_rice,Croatia baseline P_B_rice,0.03,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Croatia
+risk.Croatia.P_D_potato,Croatia baseline P_D_potato,0.03,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Croatia
+risk.Croatia.diff_CI95_lo,Croatia baseline diff_CI95_lo,-0.091,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Croatia
+risk.Croatia.diff_CI95_hi,Croatia baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Croatia
+risk.Poland.P_A,Poland baseline P_A,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Poland
+risk.Poland.P_B_rice,Poland baseline P_B_rice,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Poland
+risk.Poland.P_D_potato,Poland baseline P_D_potato,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Poland
+risk.Poland.diff_CI95_lo,Poland baseline diff_CI95_lo,-0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Poland
+risk.Poland.diff_CI95_hi,Poland baseline diff_CI95_hi,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Poland
+risk.Japan.P_A,Japan baseline P_A,0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Japan
+risk.Japan.P_B_rice,Japan baseline P_B_rice,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Japan
+risk.Japan.P_D_potato,Japan baseline P_D_potato,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Japan
+risk.Japan.diff_CI95_lo,Japan baseline diff_CI95_lo,-0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Japan
+risk.Japan.diff_CI95_hi,Japan baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Japan
+risk.Bangladesh.P_A,Bangladesh baseline P_A,0.328,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bangladesh
+risk.Bangladesh.P_B_rice,Bangladesh baseline P_B_rice,0.266,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bangladesh
+risk.Bangladesh.P_D_potato,Bangladesh baseline P_D_potato,0.25,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bangladesh
+risk.Bangladesh.diff_CI95_lo,Bangladesh baseline diff_CI95_lo,-0.094,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bangladesh
+risk.Bangladesh.diff_CI95_hi,Bangladesh baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Bangladesh
+risk.United States of America.P_A,United States of America baseline P_A,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United States of America
+risk.United States of America.P_B_rice,United States of America baseline P_B_rice,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United States of America
+risk.United States of America.P_D_potato,United States of America baseline P_D_potato,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United States of America
+risk.United States of America.diff_CI95_lo,United States of America baseline diff_CI95_lo,-0.062,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United States of America
+risk.United States of America.diff_CI95_hi,United States of America baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=United States of America
+risk.Argentina.P_A,Argentina baseline P_A,0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Argentina
+risk.Argentina.P_B_rice,Argentina baseline P_B_rice,0.016,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Argentina
+risk.Argentina.P_D_potato,Argentina baseline P_D_potato,0.031,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Argentina
+risk.Argentina.diff_CI95_lo,Argentina baseline diff_CI95_lo,-0.062,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Argentina
+risk.Argentina.diff_CI95_hi,Argentina baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Argentina
+risk.Australia.P_A,Australia baseline P_A,0.156,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Australia
+risk.Australia.P_B_rice,Australia baseline P_B_rice,0.109,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Australia
+risk.Australia.P_D_potato,Australia baseline P_D_potato,0.047,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Australia
+risk.Australia.diff_CI95_lo,Australia baseline diff_CI95_lo,-0.125,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Australia
+risk.Australia.diff_CI95_hi,Australia baseline diff_CI95_hi,0.0,probability,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_BASELINE_CORRECTED.csv,country=Australia
+robust.Argentina,Argentina share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Argentina
+robust.Australia,Australia share of 24 configurations with CI excluding 0,0.667,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Australia
+robust.Bangladesh,Bangladesh share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Bangladesh
+robust.Bulgaria,Bulgaria share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Bulgaria
+robust.Chile,Chile share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Chile
+robust.Croatia,Croatia share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Croatia
+robust.France,France share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=France
+robust.Germany,Germany share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Germany
+robust.Greece,Greece share of 24 configurations with CI excluding 0,0.083,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Greece
+robust.Hungary,Hungary share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Hungary
+robust.Italy,Italy share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Italy
+robust.Japan,Japan share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Japan
+robust.Kazakhstan,Kazakhstan share of 24 configurations with CI excluding 0,0.583,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Kazakhstan
+robust.Poland,Poland share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Poland
+robust.Portugal,Portugal share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Portugal
+robust.Romania,Romania share of 24 configurations with CI excluding 0,0.167,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Romania
+robust.Serbia,Serbia share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Serbia
+robust.Spain,Spain share of 24 configurations with CI excluding 0,0.083,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Spain
+robust.Ukraine,Ukraine share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Ukraine
+robust.United Kingdom of Great Britain and Northern Ireland,United Kingdom of Great Britain and Northern Ireland share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=United Kingdom of Great Britain and Northern Ireland
+robust.United States of America,United States of America share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=United States of America
+robust.Uzbekistan,Uzbekistan share of 24 configurations with CI excluding 0,0.0,share,outputs/modern_rice/applied_geography/RISK_PORTFOLIO_ROBUSTNESS.csv,country=Uzbekistan
+ms.inc_Mha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),69.7,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,inc_Mha
+ms.T_star,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),589,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,T_star
+ms.T_star_cal,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),664,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,T_star_cal
+ms.pct_thermal_pass,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),92.2,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_thermal_pass
+ms.pct_pass_900,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),54.9,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_pass_900
+ms.pct_pass_1000,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),45.3,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_pass_1000
+ms.dp_a_T,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),903,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_a_T
+ms.dp_b_T,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),832,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_b_T
+ms.dp_c_T,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),767,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_c_T
+ms.dp_d_T,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),750,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_d_T
+ms.dp_e_T,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),859,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_e_T
+ms.dp_f_T,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),589,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_f_T
+ms.dp_a_pct,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),3.1,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_a_pct
+ms.dp_b_pct,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),14.7,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_b_pct
+ms.dp_c_pct,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),41.5,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_c_pct
+ms.dp_d_pct,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),50.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_d_pct
+ms.dp_e_pct,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),9.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_e_pct
+ms.dp_f_pct,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),96.6,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_f_pct
+ms.dp_q_pp,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),88,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dp_q_pp
+ms.pt_lo,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.9,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pt_lo
+ms.pt_hi,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),33.3,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pt_hi
+ms.de_res_lo,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),94.1,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_res_lo
+ms.de_res_hi,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),98.4,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_res_hi
+ms.de_resc_lo,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),78.3,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_resc_lo
+ms.de_resc_hi,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),96.2,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_resc_hi
+ms.de9_lo,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),3.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de9_lo
+ms.de9_hi,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),3.5,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de9_hi
+ms.de_cal,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),85.7,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_cal
+ms.de_res_pp,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),2.4,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_res_pp
+ms.de_inc_Mha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),5.69,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_inc_Mha
+ms.rice_pt_kha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),5.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rice_pt_kha
+ms.de_T,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),96.6,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_T
+ms.de_900,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),3.2,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,de_900
+ms.ro_900_25,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),93.6,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_900_25
+ms.ro_900_60,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),78.5,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_900_60
+ms.pct_aei,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),16.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_aei
+ms.aei_Mha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),11.2,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,aei_Mha
+ms.pct_deficit,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),76.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_deficit
+ms.deficit_Mha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),53.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,deficit_Mha
+ms.bal_kha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),77,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,bal_kha
+ms.thermal_pass_Mha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),64.2,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,thermal_pass_Mha
+ms.pct_thermal_cal,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),85.5,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_thermal_cal
+ms.pct_agree,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),93.4,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_agree
+ms.max_scale_pts,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),4,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,max_scale_pts
+ms.dis_900_60,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),5.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dis_900_60
+ms.hok_rice_kha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),114,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_rice_kha
+ms.hok_p01,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),487,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_p01
+ms.hok_p10,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),637,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_p10
+ms.hok_p50,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),859,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_p50
+ms.bound_shift,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),300,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,bound_shift
+ms.hok_pipe,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),903,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_pipe
+ms.hok_cal,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),941,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_cal
+ms.hok_may,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),991,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_may
+ms.rh_pipe,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),957,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rh_pipe
+ms.rh_cal,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),931,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rh_cal
+ms.sx_pipe,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),969,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,sx_pipe
+ms.sx_cal,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),935,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,sx_cal
+ms.pg_median,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),135,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pg_median
+ms.pg_min,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),-129,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pg_min
+ms.pg_max,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),463,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pg_max
+ms.als_grid,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),617,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,als_grid
+ms.als_power,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"1,080",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,als_power
+ms.eu_rice_kha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),501,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,eu_rice_kha
+ms.val_thermal,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),99.1,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,val_thermal
+ms.val_aei,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),81.8,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,val_aei
+ms.rho,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.73,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rho
+ms.rho_p,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.0013,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rho_p
+ms.rho_n,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),16,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rho_n
+ms.hok_flower,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),48,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_flower
+ms.dan_mean,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"5,051",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_mean
+ms.dan_lf_med,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"2,749",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_lf_med
+ms.dan_lf_p10,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"2,199",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_lf_p10
+ms.dan_lf_low,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"1,410",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_lf_low
+ms.dan_lf_lo,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"2,473",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_lf_lo
+ms.dan_lf_hi,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"2,858",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_lf_hi
+ms.dan_lf_n,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),71,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_lf_n
+ms.dan_lf_reg_p10,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),"1,854",,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_lf_reg_p10
+ms.dan_q,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),241,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_q
+ms.dan_pct,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),8.8,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_pct
+ms.dan_pct_p10,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),11.0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_pct_p10
+ms.dan_pct_mean,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),4.8,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_pct_mean
+ms.dan_pct_gross,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),11.7,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_pct_gross
+ms.dan_pct_gross_low,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),22.8,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_pct_gross_low
+ms.dan_yrs10,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),76,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_yrs10
+ms.dan_yrs20,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),1.4,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_yrs20
+ms.dan_q_100,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),96,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_q_100
+ms.dan_pct_100,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),3.5,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_pct_100
+ms.ro_A,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.203,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_A
+ms.ro_B,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.109,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_B
+ms.ro_D,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.172,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_D
+ms.ro_lo,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),−0.156,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_lo
+ms.ro_hi,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.000,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_hi
+ms.kz_A,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.212,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,kz_A
+ms.kz_B,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.061,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,kz_B
+ms.kz_lo,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),−0.242,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,kz_lo
+ms.kz_hi,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.000,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,kz_hi
+ms.rs_B,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.000,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rs_B
+ms.rs_D,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0.053,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rs_D
+ms.ro_rob,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),100,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_rob
+ms.ro_excl,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),17,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,ro_excl
+ms.kz_excl,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),58,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,kz_excl
+ms.bg_rob,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),38,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,bg_rob
+ms.hu_rob,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),33,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hu_rob
+ms.fr_rob,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),12,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,fr_rob
+ms.pct_aei5,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),23.3,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_aei5
+ms.pct_aei20,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),9.5,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,pct_aei20
+ms.rice_aei5,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),87.4,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rice_aei5
+ms.rice_aei20,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),73.8,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rice_aei20
+ms.hok_mbias,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),29,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,hok_mbias
+ms.eu_mbias_min,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),0,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,eu_mbias_min
+ms.eu_mbias_max,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),13,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,eu_mbias_max
+ms.rect_Mha,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),107.1,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rect_Mha
+ms.rect_pass,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),94.2,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rect_pass
+ms.rect_aei,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),17.6,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,rect_aei
+ms.eu27_pass,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),93.1,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,eu27_pass
+ms.eu27_aei,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),20.2,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,eu27_aei
+ms.aei_cond,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),17.4,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,aei_cond
+ms.dan_q_gross,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),321,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,dan_q_gross
+ms.it_cost,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),1470–2430,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,it_cost
+ms.it_gm,manuscript placeholder value (formatted by build_ag_manuscript.py from the outputs above),1499–4379,,outputs/modern_rice/applied_geography/submission/MANUSCRIPT_NUMBERS.json,it_gm

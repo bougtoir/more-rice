@@ -1,0 +1,17 @@
+{
+ "Tstar_pipeline": 589.17,
+ "P50_pipeline": 858.52,
+ "hokkaido_rice_ha": 113967.8,
+ "germany_incumbent_Mha": 5.69,
+ "DE_share_pipeline_Tstar": 96.57,
+ "DE_share_pipeline_900": 3.23,
+ "DE_share_pipeline_P50": 9.01,
+ "Tstar_JunSep": 663.68,
+ "P50_JunSep": 955.88,
+ "DE_share_JunSep_Tstar": 85.74,
+ "DE_share_JunSep_900": 1.51,
+ "DE_share_JunSep_P50": 0.49,
+ "POWER_Hokkaido_pipeline_2000_2024": 903.24,
+ "POWER_Hokkaido_pipeline_1981_2000": 832.26,
+ "POWER_Hokkaido_JunSep_2000_2024": 941.03
+}

@@ -199,6 +199,8 @@ def build(embed, path):
     for rf in refs:
         p = d.add_paragraph(); p.paragraph_format.left_indent = Inches(0.5); p.paragraph_format.first_line_indent = Inches(-0.5); add_runs(p, rf)
     d.save(path); return d
+os.makedirs(os.path.join(SUB, "tables"), exist_ok=True)
+for i, (k, (cap, hdr, rows)) in enumerate(TABS.items(), 1): pd.DataFrame(rows, columns=hdr).to_csv(os.path.join(SUB, "tables", f"Table_{i}.csv"), index=False)
 MS = os.path.join(SUB, "01_EMA_MANUSCRIPT_FINAL.docx"); RV = os.path.join(SUB, "EMA_MANUSCRIPT_REVIEW_COPY.docx")
 build(False, MS); build(True, RV)
 assert list(FIGNUM) == ["germany", "curve", "tradeoff", "geo", "disagree"] and list(TABNUM) == ["data", "refs", "align", "stab"]

@@ -1,0 +1,5 @@
+source,unit,features_all_france,features_metropolitan,rice_area_ha,area_ha_declared,climate_cells,area_in_nodata_cells_ha,share_area_lon_ge_4p2E_lat_le_43p8N_approx_camargue,largest_cell_area_share,gdd10_min_cell,gdd10_aw_p05,gdd10_aw_median,omit_area_T589,omit_area_T900,omit_area_T1100,omit_area_centroid_T589,omit_area_centroid_T900,omit_area_centroid_T1100,omit_count_centroid_T589,omit_count_centroid_T900,omit_count_centroid_T1100,omit_cells_T589,omit_cells_T900,omit_cells_T1100
+RPG 2010,ilot (rice-group area surf_cultu),893,680,19603.6,19603.5,29,0.0,0.991,0.132,1339.0,1521.0,1541.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+RPG 2015,parcel (geodesic area),1459,1407,14970.0,14969.9,31,0.0,0.99,0.139,802.0,1521.0,1541.0,0.0,0.00012,0.00012,0.0,0.00012,0.00012,0.0,0.00142,0.00142,0,2,2
+RPG 2020,parcel (geodesic area),1706,1703,14519.5,14519.4,39,0.0,0.99,0.12,857.0,1520.0,1541.0,0.0,0.0,0.00015,0.0,0.0,0.00015,0.0,0.00059,0.00235,0,1,4
+RPG 2024,parcel (geodesic area),1616,1609,13664.1,13664.0,32,0.0,0.99,0.133,866.0,1521.0,1541.0,0.0,0.00022,0.00022,0.0,0.00022,0.00022,0.0,0.00062,0.00062,0,2,2

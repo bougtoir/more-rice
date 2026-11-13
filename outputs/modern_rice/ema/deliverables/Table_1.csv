@@ -3,4 +3,5 @@ Dataset,"Version, support",Variable used,Role
 "MapSPAM (IFPRI, 2019; Yu et al., 2020)",2010 v2.0; 5′,"Harvested area of wheat, maize, barley, potato; rice (all technologies)",Incumbent arable denominator; Hokkaido calibration; European rice coverage check
 "GMIA (Siebert et al., 2013)",v5; ~2005; 5′,Area equipped for irrigation,Non-compensatory infrastructure gate
 "NASA POWER (NASA POWER Project, 2025)",Daily point API v2; 1981–2024,Daily mean temperature at Hokkaido points,Point-derived alternative reference
+"RPG (IGN, 2026)","2010 (îlots), 2015, 2020, 2024; parcel polygons","Declared rice area (crop code RIZ, group 14)",Independent check of rice coverage in France
 "Natural Earth (Natural Earth, 2024)","Admin 0, 1:50 m, v5.1","Country polygons, continent attribute",European domain and country attribution

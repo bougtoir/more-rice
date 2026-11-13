@@ -52,6 +52,19 @@ N = dict(inc_Mha=f1(inc / 1e6), T_star=f0(TS), P01=f0(cal["hokkaido_P01_pipeline
     loco_T=f"{lo[int(TS)]['loco_min_pct']:.2f}–{lo[int(TS)]['loco_max_pct']:.2f}%", loco_900=f"{lo[900]['loco_min_pct']:.2f}–{lo[900]['loco_max_pct']:.2f}%",
     jac_25=f2(jac("Europe", "S3")), jac_10=f2(jac("Europe", "S4")), jac_cal=f2(jac("Europe", "S2")), jac_900=f2(jac("Europe", "S1")), jac_P50=f2(jac("Europe", "S5")), jac_de_900=f2(jac("Germany", "S1")),
     dis_Mha=f1(s1.ref_only_ha / 1e6), T_om10=f0(cur.index[cur.rice_omitted_pct > 10].min()), T_om5=f0(cur.index[cur.rice_omitted_pct <= 5].max()), tm_lost_Mha=f1(float(tm.iloc[2, 0])), repo_url=REPO_URL)
+RPGD = os.path.join(EMA, "rpg"); rv = pd.read_csv(os.path.join(RPGD, "RPG_RICE_PARCEL_VALIDATION.csv")); rcmp = pd.read_csv(os.path.join(RPGD, "RPG_VS_MAPSPAM_COMPARISON.csv")).set_index("threshold_gdd10")
+rcur = pd.read_csv(os.path.join(RPGD, "RPG_THRESHOLD_OMISSION_CURVE.csv")); rsm = json.load(open(os.path.join(RPGD, "RPG_SUMMARY.json")))["spam_france"]
+rpar = rv[rv.source != "RPG 2010"]; oc = [f"omit_area_T{T}" for T in (589, 900, 1100)]; sp = lambda T, k: float(rcmp.loc[T, "MapSPAM2010 France " + k])
+assert (rv[[f"omit_area_T{int(TS)}"]].values == 0).all() and all(sp(T, "omit_area_pct_in_RPG2010_cells") == 0 for T in (589, 900, 1100))
+mx = rcur[rcur.source.str.startswith("RPG")].groupby("threshold_gdd10").omitted_area_frac.max(); assert set(rcur.source[rcur.source.str.startswith("RPG")]) == {"RPG 2010", "RPG 2015", "RPG 2020", "RPG 2024"}
+N.update(rpg_kha_lo=f1(rv.rice_area_ha.min() / 1e3), rpg_kha_hi=f1(rv.rice_area_ha.max() / 1e3), rpg_cells_lo=f0(rv.climate_cells.min()), rpg_cells_hi=f0(rv.climate_cells.max()),
+    rpg2010_n=f0(rv.set_index("source").loc["RPG 2010", "features_metropolitan"]), rpg_np_lo=f0(rpar.features_metropolitan.min()), rpg_np_hi=f0(rpar.features_metropolitan.max()),
+    rpg_camargue=f0(np.floor(100 * rv.share_area_lon_ge_4p2E_lat_le_43p8N_approx_camargue.min())), rpg_p05=f0(rv.gdd10_aw_p05.min()), rpg_min_cell=f0(rv.gdd10_min_cell.min()),
+    rpg_om_max=f2(100 * rv[oc].values.max()), rpg_cnt_max=f2(100 * rv[[c_.replace("area", "count_centroid") for c_ in oc]].values.max()), rpg_T1pct=f0(mx.index[mx < 0.01].max()),
+    spam_fr_kha=f1(rsm["rice_ha"] / 1e3), spam_fr_cells=f0(rsm["cells"]), spam_fr_max_cell=f0(rsm["max_cell_ha"]), spam_fr_p05=f0(rsm["gdd10_aw_p05"]),
+    spam_in_rpg_pct=f1(100 * sp(589, "share_in_RPG2010_cells")), spam_fr_om_T=f1(sp(589, "omit_area_pct")), spam_fr_om_900=f1(sp(900, "omit_area_pct")), spam_fr_om_1100=f1(sp(1100, "omit_area_pct")),
+    spam_in_om=f1(sp(589, "omit_area_pct_in_RPG2010_cells")))
+assert int(TS) == 589 and abs(rsm["rice_ha"] - float(geo.loc["France", "rice_mapped_ha"])) < 0.5
 json.dump(N, open(os.path.join(SUB, "EMA_MANUSCRIPT_VALUES.json"), "w"), indent=1)
 
 # ---------------- tables ----------------
@@ -63,6 +76,7 @@ TABS = {
    ["MapSPAM (IFPRI, 2019; Yu et al., 2020)", "2010 v2.0; 5′", "Harvested area of wheat, maize, barley, potato; rice (all technologies)", "Incumbent arable denominator; Hokkaido calibration; European rice coverage check"],
    ["GMIA (Siebert et al., 2013)", "v5; ~2005; 5′", "Area equipped for irrigation", "Non-compensatory infrastructure gate"],
    ["NASA POWER (NASA POWER Project, 2025)", "Daily point API v2; 1981–2024", "Daily mean temperature at Hokkaido points", "Point-derived alternative reference"],
+   ["RPG (IGN, 2026)", "2010 (îlots), 2015, 2020, 2024; parcel polygons", "Declared rice area (crop code RIZ, group 14)", "Independent check of rice coverage in France"],
    ["Natural Earth (Natural Earth, 2024)", "Admin 0, 1:50 m, v5.1", "Country polygons, continent attribute", "European domain and country attribution"]]),
  "refs": ("Named threshold references and their consequences on the fixed primary surface (WorldClim 2.1 5′, 29 April–11 September). Cropland shares are weighted by incumbent arable harvested area; omission is weighted by mapped MapSPAM rice harvested area.",
    ["GDD10", "Reference construction", "Europe thermal pass (%)", "Europe thermal + AEI (%)", "Germany pass (%)", "Rice omitted (%)"],
@@ -81,6 +95,7 @@ FIGS = {
  "curve": ("THRESHOLD_OMISSION_CURVE", "Threshold sweep on the fixed primary surface. Blue: share of incumbent arable land in Europe (cropland-area weighted) and Germany passing the thermal gate. Orange: share of mapped MapSPAM rice harvested area in Europe omitted by the gate (rice-area weighted). Dashed lines mark T*, the point-derived reference and the 5th percentile of mapped European rice area."),
  "tradeoff": ("CANDIDATE_AREA_OMISSION_TRADEOFF", "Trade-off between candidate incumbent arable area retained for next-stage assessment and omitted mapped rice harvested area across thresholds (0–1800 GDD10). Orange points are the named references in Table 2. Candidate area is not feasible land. This is not a receiver-operating-characteristic curve because non-rice cropland is not a verified negative."),
  "geo": ("RICE_AREA_OMISSION_GEOGRAPHY", f"Mapped MapSPAM 2010 rice harvested area in Europe by the GDD10 of its 5′ cell, showing where rice area is omitted at T* = {N['T_star']}, 900 and 1100 GDD10. Marker area is proportional to rice harvested area (rice-area weights). ETRS89-LAEA projection."),
+ "rpg": ("RPG_MAPSPAM_FRANCE_COMPARISON", f"Rice in metropolitan France on the primary GDD10 surface (WorldClim 2.1, 1970–2000, 29 April–11 September). (a) 5′ cells with MapSPAM 2010 rice harvested area; marker area increases with cell rice area. (b) 5′ cells with rice parcels declared in the RPG 2020; marker area increases with declared rice area in the cell. Blue and red lines are the {N['T_star']} (T*) and 900 GDD10 contours. (c) Share of rice area in cells below each threshold for MapSPAM 2010 in France and Europe and for declared rice area in RPG 2010 and 2020 (RPG 2015 and 2024 curves are indistinguishable from RPG 2020). Declared parcels are split across cells by area."),
  "disagree": ("CLASSIFICATION_DISAGREEMENT_MAP", f"Agreement of the thermal gate between T* = {N['T_star']} GDD10 and the point-derived 900 GDD10 on incumbent arable cells (cropland-area weights). No cell passes at 900 and fails at T*, because the thresholds are nested on one surface. ETRS89-LAEA projection, 10 km display grid; classification on the native 5′ grid."),
 }
 # ---------------- OMML ----------------
@@ -151,7 +166,7 @@ def add_figure(d, key, embed):
     fn, cap = FIGS[key]; FIGNUM.setdefault(key, len(FIGNUM) + 1)
     if embed:
         p = d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.line_spacing = 1.0; p.paragraph_format.keep_with_next = True
-        p.add_run().add_picture(os.path.join(FIG, fn + ".png"), width=Inches(6.0 if key in ("curve", "germany") else 5.0))
+        p.add_run().add_picture(os.path.join(FIG, fn + ".png"), width=Inches(6.0 if key in ("curve", "germany", "rpg") else 5.0))
     caption(d, f"Fig. {FIGNUM[key]}", cap)
 def add_eq(d, key):
     x, n = EQS[key]; p = d.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p._p.append(parse_xml(x)); p.add_run(f"\u2003\u2003({n})")
@@ -203,7 +218,7 @@ os.makedirs(os.path.join(SUB, "tables"), exist_ok=True)
 for i, (k, (cap, hdr, rows)) in enumerate(TABS.items(), 1): pd.DataFrame(rows, columns=hdr).to_csv(os.path.join(SUB, "tables", f"Table_{i}.csv"), index=False)
 MS = os.path.join(SUB, "01_EMA_MANUSCRIPT_FINAL.docx"); RV = os.path.join(SUB, "EMA_MANUSCRIPT_REVIEW_COPY.docx")
 build(False, MS); build(True, RV)
-assert list(FIGNUM) == ["germany", "curve", "tradeoff", "geo", "disagree"] and list(TABNUM) == ["data", "refs", "align", "stab"]
+assert list(FIGNUM) == ["germany", "curve", "tradeoff", "geo", "disagree", "rpg"] and list(TABNUM) == ["data", "refs", "align", "stab"]
 
 # citation order check: first citation of Fig./Table n in body text must be ascending
 btxt = " ".join(l for l in body if not l.startswith("[["))
@@ -231,8 +246,8 @@ CL = [f"{AUTHOR}", AFFIL, f"E-mail: {EMAIL}", "", "To the Editor-in-Chief, Envir
  f"Dear Editor,",
  f"I submit the original research article “{title}” for consideration in Environmental Monitoring and Assessment.",
  f"The manuscript addresses the reliability of spatial environmental suitability assessments that transfer a climatic threshold from a reference region. Using WorldClim 2.1 climate normals, MapSPAM 2010 crop harvested areas and the Global Map of Irrigation Areas on one 5′ grid, I assess a growing-degree-day gate for transferring the cold-region rice system of Hokkaido to {N['inc_Mha']} Mha of incumbent arable land in Europe.",
- f"The main findings are as follows. First, in a controlled contrast for Germany, the thermal pass share is {N['de_T']}% with a grid-calibrated reference and {N['de_900']}% with a point-derived reference, whereas recalibration across 2.5′–10′ grids changes it by at most {N['de_res_pp']} percentage points; reference construction, not resolution, dominates. Second, a full threshold sweep against {N['rice_kha']} thousand ha of mapped European rice harvested area shows that omission stays between {N['om_T']}% and {N['om_900']}% between the competing references while candidate area changes by {N['crop_drop_pp']} percentage points, so presence-only reference data cannot discriminate between them. Third, a non-compensatory irrigation-infrastructure gate reduces the candidate area to {N['pct_aei']}% of incumbent arable land.",
- "The incremental contribution relative to suitability studies recently published in the journal, which typically apply multi-criteria or distribution models with a single threshold set, is an explicit assessment of reference-dependent instability together with an omission-versus-candidate-area analysis and an audit of the independence of the reference data. I do not propose a new monitoring network, a physiological threshold or an operational feasibility assessment. The mapped rice data are a modelled allocation of statistics rather than field observations, non-rice cropland is not a verified negative, and the manuscript states these limitations explicitly.",
+ f"The main findings are as follows. First, in a controlled contrast for Germany, the thermal pass share is {N['de_T']}% with a grid-calibrated reference and {N['de_900']}% with a point-derived reference, whereas recalibration across 2.5′–10′ grids changes it by at most {N['de_res_pp']} percentage points; reference construction, not resolution, dominates. Second, a full threshold sweep against {N['rice_kha']} thousand ha of mapped European rice harvested area shows that omission stays between {N['om_T']}% and {N['om_900']}% between the competing references while candidate area changes by {N['crop_drop_pp']} percentage points, so presence-only reference data cannot discriminate between them. Third, an independent check against rice parcels declared in the French parcel register (RPG 2010–2024) shows that the {N['spam_fr_om_T']}% omission of MapSPAM rice area in France at T* is an allocation effect: declared rice occupies only {N['rpg_cells_lo']}–{N['rpg_cells_hi']} warm 5′ cells and none of it is omitted at T*, so this independent check confirms coverage but cannot rank references either. Fourth, a non-compensatory irrigation-infrastructure gate reduces the candidate area to {N['pct_aei']}% of incumbent arable land.",
+ "The incremental contribution relative to suitability studies recently published in the journal, which typically apply multi-criteria or distribution models with a single threshold set, is an explicit assessment of reference-dependent instability together with an omission-versus-candidate-area analysis and an audit of the independence of the reference data. I do not propose a new monitoring network, a physiological threshold or an operational feasibility assessment. The mapped rice data are a modelled allocation of statistics, the declared parcels are administrative records rather than suitability trials, non-rice cropland is not a verified negative, and the manuscript states these limitations explicitly.",
  "This manuscript has not been published and is not under consideration elsewhere. I have no competing interests to declare, and the study received no specific funding. All code and derived data are available in a public repository.",
  "Sincerely,", AUTHOR]
 for l in CL: d.add_paragraph(l)

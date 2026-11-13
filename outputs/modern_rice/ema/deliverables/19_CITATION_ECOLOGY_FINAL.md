@@ -1,6 +1,6 @@
 # Citation ecology (EM&A manuscript)
 
-References: 25. EM&A articles cited: 9 (each supports a specific comparison claim in Introduction/Discussion).
+References: 26. EM&A articles cited: 9 (each supports a specific comparison claim in Introduction/Discussion).
 
 ## Verification of the earlier 19-paper counts (recomputed from `journal_fit_assessment/EMA_CLOSEST_PUBLISHED_PAPERS.csv`)
 - Papers: 19 (claimed 19)
@@ -15,8 +15,9 @@ References: 25. EM&A articles cited: 9 (each supports a specific comparison clai
 | Environmental Monitoring and Assessment | 9 |
 | dataset / report | 4 |
 | Applied Geography | 2 |
-| International Journal of Climatology | 1 |
 | Agronomy Journal | 1 |
+| Registre parcellaire graphique (RPG), editions 2010, 2015 | 1 |
+| International Journal of Climatology | 1 |
 | Landscape Ecology | 1 |
 | Scientific Reports | 1 |
 | Admin 0 – Countries, 1:50m | 1 |

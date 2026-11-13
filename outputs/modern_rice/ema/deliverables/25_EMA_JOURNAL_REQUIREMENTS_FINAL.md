@@ -3,7 +3,7 @@
 | Requirement (official text) | This submission | Status |
 |---|---|---|
 | Article type: original research article | Original research article | OK |
-| 'The Abstract should contain 150 to 250 words' | 237 words | OK |
+| 'The Abstract should contain 150 to 250 words' | 249 words | OK |
 | 'Please provide 4 to 6 keywords', 'different from those in the title' | 6 keywords, none repeats a title phrase (builder assert) | OK |
 | 'no specific word limits, the average article contains approximately 9,000 words' | ~3,200 words body | OK (short) |
 | Title page: author, affiliation, e-mail, ORCID | Present; e-mail placeholder | AUTHOR ACTION |

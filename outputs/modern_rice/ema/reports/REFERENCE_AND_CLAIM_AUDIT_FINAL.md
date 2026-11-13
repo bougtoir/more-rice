@@ -11,6 +11,7 @@ Style: APA 7, alphabetical (asserted in builder). Every reference cited in text 
 | Benti, F., Diga, G. M., Feyisa, G. L., & Tolesa, A. R. (2022). Modeling coffee (*Coffea ar… | 10.1007/s10661-022-09895-9 | Crossref record archived (data/raw_public/crossref_ema): authors/title/volume/issue/article no. match | field presence points + MaxEnt suitability |
 | Fick, S. E., & Hijmans, R. J. (2017). WorldClim 2: New 1-km spatial resolution climate sur… | 10.1002/joc.5086 | DOI verified in AG reference audit (PR #1) | WorldClim 2 data source |
 | IFPRI. (2019). *Global spatially-disaggregated crop production statistics data for 2010 ve… | 10.7910/DVN/PRFF8V | DOI verified in AG reference audit (PR #1) | MapSPAM 2010 v2 data |
+| IGN. (2026). *Registre parcellaire graphique (RPG), editions 2010, 2015, 2020 and 2024* [D… |  | dataset/grey literature; URL | ? |
 | Jelinski, D. E., & Wu, J. (1996). The modifiable areal unit problem and implications for l… | 10.1007/BF02447512 | DOI verified in AG reference audit (PR #1) | MAUP concept |
 | King, M., Altdorff, D., Li, P., Galagedara, L., Holden, J., & Unc, A. (2018). Northward sh… | 10.1038/s41598-018-26321-8 | DOI verified in AG reference audit (PR #1) | northward agricultural climate-zone shift |
 | MAFF. (2024). *Crop statistics: Rice (Hokkaido and Japan)* [Data set]. Ministry of Agricul… |  | dataset/grey literature; URL | Hokkaido rice system statistics/practice |

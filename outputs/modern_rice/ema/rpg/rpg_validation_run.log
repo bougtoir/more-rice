@@ -1,0 +1,40 @@
+                                                                                     0                       1                       2                       3
+source                                                                        RPG 2010                RPG 2015                RPG 2020                RPG 2024
+unit                                                 ilot (rice-group area surf_cultu)  parcel (geodesic area)  parcel (geodesic area)  parcel (geodesic area)
+features_all_france                                                                893                    1459                    1706                    1616
+features_metropolitan                                                              680                    1407                    1703                    1609
+rice_area_ha                                                                   19603.6                 14970.0                 14519.5                 13664.1
+area_ha_declared                                                               19603.5                 14969.9                 14519.4                 13664.0
+climate_cells                                                                       29                      31                      39                      32
+area_in_nodata_cells_ha                                                            0.0                     0.0                     0.0                     0.0
+share_area_lon_ge_4p2E_lat_le_43p8N_approx_camargue                              0.991                    0.99                    0.99                    0.99
+largest_cell_area_share                                                          0.132                   0.139                    0.12                   0.133
+gdd10_min_cell                                                                  1339.0                   802.0                   857.0                   866.0
+gdd10_aw_p05                                                                    1521.0                  1521.0                  1520.0                  1521.0
+gdd10_aw_median                                                                 1541.0                  1541.0                  1541.0                  1541.0
+omit_area_T589                                                                     0.0                     0.0                     0.0                     0.0
+omit_area_T900                                                                     0.0                 0.00012                     0.0                 0.00022
+omit_area_T1100                                                                    0.0                 0.00012                 0.00015                 0.00022
+omit_area_centroid_T589                                                            0.0                     0.0                     0.0                     0.0
+omit_area_centroid_T900                                                            0.0                 0.00012                     0.0                 0.00022
+omit_area_centroid_T1100                                                           0.0                 0.00012                 0.00015                 0.00022
+omit_count_centroid_T589                                                           0.0                     0.0                     0.0                     0.0
+omit_count_centroid_T900                                                           0.0                 0.00142                 0.00059                 0.00062
+omit_count_centroid_T1100                                                          0.0                 0.00142                 0.00235                 0.00062
+omit_cells_T589                                                                      0                       0                       0                       0
+omit_cells_T900                                                                      0                       2                       1                       2
+omit_cells_T1100                                                                     0                       2                       4                       2
+                                                                 0           1           2
+threshold_gdd10                                           589.0000    900.0000   1100.0000
+france_incumbent_cropland_pass_pct                         99.7000     46.4500     10.2600
+RPG 2010 omit_area_pct                                      0.0000      0.0000      0.0000
+RPG 2015 omit_area_pct                                      0.0000      0.0120      0.0120
+RPG 2020 omit_area_pct                                      0.0000      0.0000      0.0150
+RPG 2024 omit_area_pct                                      0.0000      0.0220      0.0220
+MapSPAM2010 France omit_area_pct                           12.1320     27.1390     38.6010
+MapSPAM2010 France rice_ha                              21961.5000  21961.5000  21961.5000
+MapSPAM2010 France cells                                  865.0000    865.0000    865.0000
+MapSPAM2010 France share_in_RPG2010_cells                   0.0406      0.0406      0.0406
+MapSPAM2010 France omit_area_pct_in_RPG2010_cells           0.0000      0.0000      0.0000
+MapSPAM2010 France omit_area_pct_outside_RPG2010_cells     12.6450     28.2870     40.2330
+{'rice_ha': np.float64(21961.5), 'cells': 865, 'cells_ge_100ha': 0, 'max_cell_ha': np.float64(42.4), 'gdd10_aw_p05': 354, 'gdd10_aw_median': 1217, 'gdd10_aw_p95': 1544, 'france_cid': 51}

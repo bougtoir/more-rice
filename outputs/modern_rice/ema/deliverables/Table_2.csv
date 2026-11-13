@@ -1,0 +1,12 @@
+GDD10,Reference construction,Europe thermal pass (%),Europe thermal + AEI (%),Germany pass (%),Rice omitted (%)
+487,"Hokkaido SPAM rice-area P01, WorldClim 5' (grid)",97.3,16.5,99.7,0.98
+589,"T*: Hokkaido SPAM rice-area P05, WorldClim 5' (grid; primary)",92.1,16.0,96.6,1.37
+637,"Hokkaido SPAM rice-area P10, WorldClim 5' (grid)",88.4,15.8,91.4,1.57
+750,WorldClim 5' cell at the Hokkaido POWER point (grid point),76.5,15.2,50.0,2.12
+767,POWER Hokkaido point 1981-2000 monthly formula,74.1,15.0,41.5,2.19
+832,POWER Hokkaido point 1981-2000 daily,63.1,14.7,14.7,2.64
+859,"Hokkaido SPAM rice-area P50, WorldClim 5' (grid)",59.4,14.5,9.0,2.93
+900,~900: rounded POWER Hokkaido point 2000-2024 daily (earlier numerical reference),54.9,14.2,3.2,3.22
+903,POWER Hokkaido point 2000-2024 daily (unrounded),54.6,14.2,3.1,3.23
+"1,036","All SPAM rice north of 35N, rice-area P05 (grid)",42.7,12.6,0.1,4.45
+"1,076",European SPAM rice-area P05 (in-sample for Europe; diagnostic only),39.1,12.0,0.0,5.00

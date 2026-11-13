@@ -1,0 +1,25 @@
+test,result,detail
+Candidate share non-increasing in T,PASS,82 thresholds
+Omission share non-decreasing in T,PASS,
+Combined gate subset of thermal gate (all T),PASS,
+"Boundary T=0: all pass, zero omission",PASS,"C(0)=100.0, O(0)=0.0"
+Boundary T>max G: no cropland passes,PASS,max GDD10 on incumbent cells=2065; C(1800)=0.3
+Boundary uses >= (cell with G == T passes),PASS,"implemented as g5 >= T in ema_threshold_sweep.py; G is continuous float32, ties have measure ~0"
+Area weighting differs from raw cell counts (weights are used),PASS,"area-weighted 92.146% (CSV 92.146), unweighted cell share 77.854%"
+Nodata: incumbent/rice area in domain cells without climate data,PASS,"incumbent 0 ha, rice 0 ha excluded (NaN GDD10)"
+"Geographic mask: Russia, Türkiye, Kazakhstan, Georgia, Azerbaijan, Armenia, Cyprus excluded",PASS,40 countries in domain
+Denominator 69.7 Mha (independent of ag_grid_gates.py),PASS,69697892 ha vs AG cascade 69697894 ha
+Thermal pass at T* (exact value; AG manuscript printed 92.2 via double rounding),PASS,"92.1465% -> 92.1% at one decimal; AG used round(0.9215 [4 d.p.],1)=92.2"
+Thermal + infrastructure share 16.0%,PASS,16.010%
+Germany endpoints reproduced from sweep,PASS,"96.572 / 3.233 vs [96.57, 3.23]"
+T* equals AG calibration (589),PASS,T*=589.0
+Omission numerator/denominator recomputed at 589,PASS,6858.0 / 501075.0 ha = 1.369%
+Omission numerator/denominator recomputed at 900,PASS,16138.1 / 501075.0 ha = 3.221%
+Legacy 0.87% omission = incumbent-cell variant,PASS,0.875% (incumbent cells) vs 1.369% (all rice cells)
+Transition matrix sums to denominator,PASS,69.699 Mha
+Nested thresholds: no cell passes 900 but fails T*,PASS,
+Jaccard T* vs 900 recomputed,PASS,0.5962
+Inference unit: no cell-level bootstrap in EM&A scripts,PASS,"scenario ranges only (shifts, LOCO)"
+No hardcoded headline results in EM&A template,PASS,"headline literals found: []; remaining literals are design constants, years, citations: ['0', '1', '10', '11', '1100', '1300', '1400', '143.0', '180', '1800', '1970', '1981', '1996', '2', '2.1', '2.5', '2000', '2005', '2010', '2012', '2013', '2014', '2015', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '25', '29', '3', '34', '4', '43.2', '45', '5', '50', '71.5', '8', '90', '900', '95']"
+No hardcoded headline results in EM&A builder,PASS,
+Water/risk models not retained in EM&A narrative,PASS,"Lower Danube demand and risk portfolio remain in AG outputs, unchanged"

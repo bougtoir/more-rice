@@ -1,0 +1,145 @@
+  return np.nanmean(a[:h, :w].reshape(h // k, k, w // k, k), axis=(1, 3))
+{
+ "T_star": 589.0,
+ "incumbent_Mha": 69.7,
+ "rice_mapped_ha": 501075.0,
+ "rice_cells": 20356,
+ "europe_rice_gdd10_quantiles": {
+  "P1": 497.0,
+  "P5": 1076.0,
+  "P10": 1201.0,
+  "P25": 1325.0,
+  "P50": 1413.0
+ },
+ "rice_irrigated_tech_share": 0.7941,
+ "rice_in_aei_cells_share": 0.811,
+ "rice_ha_in_cells_without_incumbent": 4554.3,
+ "loco": [
+  {
+   "threshold_gdd10": 589.0,
+   "loco_min_pct": 0.875,
+   "loco_max_pct": 1.803
+  },
+  {
+   "threshold_gdd10": 900.0,
+   "loco_min_pct": 2.124,
+   "loco_max_pct": 4.233
+  },
+  {
+   "threshold_gdd10": 1100.0,
+   "loco_min_pct": 4.013,
+   "loco_max_pct": 7.146
+  }
+ ],
+ "clusters": {
+  "589": {
+   "omitted_cells": 485,
+   "clusters_8conn": 66,
+   "share_largest5_clusters": 0.801,
+   "omitted_cells_with_rice_lt_1pct_of_cell": 464,
+   "omitted_ha_in_cells_rice_lt_1pct": 4366.5,
+   "omitted_cells_gdd_zero": 9,
+   "omitted_ha_gdd_zero": 74.0
+  },
+  "900": {
+   "omitted_cells": 4158,
+   "clusters_8conn": 93,
+   "share_largest5_clusters": 0.864,
+   "omitted_cells_with_rice_lt_1pct_of_cell": 4095,
+   "omitted_ha_in_cells_rice_lt_1pct": 10120.4,
+   "omitted_cells_gdd_zero": 9,
+   "omitted_ha_gdd_zero": 74.0
+  },
+  "1100": {
+   "omitted_cells": 7760,
+   "clusters_8conn": 99,
+   "share_largest5_clusters": 0.832,
+   "omitted_cells_with_rice_lt_1pct_of_cell": 7655,
+   "omitted_ha_in_cells_rice_lt_1pct": 17826.6,
+   "omitted_cells_gdd_zero": 9,
+   "omitted_ha_gdd_zero": 74.0
+  }
+ },
+ "germany_incumbent_Mha": 5.693,
+ "t25": 612.0,
+ "t10": 552.0
+}
+    threshold_gdd10                                                                   reference_label  cropland_pass_ha  cropland_pass_pct  cropland_thermal_aei_pct  germany_cropland_pass_pct  rice_mapped_ha  rice_pass_ha  rice_omitted_ha  rice_omitted_pct  rice_omitted_pct_incumbent_cells  rice_in_thermal_aei_pct  rice_omitted_pct_2p5m_subcell
+20            487.0                                  Hokkaido SPAM rice-area P01, WorldClim 5' (grid)        67794664.0             97.269                    16.502                     99.669        501075.0      496138.4           4936.6             0.985                             0.535                   81.083                          0.991
+25            589.0                     T*: Hokkaido SPAM rice-area P05, WorldClim 5' (grid; primary)        64224162.0             92.146                    16.010                     96.572        501075.0      494217.0           6858.0             1.369                             0.875                   81.071                          1.329
+28            637.0                                  Hokkaido SPAM rice-area P10, WorldClim 5' (grid)        61642217.0             88.442                    15.761                     91.429        501075.0      493193.1           7881.9             1.573                             1.055                   81.071                          1.540
+33            750.0                        WorldClim 5' cell at the Hokkaido POWER point (grid point)        53290945.0             76.460                    15.191                     49.968        501075.0      490461.0          10614.0             2.118                             1.545                   81.055                          2.162
+34            767.0                                    POWER Hokkaido point 1981-2000 monthly formula        51634096.0             74.083                    15.045                     41.502        501075.0      490080.3          10994.7             2.194                             1.600                   81.055                          2.272
+38            832.0                                              POWER Hokkaido point 1981-2000 daily        43997915.0             63.127                    14.659                     14.695        501075.0      487825.6          13249.4             2.644                             2.041                   81.047                          2.710
+40            859.0                                  Hokkaido SPAM rice-area P50, WorldClim 5' (grid)        41395590.0             59.393                    14.515                      9.007        501075.0      486374.7          14700.3             2.934                             2.330                   81.027                          2.879
+42            900.0  ~900: rounded POWER Hokkaido point 2000-2024 daily (earlier numerical reference)        38288801.0             54.935                    14.250                      3.233        501075.0      484936.9          16138.1             3.221                             2.586                   81.017                          3.226
+43            903.0                                  POWER Hokkaido point 2000-2024 daily (unrounded)        38073609.0             54.627                    14.222                      3.100        501075.0      484865.9          16209.1             3.235                             2.600                   81.009                          3.247
+49           1036.0                                  All SPAM rice north of 35N, rice-area P05 (grid)        29761282.0             42.700                    12.630                      0.122        501075.0      478799.4          22275.6             4.446                             3.748                   80.862                          4.586
+52           1076.0               European SPAM rice-area P05 (in-sample for Europe; diagnostic only)        27253981.0             39.103                    12.041                      0.000        501075.0      476023.4          25051.6             5.000                             4.282                   80.730                          5.144
+    threshold_gdd10                                     test  rice_omitted_pct
+0             589.0          rice grid shifted (-1,-1) cells             2.528
+1             589.0          rice grid shifted (-1,+0) cells             2.371
+2             589.0          rice grid shifted (-1,+1) cells             2.168
+3             589.0          rice grid shifted (+0,-1) cells             1.597
+4             589.0          rice grid shifted (+0,+0) cells             1.369
+5             589.0          rice grid shifted (+0,+1) cells             1.317
+6             589.0          rice grid shifted (+1,-1) cells             1.570
+7             589.0          rice grid shifted (+1,+0) cells             1.383
+8             589.0          rice grid shifted (+1,+1) cells             1.430
+9             589.0  omitted only if all 3x3 neighbours fail             0.526
+10            589.0              2.5' sub-cell pass fraction             1.329
+11            589.0                       10' native surface             1.720
+12            900.0          rice grid shifted (-1,-1) cells             5.639
+13            900.0          rice grid shifted (-1,+0) cells             4.653
+14            900.0          rice grid shifted (-1,+1) cells             4.393
+15            900.0          rice grid shifted (+0,-1) cells             4.035
+16            900.0          rice grid shifted (+0,+0) cells             3.221
+17            900.0          rice grid shifted (+0,+1) cells             3.142
+18            900.0          rice grid shifted (+1,-1) cells             4.194
+19            900.0          rice grid shifted (+1,+0) cells             3.443
+20            900.0          rice grid shifted (+1,+1) cells             3.228
+21            900.0  omitted only if all 3x3 neighbours fail             1.695
+22            900.0              2.5' sub-cell pass fraction             3.226
+23            900.0                       10' native surface             3.645
+24           1100.0          rice grid shifted (-1,-1) cells             9.696
+25           1100.0          rice grid shifted (-1,+0) cells             7.971
+26           1100.0          rice grid shifted (-1,+1) cells             7.528
+27           1100.0          rice grid shifted (+0,-1) cells             6.980
+28           1100.0          rice grid shifted (+0,+0) cells             5.529
+29           1100.0          rice grid shifted (+0,+1) cells             5.577
+30           1100.0          rice grid shifted (+1,-1) cells             7.287
+31           1100.0          rice grid shifted (+1,+0) cells             6.147
+32           1100.0          rice grid shifted (+1,+1) cells             6.116
+33           1100.0  omitted only if all 3x3 neighbours fail             3.188
+34           1100.0              2.5' sub-cell pass fraction             5.779
+35           1100.0                       10' native surface             6.083
+                                900: thermal not met  ...  900: thermal met, AEI >=10%
+T*=589: thermal not met                        5.474  ...                        0.000
+T*=589: thermal met, AEI <10%                 24.709  ...                        0.000
+T*=589: thermal met, AEI >=10%                 1.227  ...                        9.932
+
+[3 rows x 3 columns]
+    domain                          reference                                             comparison  both_pass_ha  ref_only_ha  comp_only_ha  both_fail_ha  agreement_pct  jaccard_pass  rice_omitted_pct_comp
+0   Europe  S0 T*=589, 5', pipeline (primary)                                   S1 900, 5', pipeline    38288801.0   25935361.0           0.0     5473731.0          62.79        0.5962                  3.221
+1   Europe  S0 T*=589, 5', pipeline (primary)                  S2 P05 recalibrated Jun-Sep (664), 5'    59594512.0    4629649.0          13.0     5473717.0          93.36        0.9279                  1.497
+2   Europe  S0 T*=589, 5', pipeline (primary)  S3 P05 recalibrated 2.5' (612), majority of sub-cells    63219257.0    1004904.0       37553.0     5436178.0          98.50        0.9838                  1.197
+3   Europe  S0 T*=589, 5', pipeline (primary)                          S4 P05 recalibrated 10' (552)    64138898.0      85263.0     1482865.0     3990866.0          97.75        0.9761                  1.623
+4   Europe  S0 T*=589, 5', pipeline (primary)                              S5 Hokkaido P50 (859), 5'    41395590.0   22828571.0           0.0     5473731.0          67.25        0.6445                  2.934
+5  Germany  S0 T*=589, 5', pipeline (primary)                                   S1 900, 5', pipeline      184074.0    5313637.0           0.0      195125.0           6.66        0.0335                    NaN
+6  Germany  S0 T*=589, 5', pipeline (primary)                  S2 P05 recalibrated Jun-Sep (664), 5'     4881298.0     616413.0           0.0      195125.0          89.17        0.8879                    NaN
+7  Germany  S0 T*=589, 5', pipeline (primary)  S3 P05 recalibrated 2.5' (612), majority of sub-cells     5403267.0      94444.0        4013.0      191112.0          98.27        0.9821                    NaN
+8  Germany  S0 T*=589, 5', pipeline (primary)                          S4 P05 recalibrated 10' (552)     5489484.0       8227.0      109827.0       85297.0          97.93        0.9789                    NaN
+9  Germany  S0 T*=589, 5', pipeline (primary)                              S5 Hokkaido P50 (859), 5'      512763.0    4984948.0           0.0      195125.0          12.43        0.0933                    NaN
+            country  rice_mapped_ha  rice_weighted_gdd10_median  rice_irrigated_tech_share  omitted_ha_T589  omitted_ha_T900  omitted_ha_T1100
+9             Italy        244162.4                      1380.0                      0.775           3146.4           7498.2           10926.3
+2             Spain        121199.5                      1634.0                      0.987              9.0             59.6             558.7
+11           Greece         31708.0                      1734.0                      1.000              0.0              0.4             167.3
+5          Portugal         29185.6                      1457.0                      0.950              0.0              0.0            1377.0
+0           Ukraine         23653.2                      1209.0                      0.820             84.2           1147.4            3620.6
+12           France         21961.5                      1218.0                      0.000           2664.4           5960.1            8477.3
+4           Romania         12612.6                      1335.0                      0.000             67.0            576.2            1546.2
+13         Bulgaria         10087.9                      1429.0                      0.992              0.0              0.0               0.0
+8   North Macedonia          3915.1                      1122.0                      0.044            886.1            893.8             913.9
+10          Hungary          2476.3                      1228.0                      0.000              0.0              0.0             100.1
+7           Moldova            99.8                      1114.0                      0.647              0.0              0.0              12.7
+3            Serbia             8.8                      1471.0                      0.000              0.0              0.0               0.2

@@ -1,0 +1,65 @@
+{
+ "T_star": 589.0,
+ "incumbent_Mha": 69.7,
+ "rice_mapped_ha": 501075.0,
+ "rice_cells": 20356,
+ "europe_rice_gdd10_quantiles": {
+  "P1": 497.0,
+  "P5": 1076.0,
+  "P10": 1201.0,
+  "P25": 1325.0,
+  "P50": 1413.0
+ },
+ "rice_irrigated_tech_share": 0.7941,
+ "rice_in_aei_cells_share": 0.811,
+ "rice_ha_in_cells_without_incumbent": 4554.3,
+ "loco": [
+  {
+   "threshold_gdd10": 589.0,
+   "loco_min_pct": 0.875,
+   "loco_max_pct": 1.803
+  },
+  {
+   "threshold_gdd10": 900.0,
+   "loco_min_pct": 2.124,
+   "loco_max_pct": 4.233
+  },
+  {
+   "threshold_gdd10": 1100.0,
+   "loco_min_pct": 4.013,
+   "loco_max_pct": 7.146
+  }
+ ],
+ "clusters": {
+  "589": {
+   "omitted_cells": 485,
+   "clusters_8conn": 66,
+   "share_largest5_clusters": 0.801,
+   "omitted_cells_with_rice_lt_1pct_of_cell": 464,
+   "omitted_ha_in_cells_rice_lt_1pct": 4366.5,
+   "omitted_cells_gdd_zero": 9,
+   "omitted_ha_gdd_zero": 74.0
+  },
+  "900": {
+   "omitted_cells": 4158,
+   "clusters_8conn": 93,
+   "share_largest5_clusters": 0.864,
+   "omitted_cells_with_rice_lt_1pct_of_cell": 4095,
+   "omitted_ha_in_cells_rice_lt_1pct": 10120.4,
+   "omitted_cells_gdd_zero": 9,
+   "omitted_ha_gdd_zero": 74.0
+  },
+  "1100": {
+   "omitted_cells": 7760,
+   "clusters_8conn": 99,
+   "share_largest5_clusters": 0.832,
+   "omitted_cells_with_rice_lt_1pct_of_cell": 7655,
+   "omitted_ha_in_cells_rice_lt_1pct": 17826.6,
+   "omitted_cells_gdd_zero": 9,
+   "omitted_ha_gdd_zero": 74.0
+  }
+ },
+ "germany_incumbent_Mha": 5.693,
+ "t25": 612.0,
+ "t10": 552.0
+}

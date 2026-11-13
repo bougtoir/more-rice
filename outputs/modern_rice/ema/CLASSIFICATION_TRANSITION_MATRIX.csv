@@ -1,0 +1,4 @@
+,900: thermal not met,"900: thermal met, AEI <10%","900: thermal met, AEI >=10%"
+T*=589: thermal not met,5.474,0.0,0.0
+"T*=589: thermal met, AEI <10%",24.709,28.357,0.0
+"T*=589: thermal met, AEI >=10%",1.227,0.0,9.932

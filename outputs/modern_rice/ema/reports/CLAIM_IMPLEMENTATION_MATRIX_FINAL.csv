@@ -1,0 +1,15 @@
+claim,manuscript_placeholder,value,source_file,script,verification
+Hokkaido reference T*,T_star,589,GRID_THERMAL_CALIBRATION.json,ag_grid_gates.py,KAT 14
+Denominator Mha,inc_Mha,69.7,EUROPE_GATE_CASCADE_BY_COUNTRY.csv,ag_grid_gates.py,KAT 10
+Thermal pass % at T*,pct_T,92.1,THRESHOLD_OMISSION_CURVE.csv,ema_threshold_sweep.py,"KAT 7, 11"
+Thermal+AEI % at T*,pct_aei,16.0,THRESHOLD_OMISSION_CURVE.csv,ema_threshold_sweep.py,KAT 12
+Germany pass at T* / 900,de_T/de_900,96.6 / 3.2,THRESHOLD_OMISSION_CURVE.csv; GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,ema_threshold_sweep.py; ag_germany_decomposition.py,KAT 13
+Resolution effect ≤ pp,de_res_pp,2.4,GERMANY_THERMAL_CONTRAST_DECOMPOSITION.csv,ag_germany_decomposition.py,builder computation
+"Rice omission at T*, 900",om_T/om_900,1.37 / 3.22,THRESHOLD_OMISSION_CURVE.csv,ema_threshold_sweep.py,KAT 15-16
+Legacy 0.87% variant,om_T_inc,0.88,THRESHOLD_OMISSION_CURVE.csv; EUROPE_RICE_VALIDATION.json,ema_threshold_sweep.py,KAT 17
+Candidate drop T*→900,crop_drop_pp,37.2,THRESHOLD_OMISSION_CURVE.csv,build_ema_manuscript.py,derived
+Omission geography/clusters,om_cells/om_clusters/om_fringe_pct,485 / 66 / 64,EMA_THRESHOLD_SUMMARY.json,ema_threshold_sweep.py,scipy.ndimage.label 8-conn
+Shift / LOCO ranges,sh_min/sh_max/loco_T,1.32 / 2.53 / 0.88–1.80%,OMISSION_ALIGNMENT_SENSITIVITY.csv; EMA_THRESHOLD_SUMMARY.json,ema_threshold_sweep.py,scenario range
+Jaccard values,jac_*,see file,CLASSIFICATION_STABILITY_PAIRS.csv,ema_threshold_sweep.py,KAT 20
+Transition 1.2 Mha,tm_lost_Mha,1.2,CLASSIFICATION_TRANSITION_MATRIX.csv,ema_threshold_sweep.py,KAT 18-19
+Omission >10% threshold,T_om10,"1,225",THRESHOLD_OMISSION_CURVE.csv,build_ema_manuscript.py,derived

@@ -1,0 +1,4 @@
+threshold_gdd10,france_incumbent_cropland_pass_pct,RPG 2010 omit_area_pct,RPG 2015 omit_area_pct,RPG 2020 omit_area_pct,RPG 2024 omit_area_pct,MapSPAM2010 France omit_area_pct,MapSPAM2010 France rice_ha,MapSPAM2010 France cells,MapSPAM2010 France share_in_RPG2010_cells,MapSPAM2010 France omit_area_pct_in_RPG2010_cells,MapSPAM2010 France omit_area_pct_outside_RPG2010_cells
+589,99.7,0.0,0.0,0.0,0.0,12.132,21961.5,865,0.0406,0.0,12.645
+900,46.45,0.0,0.012,0.0,0.022,27.139,21961.5,865,0.0406,0.0,28.287
+1100,10.26,0.0,0.012,0.015,0.022,38.601,21961.5,865,0.0406,0.0,40.233

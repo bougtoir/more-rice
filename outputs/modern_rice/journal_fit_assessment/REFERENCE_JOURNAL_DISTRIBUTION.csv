@@ -1,0 +1,38 @@
+ref_id,citation_short,source,source_type,research_field,methodological_community,scientific_role,claim_supported_in_AG_manuscript,direct_methodological_predecessor,environmental_assessment_literature,land_use_or_agricultural_systems_literature
+1,Allen et al. 1998,FAO Irrigation and Drainage Paper 56,report,agricultural water / hydrology,crop water requirement (FAO-56),method (ET0/Kc),Penman-Monteith/Kc basis for crop water demand and deficit D,no,no,yes
+2,Bai et al. 2010,Agronomy Journal,journal,agronomy / agrometeorology,crop modelling weather data,data validation,NASA POWER reliability for crop modelling,no,no,yes
+3,Bouman et al. 2007,IRRI book,book,rice agronomy / water management,irrigated rice,parameter source,paddy seasonal water depth (~1000 mm),no,no,yes
+4,Burchfield & Gilligan 2016,Applied Geography,journal,geography / adaptation,human-environment geography,context,water governance shapes rice adaptation,no,no,yes
+5,Cornwell et al. 2020,Applied Geography,journal,geography / land suitability,land suitability + irrigation potential,closest prior (method),catchment irrigation potential constrains suitability,yes,partly,yes
+6,do Nascimento et al. 2024,Scientific Data,journal,hydrology,large-sample hydrology data,data source,EStreams discharge indices (Lower Danube),no,no,no
+7,FAO 2024 (FAOSTAT),FAOSTAT,dataset,agricultural statistics,national statistics,data source,national yields for portfolio risk,no,no,yes
+8,Fick & Hijmans 2017,International Journal of Climatology,journal,climatology,gridded climate data,data source,WorldClim 2.1 climatology,no,no,no
+9,Gao & Liu 2011,Applied Geography,journal,geography / land-use change,land-use change,context (cold-margin rice),paddy expansion in Heilongjiang under warming,partly,no,yes
+10,Gaupp et al. 2020,Nature Climate Change,journal,food security / climate risk,global risk analysis,motivation,simultaneous breadbasket failure risk,no,no,yes
+11,Hargreaves & Samani 1985,Applied Engineering in Agriculture,journal,agricultural engineering,ET0 estimation,method,temperature-based ET0,no,no,yes
+12,IFPRI 2019 (SPAM 2010),Harvard Dataverse,dataset,agricultural land use data,crop mapping,data source,incumbent-arable denominator and rice area,no,no,yes
+13,Jelinski & Wu 1996,Landscape Ecology,journal,landscape ecology / spatial analysis,MAUP,concept,modifiable areal unit problem,partly,no,no
+14,King et al. 2018,Scientific Reports,journal,agro-climatology,GDD zone projection,context,GDD thresholds used to project northward shifts,partly,no,yes
+15,Künsch 1989,The Annals of Statistics,journal,statistics,bootstrap,method,moving-block bootstrap,no,no,no
+16,Liu et al. 2022,Applied Geography,journal,geography / land-use change,land-use change,context (cold-margin rice),paddy expansion in NE China attributed partly to climate,partly,no,yes
+17,MAFF 2024,MAFF statistics,dataset,agricultural statistics,national statistics,data source,Hokkaido rice statistics,no,no,yes
+18,Malone et al. 2015,PeerJ,journal,soil science / digital land suitability,digital soil mapping / DLSA,closest prior (uncertainty),uncertainty in digital land suitability,yes,partly,yes
+19,Mehrabi & Ramankutty 2019,Nature Ecology & Evolution,journal,food security / global agriculture,global risk analysis,motivation,synchronized crop failure,no,no,yes
+20,Monaco et al. 2016,Water,journal,agricultural water management (Italy rice),water management modelling,parameter source,Italian rice water management / costs,no,no,yes
+21,NASA POWER 2025,NASA POWER,dataset,climatology,reanalysis/satellite weather,data source,daily point weather,no,no,no
+22,Natural Earth 2024,Natural Earth,dataset,cartography,boundaries,data source,domain boundaries,no,no,no
+23,Nouri et al. 2017,Applied Geography,journal,geography / land suitability,land suitability (conservation),context (water sustainability),irrigation expansion vs Lake Urmia,partly,yes,yes
+24,Ray et al. 2015,Nature Communications,journal,global agriculture / climate,yield variability,motivation,climate explains a third of yield variability,no,no,yes
+25,Renard & Tilman 2019,Nature,journal,ecology / food security,crop diversity,motivation,crop diversity stabilises national production,no,no,yes
+26,Saiko & Zonn 2000,Applied Geography,journal,geography / desertification,human-environment geography,context (water sustainability),Aral irrigation expansion and desertification,no,yes,yes
+27,Salam et al. 2022,Geo-Eco-Marina,journal,water resources (Danube),water-energy-food nexus,context/data,Lower Danube allocation framework,no,partly,no
+28,Savoini et al. 2025,Agriculture,journal,agricultural sustainability (Italy rice),sustainability assessment,parameter source,Italian rice farm economics,no,partly,yes
+29,Schmitter et al. 2018,Applied Geography,journal,geography / irrigation suitability,suitability mapping,closest prior (water access criteria),water-access criteria drive irrigation suitability,yes,no,yes
+30,Siebert et al. 2013 (GMIA v5),FAO/Univ. Bonn,dataset,irrigation data,irrigation mapping,data source,area equipped for irrigation,no,no,yes
+31,Sloat et al. 2020,Nature Communications,journal,global agriculture / adaptation,crop migration,context,crop areas migrate with warming,no,no,yes
+32,Snelder et al. 2023,Environmental Management,journal,environmental management / land-use suitability,environmental limits,closest prior (concept),suitability is relational to reference,yes,yes,yes
+33,Tenerelli & Carver 2012,Applied Geography,journal,geography / land suitability,MCE uncertainty,closest prior (uncertainty),MCE weights/thresholds uncertainty,yes,partly,yes
+34,Xu & Zhang 2013,Applied Geography,journal,geography / land suitability,spatially explicit sensitivity analysis,closest prior (sensitivity),spatial sensitivity of land suitability evaluation,yes,partly,yes
+35,Yang et al. 2023,Applied Geography,journal,geography / crop limits,GDD threshold mapping,closest prior (thermal limits),northern limits of ratoon rice from heat thresholds,yes,no,yes
+36,Yu et al. 2020,Earth System Science Data,journal,agricultural land use data,crop mapping,data source,SPAM 2010 description,no,no,yes
+37,Zabel et al. 2014,PLoS ONE,journal,global land suitability,fuzzy-logic suitability,closest prior (global suitability),global agricultural suitability incl. rice,yes,no,yes

@@ -1,0 +1,8 @@
+Test,T* = 589,900,1100
+"Rice layer shifted (+0,+0) cells",1.37,3.22,5.53
+"Rice layer shifted (-1,-1) cells",2.53,5.64,9.70
+"Rice layer shifted (+0,+1) cells",1.32,3.14,5.58
+3 × 3 neighbourhood rule,0.53,1.70,3.19
+2.5′ sub-cell pass fraction,1.33,3.23,5.78
+Native 10′ surface,1.72,3.65,6.08
+Leave-one-country-out range,0.88–1.80,2.12–4.23,4.01–7.15

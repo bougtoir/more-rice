@@ -25,7 +25,7 @@ Script: `modern_rice/scripts/ema_known_answer_tests.py`. Inputs: `outputs/modern
 | 19 | Nested thresholds: no cell passes 900 but fails T* | PASS |  |
 | 20 | Jaccard T* vs 900 recomputed | PASS | 0.5962 |
 | 21 | Inference unit: no cell-level bootstrap in EM&A scripts | PASS | scenario ranges only (shifts, LOCO) |
-| 22 | No hardcoded headline results in EM&A template | PASS | headline literals found: []; remaining literals are design constants, years, citations: ['0', '1', '10', '11', '1100', '1300', '1400', '143.0', '180', '1800', '1970', '1981', '1996', '2', '2.1', '2.5', '2000', '2005', '2010', '2012', '2013', '2014', '2015', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '25', '29', '3', '34', '4', '43.2', '45', '5', '50', '71.5', '8', '90', '900', '95'] |
+| 22 | No hardcoded headline results in EM&A template | PASS | headline literals found: []; remaining literals are design constants, years, citations: ['0', '1', '10', '11', '1100', '1300', '14', '1400', '143.0', '180', '1800', '1970', '1981', '1996', '2', '2.1', '2.5', '2000', '2005', '2010', '2012', '2013', '2014', '2015', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '25', '29', '3', '3.5', '34', '4', '4.2', '43.2', '43.8', '45', '5', '50', '6', '71.5', '8', '90', '900', '93', '95'] |
 | 23 | No hardcoded headline results in EM&A builder | PASS |  |
 | 24 | Water/risk models not retained in EM&A narrative | PASS | Lower Danube demand and risk portfolio remain in AG outputs, unchanged |
 

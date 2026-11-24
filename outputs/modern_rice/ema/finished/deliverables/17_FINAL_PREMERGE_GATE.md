@@ -11,6 +11,6 @@
 | No raw RPG geometries | PASS |
 | Scope limited to wording, cover letter, figure embedding, audits | PASS |
 | CI | CI_NOT_CONFIGURED |
-| Explicit author approval to merge | PENDING |
+| Explicit author approval to merge | RECEIVED (merged) |
 
-Recommendation: MERGE after author approval, then re-run the public clean-clone check on the new main.
+Post-merge public clean-clone check: PASS.

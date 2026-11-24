@@ -18,7 +18,8 @@ def git(*a, cwd=WORK): return subprocess.run(["git", *a], cwd=cwd, capture_outpu
 
 # raw inputs vs ledgers
 checked, bad = [], []
-for r in csv.DictReader(open(os.path.join(RAW, "RAW_ACQUISITION_LEDGER_2026-11-08.csv"))):
+LEDGER = os.path.join(ROOT, "modern_rice", "data", "RAW_ACQUISITION_LEDGER_2026-11-08.csv")
+for r in csv.DictReader(open(LEDGER)):
     f, s = (r.get("file") or "").strip(), (r.get("sha256") or "").strip()
     if not re.fullmatch(r"[0-9a-f]{64}", s): continue
     p = os.path.join(ROOT, f) if f.startswith("modern_rice/") else os.path.join(RAW, f.split("raw/", 1)[-1])
@@ -64,7 +65,7 @@ ok = (not bad and all(r.endswith("=0") for r in runs) and not data_changed and a
 R = {"repository": URL.removesuffix(".git"), "verified_commit": commit, "commit_subject": subject,
      "verified_utc": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
      "clone_method": "fresh anonymous HTTPS clone (GIT_TERMINAL_PROMPT=0)",
-     "raw_inputs": f"durable local store linked into the clone; {len(checked)} ledgered files SHA-256-verified, {len(bad)} mismatched/missing",
+     "raw_inputs": f"durable local store linked into the clone; {len(checked)} of {len(checked) + len(bad)} SHA-256 rows in the tracked ledgers (RAW_ACQUISITION_LEDGER_2026-11-08.csv + rpg/LEDGER.txt) matched, {len(bad)} mismatched/missing",
      "raw_mismatches": bad, "scripts": runs, "canonical_csv_json_png_changed": data_changed, "semantic_checks": sem,
      "prose_reports_regenerated": md, "tests": kat, "tracked_geojson": sum(t.endswith(".geojson") for t in tracked),
      "status": "PASS" if ok else "FAIL"}

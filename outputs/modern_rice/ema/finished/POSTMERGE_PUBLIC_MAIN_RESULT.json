@@ -1,0 +1,74 @@
+{
+ "repository": "https://github.com/bougtoir/more-rice",
+ "verified_commit": "3a46db97836d8a2fca25f79b65ebb92c92df5340",
+ "commit_subject": "Merge pull request #3 from bougtoir/devin/1795496123-ema-finishing-pass",
+ "verified_utc": "2026-11-24T05:18:54Z",
+ "clone_method": "fresh anonymous HTTPS clone (GIT_TERMINAL_PROMPT=0)",
+ "raw_inputs": "durable local store linked into the clone; 82 of 82 SHA-256 rows in the tracked ledgers (RAW_ACQUISITION_LEDGER_2026-11-08.csv + rpg/LEDGER.txt) matched, 0 mismatched/missing",
+ "raw_mismatches": [],
+ "scripts": [
+  "ag_grid_gates=0",
+  "ag_germany_decomposition=0",
+  "ema_threshold_sweep=0",
+  "ema_figures=0",
+  "ema_reports=0",
+  "rpg_validation=0",
+  "rpg_reports=0",
+  "ema_known_answer_tests=0",
+  "rpg_known_answer_tests=0",
+  "build_ema_manuscript=0"
+ ],
+ "canonical_csv_json_png_changed": [],
+ "semantic_checks": [
+  [
+   "outputs/modern_rice/ema/figures/CANDIDATE_AREA_OMISSION_TRADEOFF.pdf",
+   "extracted text identical"
+  ],
+  [
+   "outputs/modern_rice/ema/figures/CLASSIFICATION_DISAGREEMENT_MAP.pdf",
+   "extracted text identical"
+  ],
+  [
+   "outputs/modern_rice/ema/figures/GERMANY_CONTROLLED_CONTRAST.pdf",
+   "extracted text identical"
+  ],
+  [
+   "outputs/modern_rice/ema/figures/RICE_AREA_OMISSION_GEOGRAPHY.pdf",
+   "extracted text identical"
+  ],
+  [
+   "outputs/modern_rice/ema/figures/THRESHOLD_OMISSION_CURVE.pdf",
+   "extracted text identical"
+  ],
+  [
+   "outputs/modern_rice/ema/submission/01_EMA_MANUSCRIPT_FINAL.docx",
+   "document.xml + media identical"
+  ],
+  [
+   "outputs/modern_rice/ema/submission/02_EMA_MANUSCRIPT_REVIEW.pdf",
+   "extracted text identical"
+  ],
+  [
+   "outputs/modern_rice/ema/submission/03_EMA_COVER_LETTER_FINAL.docx",
+   "document.xml + media identical"
+  ],
+  [
+   "outputs/modern_rice/ema/submission/EMA_MANUSCRIPT_REVIEW_COPY.docx",
+   "document.xml + media identical"
+  ],
+  [
+   "outputs/modern_rice/ema/submission/render_check/01_EMA_MANUSCRIPT_FINAL.pdf",
+   "extracted text identical"
+  ]
+ ],
+ "prose_reports_regenerated": [
+  "outputs/modern_rice/ema/reports/EMA_JOURNAL_REQUIREMENTS_FINAL.md",
+  "outputs/modern_rice/ema/reports/WORD_RENDER_AND_EQUATION_AUDIT.md"
+ ],
+ "tests": {
+  "ema": "24/24",
+  "rpg": "26/26"
+ },
+ "tracked_geojson": 0,
+ "status": "PASS"
+}

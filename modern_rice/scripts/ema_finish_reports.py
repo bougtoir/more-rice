@@ -92,7 +92,8 @@ W("07_EMA_JOURNAL_REQUIREMENTS_RECHECK.md", L)
 
 # ---- 08 non-regression ----
 changed = sh("git", "diff", "--name-only", BASE, "--", "outputs/modern_rice", "modern_rice").decode().split()
-untracked = sh("git", "ls-files", "--others", "--exclude-standard", "outputs/modern_rice/ema", "modern_rice/scripts").decode().split()
+untracked = sorted(set(sh("git", "diff", "--name-only", "--diff-filter=A", BASE, "--", "modern_rice/scripts").decode().split())
+                   | {u for u in sh("git", "ls-files", "--others", "--exclude-standard", "modern_rice/scripts").decode().split() if os.path.basename(u).startswith("ema_")})
 an_scripts = [f for f in changed if f.startswith("modern_rice/scripts/") and not f.endswith(("build_ema_manuscript.py",))]
 canon = [f for f in sh("git", "ls-files", "outputs/modern_rice").decode().split() if f.endswith((".csv", ".json", ".png")) and "/submission/" not in f and "KNOWN_ANSWER" not in f and "/deliverables/" not in f and "/finished/" not in f]
 canon_changed = [f for f in changed if f in canon]
@@ -198,23 +199,52 @@ W("14_FINAL_HOSTILE_EMA_EDITOR_REVIEW.md", L)
 
 # ---- 15 public main ----
 R = json.load(open(os.path.join(FIN, "PUBLIC_MAIN_REPRO_RESULT.json")))
-L = ["# Public main reproducibility audit", "", f"Status: **PASS for public main `{R['verified_commit']}`**; finishing-pass changes: **PUBLIC_SYNC_PENDING** until the finishing PR is merged and re-verified.", "",
+PMF = os.path.join(FIN, "POSTMERGE_PUBLIC_MAIN_RESULT.json")
+PM = json.load(open(PMF)) if os.path.exists(PMF) else None
+POST = bool(PM and PM["status"] == "PASS")
+lic = "| Licences | WorldClim CC BY 4.0; MapSPAM CC BY 4.0; GMIA (FAO, not redistributed); RPG Licence Ouverte 2.0 (geometries not redistributed) |"
+L = ["# Public main reproducibility audit", ""]
+if PM:
+    L += [f"Status: **{PM['status']} for public main `{PM['verified_commit']}`** ({PM['commit_subject']}), i.e. after the finishing pass was merged.", "",
+          "| Item | Result |", "|---|---|", f"| Repository accessible anonymously | YES ({PM['repository']}) |", f"| Clone | {PM['clone_method']} |", f"| Verified at (UTC) | {PM['verified_utc']} |",
+          f"| Raw inputs | {PM['raw_inputs']} |", "| Scripts run (exit codes) | " + "; ".join(PM["scripts"]) + " |",
+          f"| Canonical CSV/JSON/PNG outputs changed by re-run | {len(PM['canonical_csv_json_png_changed'])} |",
+          "| DOCX/PDF re-run vs committed | " + "; ".join(f"{os.path.basename(f)}: {v}" for f, v in PM["semantic_checks"]) + " (PDF/DOCX bytes differ only in render metadata) |",
+          "| Prose audit reports regenerated with different text | " + (", ".join(os.path.basename(f) for f in PM["prose_reports_regenerated"]) or "none") + " |",
+          f"| Tests | EM&A {PM['tests'].get('ema')}; RPG {PM['tests'].get('rpg')} |", f"| Tracked .geojson files | {PM['tracked_geojson']} |",
+          "| Data / Code Availability URL | https://github.com/bougtoir/more-rice (HTTP 200) |", "| Acquisition ledgers | RAW_ACQUISITION_LEDGER_2026-11-08.csv; rpg/LEDGER.txt (WFS URLs via rpg_fetch_rice.py) |", lic, "",
+          "The two prose reports listed above are legacy pre-finishing audit files whose committed copies carried stale descriptive values (abstract word count 249 instead of 250; archive directory listing). They contain no manuscript or analysis numbers; the regenerated copies are committed by the post-merge verification PR.", "",
+          f"Earlier pre-merge check of `{R['verified_commit']}`: PASS (see PUBLIC_MAIN_REPRO_RESULT.json).", "",
+          "Limitation: raw inputs were taken from the durable local store (SHA-256-verified against the acquisition ledgers) rather than re-downloaded from every provider (≈13 GB)."]
+else:
+    L += [f"Status: **PASS for public main `{R['verified_commit']}`**; finishing-pass changes: **PUBLIC_SYNC_PENDING** until the finishing PR is merged and re-verified.", "",
      "| Item | Result |", "|---|---|", f"| Repository accessible anonymously | YES ({R['repository']}) |", f"| Clone | {R['clone_method']} |", f"| Verified at (UTC) | {R['verified_utc']} |",
      f"| Raw inputs | {R['raw_inputs']} |", "| Scripts run (exit codes) | " + "; ".join(R["scripts"]) + " |", f"| Byte-identical | {R['byte_identical']} |",
      "| Semantically identical | " + "; ".join(R["semantically_identical"]) + " |", f"| Tests | EM&A {R['tests']['ema_known_answer_tests']}; RPG {R['tests']['rpg_known_answer_tests']} |",
      "| Data Availability URL / Code Availability URL | https://github.com/bougtoir/more-rice (HTTP 200) |", "| Acquisition instructions / ledgers | RAW_ACQUISITION_LEDGER_2026-11-08.csv; RPG LEDGER via rpg_fetch_rice.py (WFS URLs) |",
-     "| Credentials or restricted geometries in repo | none (.geojson absent from tracked files and ZIPs) |", "| Licences | WorldClim CC BY 4.0; MapSPAM CC BY 4.0; GMIA (FAO, not redistributed); RPG Licence Ouverte 2.0 (geometries not redistributed) |", "",
+     "| Credentials or restricted geometries in repo | none (.geojson absent from tracked files and ZIPs) |", lic, "",
      "Limitation: raw inputs were taken from the durable local store (hash-verified against the ledgers) rather than re-downloaded from every provider during this check."]
 W("15_PUBLIC_MAIN_REPRODUCIBILITY_AUDIT.md", L)
 
 # ---- 16 PR / 17 premerge / 18 gate ----
 br = sh("git", "rev-parse", "--abbrev-ref", "HEAD").decode().strip()
+fp = f"{PR} — merged into main as `{PM['verified_commit']}` after explicit author approval" if PM else f"{PR} — NOT merged (requires explicit author approval)"
 W("16_PR_AND_MERGE_STATUS.md", ["# PR and merge status", "", "| Item | Value |", "|---|---|", "| PR #2 | https://github.com/bougtoir/more-rice/pull/2 — merged; merge commit a1202c7c5b41c9286388dfd89a90532ceb9ecb0f (not re-merged) |",
-    f"| Finishing-pass branch | `{br}` (from {BASE[:7]}) |", f"| Finishing-pass PR | {PR} — NOT merged (requires explicit author approval) |", "| CI | CI_NOT_CONFIGURED |"])
+    f"| Finishing-pass branch | `devin/1795496123-ema-finishing-pass` (from {BASE[:7]}) |", f"| Finishing-pass PR | {fp} |"]
+    + ([f"| Post-merge verification branch | `{br}` (records only; no manuscript or analysis change) |"] if PM else []) + ["| CI | CI_NOT_CONFIGURED |"])
 W("17_FINAL_PREMERGE_GATE.md", ["# Final pre-merge gate (finishing-pass PR)", "", "| Gate | Status |", "|---|---|", "| Numerical non-regression | PASS |", f"| KAT | EM&A {kp[0]}/{kp[1]}, RPG {rp[0]}/{rp[1]} PASS |",
     "| Claim calibration / boundary | PASS |", "| References | PASS |", "| Figures/tables | PASS |", "| Word/OMML/render | PASS |", "| No raw RPG geometries | PASS |", "| Scope limited to wording, cover letter, figure embedding, audits | PASS |", "| CI | CI_NOT_CONFIGURED |",
-    "| Explicit author approval to merge | PENDING |", "", "Recommendation: MERGE after author approval, then re-run the public clean-clone check on the new main."])
-W("18_FINAL_SUBMISSION_GATE.md", ["# Final submission gate", "", "**Decision: CONDITIONAL READY — finishing-pass PR merge and post-merge public-main check pending; author actions pending.**", "",
+    "| Explicit author approval to merge | " + ("RECEIVED (merged)" if PM else "PENDING") + " |", "",
+    "Post-merge public clean-clone check: " + (PM["status"] if PM else "pending") + "."])
+if POST:
+    W("18_FINAL_SUBMISSION_GATE.md", ["# Final submission gate", "", "**Decision: SCIENTIFICALLY READY — AUTHOR ACTIONS PENDING**", "",
+        f"All scientific and editorial gates pass, the finishing pass is merged, and public main `{PM['verified_commit'][:7]}` was re-verified from a fresh anonymous clone (PASS). `READY FOR SUBMISSION` is not issued only because author-controlled items remain (the corresponding e-mail is still a placeholder).", "",
+        "Author actions:", "1. Enter the corresponding e-mail on the title page and cover letter.", "2. Confirm affiliation and ORCID.",
+        "3. Choose the subscription (no-APC) route; do not select open access unless funded.", "4. Enter author contributions and competing interests in the submission interface.", "",
+        "Journal-selectivity risk: MEDIUM–HIGH (no author-collected field data). A scientifically defensible manuscript can still be desk-rejected; this verdict concerns readiness, not predicted acceptance.", "",
+        "Not done by Devin: submission, contact with the journal, payment."])
+else:
+    W("18_FINAL_SUBMISSION_GATE.md", ["# Final submission gate", "", "**Decision: CONDITIONAL READY — finishing-pass PR merge and post-merge public-main check pending; author actions pending.**", "",
     "`READY FOR SUBMISSION` is not issued because the finished text is not yet on public main (PUBLIC_SYNC_PENDING).", "", "Author actions:", "1. Approve and merge the finishing-pass PR.", "2. Enter the corresponding e-mail on the title page and cover letter.",
     "3. Confirm affiliation and ORCID.", "4. Choose the subscription (no-APC) route; do not select open access unless funded.", "5. Enter author contributions and competing interests in the submission interface.", "",
     "Not done by Devin: submission, contact with the journal, payment."])
@@ -237,7 +267,8 @@ with zipfile.ZipFile(za, "w", zipfile.ZIP_DEFLATED) as z:
     for n in out:
         if n not in sub_set: z.write(os.path.join(DL, n), "finishing_pass/" + n)
     for f in prior: z.write(os.path.join(OLD, f), "prior_scientific_evidence/" + f)
-    for f in ("CLAIM_CALIBRATION_EDITS.json", "CROSSREF_CHECK.json", "PUBLIC_MAIN_REPRO_RESULT.json"): z.write(os.path.join(FIN, f), "finishing_pass/records/" + f)
+    for f in ("CLAIM_CALIBRATION_EDITS.json", "CROSSREF_CHECK.json", "PUBLIC_MAIN_REPRO_RESULT.json", "POSTMERGE_PUBLIC_MAIN_RESULT.json"):
+        if os.path.exists(os.path.join(FIN, f)): z.write(os.path.join(FIN, f), "finishing_pass/records/" + f)
     for f in sorted(os.listdir(JR)): z.write(os.path.join(JR, f), "finishing_pass/journal_requirements_2026-11-24/" + f)
 for zz in (zs, za):
     nm = zipfile.ZipFile(zz).namelist(); assert not any(n.endswith((".geojson", ".tif", ".asc", ".nc")) or "literature" in n for n in nm)

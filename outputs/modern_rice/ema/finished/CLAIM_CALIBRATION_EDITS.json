@@ -1,0 +1,132 @@
+[
+ {
+  "id": "T1",
+  "document": "manuscript",
+  "section": "Abstract",
+  "construct": "threshold discrimination",
+  "original": "warm cells and cannot rank references.",
+  "revised": "warm cells and barely discriminates between references.",
+  "reason": "Limited empirical discrimination in the evaluated data, not formal non-identifiability.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T2",
+  "document": "manuscript",
+  "section": "Abstract",
+  "construct": "threshold strictness",
+  "original": "Presence-only coverage constrains only implausibly strict thresholds;",
+  "revised": "Presence-only coverage constrains only thresholds that omit much recorded rice;",
+  "reason": "Physiological implausibility is not established; the evidence is observed-land-use omission.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T3",
+  "document": "manuscript",
+  "section": "2.4",
+  "construct": "threshold discrimination",
+  "original": "over thresholds that the rice data cannot distinguish.",
+  "revised": "over thresholds that the rice data barely distinguish.",
+  "reason": "Omission does change (1.37% to 3.22%); 'cannot' overstates.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T4",
+  "document": "manuscript",
+  "section": "3.4",
+  "construct": "threshold discrimination",
+  "original": "The mapped rice data therefore reject thresholds that would exclude much of current Mediterranean and Danubian rice production but cannot discriminate among the Hokkaido-derived references",
+  "revised": "The mapped rice data therefore weigh against thresholds that would exclude much of current Mediterranean and Danubian rice production but provide little discrimination among the Hokkaido-derived references",
+  "reason": "No formal test of rejection; limited, not zero, discrimination.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T5",
+  "document": "manuscript",
+  "section": "3.5",
+  "construct": "threshold discrimination",
+  "original": "reinforcing that the omission check cannot rank these references.",
+  "revised": "so the omission check has little power to rank these references.",
+  "reason": "Scenario ranges comparable to the T*-900 difference imply low, not zero, power.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T6",
+  "document": "manuscript",
+  "section": "3.7",
+  "construct": "MapSPAM allocation",
+  "original": "The omission of MapSPAM rice area in France is therefore an allocation effect outside the declared rice district, consistent with the low-density margin cells identified in Section 3.5, rather than evidence that the gate excludes current production.",
+  "revised": "The omission of MapSPAM rice area in France therefore occurs outside the declared rice district. This is consistent with differences in spatial allocation, spatial support and data-generation procedures between the two datasets, including the low-density margin cells identified in Section 3.5, although their individual contributions cannot be isolated; it does not indicate that the gate excludes declared production.",
+  "reason": "The RPG-MapSPAM comparison is descriptive; allocation, support, reference-year and data-generation causes are not separated.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T7",
+  "document": "manuscript",
+  "section": "3.7",
+  "construct": "threshold discrimination",
+  "original": "The independent records do not, however, help to rank references:",
+  "revised": "The independent records, however, provide little discrimination between references:",
+  "reason": "Limited discrimination in the evaluated data.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T8",
+  "document": "manuscript",
+  "section": "4.1",
+  "construct": "coverage vs validity",
+  "original": "Third, the available reference data on existing rice area validate neither specification in the critical range. Low omission at T* demonstrates that the gate does not exclude current European rice production, but because",
+  "revised": "Third, the available reference data on existing rice area provide little empirical discrimination between the specifications in the critical range. Low omission at T* indicates that the gate excludes little of the mapped and declared European rice area, but because",
+  "reason": "'demonstrates ... does not exclude' overstates a 1.37% omission; 'validate' conflates coverage with agronomic validity.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T9",
+  "document": "manuscript",
+  "section": "4.2",
+  "construct": "MapSPAM allocation",
+  "original": "it can separate allocation effects from omission of real production.",
+  "revised": "it can help to distinguish omissions that arise from spatial allocation from omissions of declared production.",
+  "reason": "The register does not causally separate allocation effects.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T10",
+  "document": "manuscript",
+  "section": "5",
+  "construct": "coverage vs validity",
+  "original": "confirm that the gate does not exclude current European production, but neither can discriminate between references",
+  "revised": "indicate that the gate excludes little current European production, but neither provides much discrimination between references",
+  "reason": "Calibrated to the observed omission and to limited discrimination.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T11",
+  "document": "manuscript",
+  "section": "4.2 (new paragraph)",
+  "construct": "contingency application",
+  "original": "## 4.3 Limitations and external validation",
+  "revised": "Beyond long-term agricultural adaptation, spatial suitability screening could also provide a preliminary input to contingency crop-substitution planning after a widespread crop-specific disease outbreak; a severe disruption to wheat production, for example, could prompt an assessment of alternative crops. This study did not evaluate any disease scenario, and its results do not identify rice as a preferred alternative. They do indicate why thermal screening alone would be insufficient for such planning: the candidate area depends strongly on reference construction, and mapped irrigation infrastructure, which is not evidence of available water, imposes a further constraint. Operational substitution capacity would require separate assessment of water availability, seed supply, machinery, seasonal timing, conversion costs and attainable yields.\n\n## 4.3 Limitations and external validation",
+  "reason": "Prospective application only; no disease scenario, capacity or food-security claim.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T12",
+  "document": "manuscript",
+  "section": "Abstract",
+  "construct": "length (editorial)",
+  "original": "Omissions fall mainly in low-density allocation cells at climatic margins.",
+  "revised": "Omissions fall mainly in marginal low-density allocation cells.",
+  "reason": "Keeps the abstract within the 250-word limit after T1-T2; same meaning.",
+  "numerical_results_changed": "NO"
+ },
+ {
+  "id": "T13",
+  "document": "manuscript",
+  "section": "Abstract",
+  "construct": "length (editorial)",
+  "original": "In a controlled contrast for Germany, the pass share",
+  "revised": "In a controlled German contrast, the pass share",
+  "reason": "Keeps the abstract within the 250-word limit; same meaning.",
+  "numerical_results_changed": "NO"
+ }
+]

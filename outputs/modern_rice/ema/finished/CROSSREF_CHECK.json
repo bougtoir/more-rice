@@ -1,0 +1,166 @@
+[
+ {
+  "doi": "10.1002/joc.5086",
+  "status": "RESOLVED",
+  "title": "WorldClim 2: new 1‐km spatial resolution climate surfaces for global land areas",
+  "year": 2017,
+  "container": "International Journal of Climatology",
+  "first_author": "Fick"
+ },
+ {
+  "doi": "10.1007/BF02447512",
+  "status": "RESOLVED",
+  "title": "The modifiable areal unit problem and implications for landscape ecology",
+  "year": 1996,
+  "container": "Landscape Ecology",
+  "first_author": "Jelinski"
+ },
+ {
+  "doi": "10.1007/s00267-022-01764-y",
+  "status": "RESOLVED",
+  "title": "Land-use Suitability is Not an Intrinsic Property of a Land Parcel",
+  "year": 2022,
+  "container": "Environmental Management",
+  "first_author": "Snelder"
+ },
+ {
+  "doi": "10.1007/s10661-019-7649-z",
+  "status": "RESOLVED",
+  "title": "Land suitability modeling for newly reclaimed area using GIS-based multi-criteria decision",
+  "year": 2019,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Mohamed"
+ },
+ {
+  "doi": "10.1007/s10661-021-09547-4",
+  "status": "RESOLVED",
+  "title": "Projected changes in East African climate and its impacts on climatic suitability of maize",
+  "year": 2021,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Ojara"
+ },
+ {
+  "doi": "10.1007/s10661-022-09895-9",
+  "status": "RESOLVED",
+  "title": "Modeling coffee (Coffea arabica L.) climate suitability under current and future scenario ",
+  "year": 2022,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Benti"
+ },
+ {
+  "doi": "10.1007/s10661-022-10180-y",
+  "status": "RESOLVED",
+  "title": "Zoning the suitability of the western Mekong Delta for paddy rice cultivation and aquacult",
+  "year": 2022,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Van"
+ },
+ {
+  "doi": "10.1007/s10661-022-10259-6",
+  "status": "RESOLVED",
+  "title": "A comparative analysis of three multi-criteria decision-making methods for land suitabilit",
+  "year": 2022,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Rashidi"
+ },
+ {
+  "doi": "10.1007/s10661-023-11849-8",
+  "status": "RESOLVED",
+  "title": "Land evaluation approaches comparing TOPSIS and SAW with parametric methods for rice culti",
+  "year": 2023,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Azadi"
+ },
+ {
+  "doi": "10.1007/s10661-024-12341-7",
+  "status": "RESOLVED",
+  "title": "Does spatial resolution matter in the estimation of average annual soil loss by using RUSL",
+  "year": 2024,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Bagwan"
+ },
+ {
+  "doi": "10.1007/s10661-024-12534-0",
+  "status": "RESOLVED",
+  "title": "Response of the cultivation suitability of Pu'er tea (Camellia sinensis var. assamica) to ",
+  "year": 2024,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Wang"
+ },
+ {
+  "doi": "10.1007/s10661-024-12811-y",
+  "status": "RESOLVED",
+  "title": "Multi-criteria GIS-based land suitability analysis for rice cultivation: a case study in G",
+  "year": 2024,
+  "container": "Environmental Monitoring and Assessment",
+  "first_author": "Bazkiaee"
+ },
+ {
+  "doi": "10.1016/j.apgeog.2011.08.013",
+  "status": "RESOLVED",
+  "title": "Multi-criteria, multi-objective and uncertainty analysis for agro-energy spatial modelling",
+  "year": 2012,
+  "container": "Applied Geography",
+  "first_author": "Tenerelli"
+ },
+ {
+  "doi": "10.1016/j.apgeog.2013.08.005",
+  "status": "RESOLVED",
+  "title": "Spatially-explicit sensitivity analysis for land suitability evaluation",
+  "year": 2013,
+  "container": "Applied Geography",
+  "first_author": "Xu"
+ },
+ {
+  "doi": "10.1038/s41467-020-15076-4",
+  "status": "RESOLVED",
+  "title": "Climate adaptation by crop migration",
+  "year": 2020,
+  "container": "Nature Communications",
+  "first_author": "Sloat"
+ },
+ {
+  "doi": "10.1038/s41598-018-26321-8",
+  "status": "RESOLVED",
+  "title": "Northward shift of the agricultural climate zone under 21st-century global climate change",
+  "year": 2018,
+  "container": "Scientific Reports",
+  "first_author": "King"
+ },
+ {
+  "doi": "10.1371/journal.pone.0107522",
+  "status": "RESOLVED",
+  "title": "Global Agricultural Land Resources – A High Resolution Suitability Evaluation and Its Pers",
+  "year": 2014,
+  "container": "PLoS ONE",
+  "first_author": "Zabel"
+ },
+ {
+  "doi": "10.2134/agronj2009.0085",
+  "status": "RESOLVED",
+  "title": "Evaluation of NASA Satellite‐ and Model‐Derived Weather Data for Simulation of Maize Yield",
+  "year": 2010,
+  "container": "Agronomy Journal",
+  "first_author": "Bai"
+ },
+ {
+  "doi": "10.5194/essd-12-3545-2020",
+  "status": "RESOLVED",
+  "title": "A cultivated planet in 2010 – Part 2: The global gridded agricultural-production maps",
+  "year": 2020,
+  "container": "Earth System Science Data",
+  "first_author": "Yu"
+ },
+ {
+  "doi": "10.7717/peerj.1366",
+  "status": "RESOLVED",
+  "title": "Taking account of uncertainties in digital land suitability assessment",
+  "year": 2015,
+  "container": "PeerJ",
+  "first_author": "Malone"
+ },
+ {
+  "doi": "10.7910/DVN/PRFF8V",
+  "status": "ERROR HTTP Error 404: Not Found"
+ }
+]

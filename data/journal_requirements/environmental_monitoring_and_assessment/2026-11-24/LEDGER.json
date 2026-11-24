@@ -1,0 +1,29 @@
+[
+ {
+  "name": "submission_guidelines",
+  "url": "https://link.springer.com/journal/10661/submission-guidelines",
+  "final_url": "https://link.springer.com/journal/10661/submission-guidelines",
+  "retrieved_utc": "2026-11-24T04:59:03.073099Z",
+  "bytes_txt": 72860,
+  "sha256_html": "d5e3a53e375d5a2fe090b850dabc3aa7d51162826f6a973a5175e11d28221c86",
+  "sha256_txt": "b8106246f5515d4b7fe124538aba8f099c468abe0401927539e6650f15190596"
+ },
+ {
+  "name": "aims_and_scope",
+  "url": "https://link.springer.com/journal/10661/aims-and-scope",
+  "final_url": "https://link.springer.com/journal/10661/aims-and-scope",
+  "retrieved_utc": "2026-11-24T04:59:09.718323Z",
+  "bytes_txt": 5285,
+  "sha256_html": "fbc65f9ff8da70a8356aeb8a47a95ffc4704fb2358dbc96e371a428c59197ab8",
+  "sha256_txt": "c959238acff686b8dd0c94e9ad0478408837d48d5881fa831e9679cdfe4d429c"
+ },
+ {
+  "name": "publishing_model",
+  "url": "https://link.springer.com/journal/10661/how-to-publish-with-us",
+  "final_url": "https://link.springer.com/journal/10661/how-to-publish-with-us",
+  "retrieved_utc": "2026-11-24T04:59:16.551569Z",
+  "bytes_txt": 6176,
+  "sha256_html": "69e330dd27124c49a0a0f51e61fb48fc65e4e2fd0d986ef81c4a70ad912edd7a",
+  "sha256_txt": "6d91d3efdef9186e30b73fa85fa3e643f17703c2715bb06d9bed71c90c7c12c6"
+ }
+]

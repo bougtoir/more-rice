@@ -29,7 +29,11 @@ for line in open(os.path.join(RAW, "rpg", "LEDGER.txt")):
     if len(t) >= 4 and t[0].endswith(".geojson"):
         p = os.path.join(RAW, "rpg", t[0]); (checked if os.path.exists(p) and sha(p) == t[3] else bad).append("rpg/" + t[0])
 
-shutil.rmtree(WORK, ignore_errors=True)
+if os.path.exists(WORK):
+    origin = subprocess.run(["git", "config", "--get", "remote.origin.url"], cwd=WORK, capture_output=True, text=True).stdout.strip()
+    if origin.removesuffix(".git") != URL.removesuffix(".git") or os.path.realpath(WORK) == os.path.realpath(ROOT):
+        sys.exit(f"{WORK} exists and is not a previous verification clone of {URL}; set POSTMERGE_DIR to a new path")
+    shutil.rmtree(WORK)
 subprocess.run(["git", "clone", "-q", URL, WORK], check=True, env={**os.environ, "GIT_TERMINAL_PROMPT": "0"})
 commit = git("rev-parse", "HEAD").decode().strip(); subject = git("log", "-1", "--format=%s").decode().strip()
 os.symlink(RAW, os.path.join(WORK, "modern_rice", "data", "raw"))

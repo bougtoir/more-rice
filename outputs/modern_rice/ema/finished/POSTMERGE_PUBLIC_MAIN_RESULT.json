@@ -2,9 +2,9 @@
  "repository": "https://github.com/bougtoir/more-rice",
  "verified_commit": "3a46db97836d8a2fca25f79b65ebb92c92df5340",
  "commit_subject": "Merge pull request #3 from bougtoir/devin/1795496123-ema-finishing-pass",
- "verified_utc": "2026-11-24T05:14:05Z",
+ "verified_utc": "2026-11-24T05:18:54Z",
  "clone_method": "fresh anonymous HTTPS clone (GIT_TERMINAL_PROMPT=0)",
- "raw_inputs": "durable local store linked into the clone; 62 ledgered files SHA-256-verified, 0 mismatched/missing",
+ "raw_inputs": "durable local store linked into the clone; 82 of 82 SHA-256 rows in the tracked ledgers (RAW_ACQUISITION_LEDGER_2026-11-08.csv + rpg/LEDGER.txt) matched, 0 mismatched/missing",
  "raw_mismatches": [],
  "scripts": [
   "ag_grid_gates=0",

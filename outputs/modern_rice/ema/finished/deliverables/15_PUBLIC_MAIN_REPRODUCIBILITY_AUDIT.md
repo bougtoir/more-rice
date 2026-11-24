@@ -6,8 +6,8 @@ Status: **PASS for public main `3a46db97836d8a2fca25f79b65ebb92c92df5340`** (Mer
 |---|---|
 | Repository accessible anonymously | YES (https://github.com/bougtoir/more-rice) |
 | Clone | fresh anonymous HTTPS clone (GIT_TERMINAL_PROMPT=0) |
-| Verified at (UTC) | 2026-11-24T05:14:05Z |
-| Raw inputs | durable local store linked into the clone; 62 ledgered files SHA-256-verified, 0 mismatched/missing |
+| Verified at (UTC) | 2026-11-24T05:18:54Z |
+| Raw inputs | durable local store linked into the clone; 82 of 82 SHA-256 rows in the tracked ledgers (RAW_ACQUISITION_LEDGER_2026-11-08.csv + rpg/LEDGER.txt) matched, 0 mismatched/missing |
 | Scripts run (exit codes) | ag_grid_gates=0; ag_germany_decomposition=0; ema_threshold_sweep=0; ema_figures=0; ema_reports=0; rpg_validation=0; rpg_reports=0; ema_known_answer_tests=0; rpg_known_answer_tests=0; build_ema_manuscript=0 |
 | Canonical CSV/JSON/PNG outputs changed by re-run | 0 |
 | DOCX/PDF re-run vs committed | CANDIDATE_AREA_OMISSION_TRADEOFF.pdf: extracted text identical; CLASSIFICATION_DISAGREEMENT_MAP.pdf: extracted text identical; GERMANY_CONTROLLED_CONTRAST.pdf: extracted text identical; RICE_AREA_OMISSION_GEOGRAPHY.pdf: extracted text identical; THRESHOLD_OMISSION_CURVE.pdf: extracted text identical; 01_EMA_MANUSCRIPT_FINAL.docx: document.xml + media identical; 02_EMA_MANUSCRIPT_REVIEW.pdf: extracted text identical; 03_EMA_COVER_LETTER_FINAL.docx: document.xml + media identical; EMA_MANUSCRIPT_REVIEW_COPY.docx: document.xml + media identical; 01_EMA_MANUSCRIPT_FINAL.pdf: extracted text identical (PDF/DOCX bytes differ only in render metadata) |

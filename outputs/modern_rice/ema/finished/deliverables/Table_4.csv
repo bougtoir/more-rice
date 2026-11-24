@@ -1,0 +1,11 @@
+Domain,Alternative specification,Agreement (%),Jaccard (pass),Pass in primary only (Mha),Pass in alternative only (Mha)
+Europe,"900, 5', pipeline",62.8,0.60,25.94,0.00
+Europe,"P05 recalibrated Jun-Sep (664), 5'",93.4,0.93,4.63,0.00
+Europe,"P05 recalibrated 2.5' (612), majority of sub-cells",98.5,0.98,1.00,0.04
+Europe,P05 recalibrated 10' (552),97.8,0.98,0.09,1.48
+Europe,"Hokkaido P50 (859), 5'",67.2,0.64,22.83,0.00
+Germany,"900, 5', pipeline",6.7,0.03,5.31,0.00
+Germany,"P05 recalibrated Jun-Sep (664), 5'",89.2,0.89,0.62,0.00
+Germany,"P05 recalibrated 2.5' (612), majority of sub-cells",98.3,0.98,0.09,0.00
+Germany,P05 recalibrated 10' (552),97.9,0.98,0.01,0.11
+Germany,"Hokkaido P50 (859), 5'",12.4,0.09,4.98,0.00

@@ -94,7 +94,7 @@ W("07_EMA_JOURNAL_REQUIREMENTS_RECHECK.md", L)
 changed = sh("git", "diff", "--name-only", BASE, "--", "outputs/modern_rice", "modern_rice").decode().split()
 untracked = sh("git", "ls-files", "--others", "--exclude-standard", "outputs/modern_rice/ema", "modern_rice/scripts").decode().split()
 an_scripts = [f for f in changed if f.startswith("modern_rice/scripts/") and not f.endswith(("build_ema_manuscript.py",))]
-canon = [f for f in sh("git", "ls-files", "outputs/modern_rice").decode().split() if f.endswith((".csv", ".json", ".png")) and "/submission/" not in f and "KNOWN_ANSWER" not in f and "/deliverables/" not in f]
+canon = [f for f in sh("git", "ls-files", "outputs/modern_rice").decode().split() if f.endswith((".csv", ".json", ".png")) and "/submission/" not in f and "KNOWN_ANSWER" not in f and "/deliverables/" not in f and "/finished/" not in f]
 canon_changed = [f for f in changed if f in canon]
 kat = subprocess.run(["python3", os.path.join(HERE, "ema_known_answer_tests.py")], capture_output=True, text=True, cwd=ROOT).stdout
 rkat = subprocess.run(["python3", os.path.join(HERE, "rpg_known_answer_tests.py")], capture_output=True, text=True, cwd=ROOT).stdout
